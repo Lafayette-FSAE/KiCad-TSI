@@ -73,7 +73,7 @@ $EndComp
 Text Label 5700 9350 2    60   ~ 0
 +24HV
 $Comp
-L pspice:INDUCTOR L1
+L Circuit_layout-rescue:INDUCTOR-pspice L1
 U 1 1 5BCFF611
 P 2700 8600
 F 0 "L1" H 2700 8700 50  0000 C CNN
@@ -230,7 +230,7 @@ Throttle_HV
 Text Label 14450 7600 2    60   ~ 0
 BP_HV
 $Comp
-L Device:Jumper_NC_Dual JP3
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP3
 U 1 1 5BE5047F
 P 13500 7400
 F 0 "JP3" H 13550 7300 50  0000 L CNN
@@ -241,8 +241,6 @@ F 3 "" H 13500 7400 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text Label 13500 7100 2    60   ~ 0
-I/O_ground
-Text Label 14450 7100 2    60   ~ 0
 I/O_ground
 Text Notes 14050 7600 2    60   ~ 0
 13=FW 14=RW active low\n
@@ -289,23 +287,12 @@ F 3 "" H 10100 3300 50  0000 C CNN
 $EndComp
 Text Label 10250 2300 0    60   ~ 0
 +24HV
-$Comp
-L Device:Q_NMOS_DGS Q4
-U 1 1 5BE75F38
-P 10500 3300
-F 0 "Q4" H 10700 3350 50  0000 L CNN
-F 1 "STN3NF06L" H 10700 3250 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223" H 10700 3400 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/93/f0/a9/a9/40/d7/CD00002430.pdf/files/CD00002430.pdf/jcr:content/translations/en.CD00002430.pdf" H 10500 3300 50  0001 C CNN
-	1    10500 3300
-	1    0    0    -1  
-$EndComp
 Text Label 10600 3700 0    60   ~ 0
 I/O_Ground
 Text Notes 10550 3900 0    60   ~ 0
 Pre-charge switch\n\n
 $Comp
-L Device:LED D6
+L Circuit_layout-rescue:LED-Device D6
 U 1 1 5BE75F40
 P 11150 2750
 F 0 "D6" H 11150 2850 50  0000 C CNN
@@ -359,13 +346,13 @@ Text Notes 9150 2100 0    60   ~ 0
 $Comp
 L Circuit_layout-rescue:C-RESCUE-Circuit_layout C55
 U 1 1 5BE7AC09
-P 3800 1400
-F 0 "C55" V 3850 1500 50  0000 L CNN
-F 1 "0.1u" V 3850 1100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3838 1250 50  0001 C CNN
-F 3 "" H 3800 1400 50  0000 C CNN
-	1    3800 1400
-	0    1    1    0   
+P 5700 1400
+F 0 "C55" V 5750 1500 50  0000 L CNN
+F 1 "0.1u" V 5750 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5738 1250 50  0001 C CNN
+F 3 "" H 5700 1400 50  0000 C CNN
+	1    5700 1400
+	-1   0    0    1   
 $EndComp
 Text Notes 10700 4150 0    60   ~ 0
 bypass\n
@@ -385,7 +372,7 @@ Text Label 15500 4050 0    60   ~ 0
 Text Label 15450 4650 0    60   ~ 0
 IGNI_VCC
 $Comp
-L Device:LED D7
+L Circuit_layout-rescue:LED-Device D7
 U 1 1 5BE81BBA
 P 13500 4650
 F 0 "D7" H 13500 4750 50  0000 C CNN
@@ -407,7 +394,7 @@ F 3 "" H 13500 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D8
+L Circuit_layout-rescue:1N4001-Diode D8
 U 1 1 5BE81BC6
 P 14100 4450
 F 0 "D8" H 14100 4550 50  0000 C CNN
@@ -423,7 +410,7 @@ Text Notes 13900 4800 0    60   ~ 0
 Protection\nDiode\n
 Text Notes 14150 5250 0    60   ~ 0
 Logic power supply switch\n
-Text Label 12400 5700 0    60   ~ 0
+Text Label 12950 5900 0    60   ~ 0
 I/O_Ground
 Text Label 14450 7000 2    60   ~ 0
 IGNI_VCC
@@ -458,17 +445,6 @@ Text Label 2900 1900 0    60   ~ 0
 Text Notes 1800 1400 0    60   ~ 0
 Buffer
 $Comp
-L TSI_HV_Isolater-cache:R R33
-U 1 1 5BE80191
-P 2500 1350
-F 0 "R33" V 2580 1350 50  0000 C CNN
-F 1 "5k" V 2500 1350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2430 1350 50  0001 C CNN
-F 3 "" H 2500 1350 50  0000 C CNN
-	1    2500 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L TSI_HV_Isolater-cache:R R2
 U 1 1 5BE80198
 P 2500 900
@@ -489,25 +465,12 @@ Text Notes 1850 3150 0    60   ~ 0
 Buffer
 Text Label 4200 2350 0    60   ~ 0
 I/O_Ground
-$Comp
-L Circuit_layout-rescue:MCP6004-linear U40
-U 2 1 5BE801B3
-P 4300 3300
-F 0 "U40" H 4300 3500 50  0000 L CNN
-F 1 "MCP6004" H 4300 3100 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4250 3400 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4350 3500 50  0001 C CNN
-	2    4300 3300
-	1    0    0    1   
-$EndComp
 Text Label 5100 1800 0    60   ~ 0
 TSV_Ready
 Text Label 5600 3300 2    60   ~ 0
 Precharge_Ready
 Text Label 5550 4150 2    60   ~ 0
 Safety_Loop_HV
-Text Label 14300 3250 0    79   ~ 0
-Pre_charge_Ready
 Text Notes 6900 1700 0    60   ~ 0
 ~S
 Text Notes 7250 1450 0    60   ~ 0
@@ -545,21 +508,8 @@ F 3 "https://www.digikey.com/products/en?keywords=TLP293(GB-TPLECT-ND" H 3950 10
 	1    3950 10300
 	-1   0    0    -1  
 $EndComp
-$Comp
-L TSI_HV_Isolater-cache:R R54
-U 1 1 5BEBFE1D
-P 4600 10200
-F 0 "R54" V 4680 10200 50  0000 C CNN
-F 1 "150" V 4600 10200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4530 10200 50  0001 C CNN
-F 3 "" H 4600 10200 50  0000 C CNN
-	1    4600 10200
-	0    1    1    0   
-$EndComp
 Text Label 6100 10400 2    60   ~ 0
 I/O_Ground
-Text Label 2300 10200 0    61   ~ 0
-+5V
 Text Label 2300 10400 0    60   ~ 0
 PC_ready
 Text Notes 3450 10700 0    60   ~ 0
@@ -646,12 +596,12 @@ $EndComp
 Text Notes 7200 8450 0    60   ~ 0
 Voltage reference_3.3V
 $Comp
-L Device:Q_NMOS_DGS Q5
+L Circuit_layout-rescue:Q_NMOS_DGS-Device Q5
 U 1 1 5C56750B
 P 12300 5250
 F 0 "Q5" H 12500 5300 50  0000 L CNN
 F 1 "SI1302DL-T1-E3" H 12500 5200 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering" H 12500 5350 50  0001 C CNN
+F 2 "custom_footprints:SOT-323_SC-70_Handsoldering_special" H 12500 5350 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/71249/71249.pdf" H 12300 5250 50  0001 C CNN
 	1    12300 5250
 	1    0    0    -1  
@@ -685,7 +635,7 @@ I/O_Ground
 Text Label 5150 8600 2    60   ~ 0
 I/O_Ground
 $Comp
-L pspice:CAP C5
+L Circuit_layout-rescue:CAP-pspice C5
 U 1 1 5C5A5014
 P 1000 2600
 F 0 "C5" V 1100 2750 50  0000 C CNN
@@ -779,7 +729,7 @@ F 3 "" H 7550 2000 50  0001 C CNN
 	3    7550 2000
 	1    0    0    -1  
 $EndComp
-Text Label 6050 1350 0    60   ~ 0
+Text Label 6050 1000 0    60   ~ 0
 +5HV
 Text Label 6050 2450 0    60   ~ 0
 I/O_Ground
@@ -969,22 +919,9 @@ Wire Wire Line
 	9800 4700 11050 4700
 Connection ~ 9800 4700
 Wire Wire Line
-	4050 1400 4200 1400
-Connection ~ 4200 1400
-Wire Wire Line
-	3550 1400 3450 1400
-Wire Wire Line
-	3450 1400 3450 2200
-Wire Wire Line
-	3450 2200 4200 2200
-Wire Wire Line
 	12350 4050 13500 4050
 Wire Wire Line
 	15050 4050 15500 4050
-Wire Wire Line
-	14950 4650 15450 4650
-Wire Wire Line
-	12400 5000 13500 5000
 Wire Wire Line
 	14550 5000 14550 4650
 Connection ~ 13500 4050
@@ -1004,8 +941,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 6500 1350 6500
 Wire Wire Line
-	4200 1250 4200 1400
-Wire Wire Line
 	4000 1900 2900 1900
 Wire Wire Line
 	2100 1700 2250 1700
@@ -1013,14 +948,6 @@ Wire Wire Line
 	2500 1700 2500 1500
 Wire Wire Line
 	2000 750  2500 750 
-Wire Wire Line
-	2500 1050 2500 1100
-Wire Wire Line
-	2500 1100 2800 1100
-Wire Wire Line
-	2800 1100 2800 3200
-Wire Wire Line
-	2800 3200 4000 3200
 Wire Wire Line
 	2150 3400 2300 3400
 Wire Wire Line
@@ -1044,9 +971,6 @@ Wire Wire Line
 	1450 3700 2300 3700
 Wire Wire Line
 	2300 3700 2300 3400
-Connection ~ 2300 3400
-Wire Wire Line
-	4200 2100 4200 2200
 Wire Wire Line
 	4600 1800 5650 1800
 Wire Wire Line
@@ -1054,16 +978,12 @@ Wire Wire Line
 Wire Wire Line
 	5650 2000 5650 3300
 Connection ~ 2500 1700
-Connection ~ 2500 1100
 Wire Wire Line
 	6950 2800 8300 2800
 Wire Wire Line
 	8300 2800 8300 3300
 Wire Wire Line
-	13950 4050 13950 3250
-Wire Wire Line
-	13950 3250 14300 3250
-Connection ~ 13950 4050
+	14950 5000 14950 4650
 Wire Wire Line
 	6850 2600 8550 2600
 Wire Wire Line
@@ -1129,15 +1049,9 @@ Wire Notes Line
 Connection ~ 6950 9650
 Connection ~ 7400 10300
 Wire Wire Line
-	4750 10200 6100 10200
-Wire Wire Line
-	4250 10200 4450 10200
-Wire Wire Line
 	4250 10400 6100 10400
 Wire Wire Line
 	3650 10200 2300 10200
-Wire Wire Line
-	3650 10400 2300 10400
 Wire Wire Line
 	1100 6350 1350 6350
 Wire Wire Line
@@ -1243,10 +1157,7 @@ Wire Notes Line
 Wire Notes Line
 	8300 1200 9450 1200
 Wire Wire Line
-	6050 1700 6050 1350
-Wire Wire Line
-	6050 2100 6050 2450
-Connection ~ 4200 2200
+	6050 2100 6050 2250
 Wire Wire Line
 	15150 9300 14700 9300
 Wire Wire Line
@@ -1332,10 +1243,6 @@ Wire Wire Line
 Wire Wire Line
 	9800 4700 9800 5150
 Wire Wire Line
-	4200 1400 4200 1500
-Wire Wire Line
-	13500 4050 13950 4050
-Wire Wire Line
 	13500 5000 14100 5000
 Wire Wire Line
 	14100 4050 14550 4050
@@ -1344,13 +1251,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 1700 2500 1700
 Wire Wire Line
-	2300 3400 4000 3400
-Wire Wire Line
 	2500 1700 4000 1700
-Wire Wire Line
-	2500 1100 2500 1200
-Wire Wire Line
-	13950 4050 14100 4050
 Wire Wire Line
 	6950 9650 7100 9650
 Wire Wire Line
@@ -1368,9 +1269,217 @@ Wire Wire Line
 Wire Wire Line
 	4550 8100 5350 8100
 Wire Wire Line
-	4200 2200 4200 2350
-Wire Wire Line
 	3200 5600 3800 5600
 Wire Wire Line
 	3200 6250 3800 6250
+Wire Wire Line
+	13500 4050 14100 4050
+Connection ~ 14950 4650
+Wire Wire Line
+	14950 4650 15450 4650
+Text Label 14950 5000 0    79   ~ 0
+Pre_charge_Ready
+Wire Notes Line
+	16000 3250 16000 5700
+Wire Notes Line
+	16000 5700 14450 5700
+Wire Notes Line
+	14450 5700 14450 3250
+Wire Notes Line
+	14400 3250 16000 3250
+Text Notes 14650 5450 0    61   ~ 0
+Change 1. Move Pre_charge_Ready from pin A1 to Pin 11
+Wire Wire Line
+	4250 10200 4450 10200
+Wire Wire Line
+	4750 10200 6100 10200
+$Comp
+L TSI_HV_Isolater-cache:R R54
+U 1 1 5BEBFE1D
+P 4600 10200
+F 0 "R54" V 4680 10200 50  0000 C CNN
+F 1 "2.4k" V 4600 10200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4530 10200 50  0001 C CNN
+F 3 "" H 4600 10200 50  0000 C CNN
+	1    4600 10200
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	4400 9950 5050 9950
+Wire Notes Line
+	5050 9950 5050 10650
+Wire Notes Line
+	5050 10650 4400 10650
+Wire Notes Line
+	4400 10650 4400 9950
+Text Notes 4400 10950 0    61   ~ 0
+Change 2. Because Pre_charge_Ready is now 24v, R54 is changed to 2.4k, matching R70.\nCurrent is 0.01A.
+Connection ~ 2300 3400
+$Comp
+L Circuit_layout-rescue:MCP6004-linear U40
+U 2 1 5BE801B3
+P 4300 3300
+F 0 "U40" H 4300 3500 50  0000 L CNN
+F 1 "MCP6004" H 4300 3100 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4250 3400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4350 3500 50  0001 C CNN
+	2    4300 3300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2300 3400 4000 3400
+$Comp
+L Circuit_layout-rescue:Q_NMOS_DGS-Device Q4
+U 1 1 5BE75F38
+P 10500 3300
+F 0 "Q4" H 10700 3350 50  0000 L CNN
+F 1 "STN3NF06L" H 10700 3250 50  0000 L CNN
+F 2 "custom_footprints:SOT230P700X180-4N-speical" H 10700 3400 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/93/f0/a9/a9/40/d7/CD00002430.pdf/files/CD00002430.pdf/jcr:content/translations/en.CD00002430.pdf" H 10500 3300 50  0001 C CNN
+	1    10500 3300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10350 3550 10950 3550
+Wire Notes Line
+	10950 3550 10950 3050
+Wire Notes Line
+	10950 3050 10350 3050
+Wire Notes Line
+	10350 3050 10350 3550
+Text Notes 9600 3000 0    39   ~ 0
+Change 8. pin 1 and 2 are flipped on footprint
+Wire Notes Line
+	12050 5050 12850 5050
+Wire Notes Line
+	12850 5050 12850 5500
+Wire Notes Line
+	12850 5500 12050 5500
+Wire Notes Line
+	12050 5500 12050 5050
+Text Notes 11150 5450 0    39   ~ 0
+Change 9. new pin# on new footprint\nold pin# does not match datasheet 
+Text Label 14450 7100 2    60   ~ 0
+I/O_ground
+Text Notes 12600 6800 0    39   ~ 0
+same as I/O Ground\nCannot be changed now b/c "/" in invalid in label name
+Wire Notes Line
+	13200 6850 13200 7000
+Wire Notes Line
+	13800 6850 13800 7050
+Wire Notes Line
+	13800 7050 13900 7050
+Wire Wire Line
+	2500 1050 2500 1200
+Wire Wire Line
+	2650 3200 2650 1350
+Wire Wire Line
+	2650 3200 4000 3200
+$Comp
+L Circuit_layout-rescue:POT_TRIM RV1
+U 1 1 5D89931C
+P 2500 1350
+F 0 "RV1" H 2430 1396 50  0000 R CNN
+F 1 "POT_TRIM" H 2430 1305 50  0000 R CNN
+F 2 "TC33X-2-103E:35WR" H 2500 1350 50  0001 C CNN
+F 3 "" H 2500 1350 50  0001 C CNN
+	1    2500 1350
+	1    0    0    -1  
+$EndComp
+Text Label 2300 10200 0    61   ~ 0
+LV_RTN
+Wire Wire Line
+	2300 10400 2850 10400
+Wire Wire Line
+	2850 10400 3650 10400
+Connection ~ 2850 10400
+Wire Wire Line
+	2850 10150 2850 10400
+$Comp
+L TSI_HV_Isolater-cache:R R33
+U 1 1 5D8ED66B
+P 2850 10000
+F 0 "R33" H 2920 10046 50  0000 L CNN
+F 1 "5k" H 2920 9955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2920 9909 50  0001 L CNN
+F 3 "" H 2850 10000 50  0000 C CNN
+	1    2850 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 9850 2850 9700
+Text Label 2850 9700 0    61   ~ 0
++5V
+Wire Notes Line
+	2400 10600 3200 10600
+Wire Notes Line
+	3200 10600 3200 9550
+Wire Notes Line
+	3200 9550 2400 9550
+Wire Notes Line
+	2400 9550 2400 10600
+Wire Notes Line
+	2200 1100 2200 1600
+Wire Notes Line
+	2200 1600 2800 1600
+Wire Notes Line
+	2800 1600 2800 1100
+Wire Notes Line
+	2800 1100 2200 1100
+Text Notes 1900 1200 0    39   ~ 0
+Change 3. 5k changed to trim pot
+Text Notes 1350 9850 0    39   ~ 0
+Change 11. Change to active low, matching the prototype board from last year
+Wire Wire Line
+	4200 2100 4200 2350
+Wire Wire Line
+	4200 1250 4200 1500
+Wire Wire Line
+	6050 1000 6050 1150
+Wire Wire Line
+	5700 1650 5700 2250
+Wire Wire Line
+	5700 2250 6050 2250
+Connection ~ 6050 2250
+Wire Wire Line
+	6050 2250 6050 2450
+Wire Wire Line
+	5700 1150 6050 1150
+Connection ~ 6050 1150
+Wire Wire Line
+	6050 1150 6050 1700
+$Comp
+L Circuit_layout-rescue:Jumper-Device JP4
+U 1 1 5DA1F700
+P 13500 5350
+F 0 "JP4" V 13546 5262 50  0000 R CNN
+F 1 "Jumper-Device" V 13455 5262 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 13500 5350 50  0001 C CNN
+F 3 "" H 13500 5350 50  0001 C CNN
+	1    13500 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12400 5000 13500 5000
+Wire Wire Line
+	13500 5050 13500 5000
+Wire Wire Line
+	13500 5700 13500 5650
+Wire Wire Line
+	12400 5700 12950 5700
+Wire Wire Line
+	12950 5700 12950 5900
+Connection ~ 12950 5700
+Wire Wire Line
+	12950 5700 13500 5700
+Wire Notes Line
+	13350 5100 13750 5100
+Wire Notes Line
+	13750 5100 13750 5850
+Wire Notes Line
+	13750 5850 13350 5850
+Wire Notes Line
+	13350 5850 13350 5100
+Text Notes 13250 5600 0    39   ~ 0
+Change 12. Jumper for MC
 $EndSCHEMATC

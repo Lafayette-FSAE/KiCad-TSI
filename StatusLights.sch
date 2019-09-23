@@ -167,10 +167,10 @@ F 8 "0.68" H 6650 4450 60  0001 C CNN "Cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG1
+L Circuit_layout-rescue:PWR_FLAG-power #FLG01
 U 1 1 58C1AF3D
 P 1600 5200
-F 0 "#FLG1" H 1600 5295 50  0001 C CNN
+F 0 "#FLG01" H 1600 5295 50  0001 C CNN
 F 1 "PWR_FLAG" H 1600 5380 50  0000 C CNN
 F 2 "" H 1600 5200 50  0000 C CNN
 F 3 "" H 1600 5200 50  0000 C CNN
@@ -465,7 +465,7 @@ BP_RTN
 Text HLabel 1550 850  0    60   Input ~ 0
 BP_RTN
 $Comp
-L Device:Q_PMOS_GSD Q3
+L Circuit_layout-rescue:Q_PMOS_GSD-Device Q3
 U 1 1 5C6172C4
 P 7500 1250
 F 0 "Q3" H 7700 1300 50  0000 L CNN
@@ -499,7 +499,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 1450 5350 1650
 Wire Wire Line
-	6050 1250 7300 1250
+	6050 1250 6750 1250
 Wire Wire Line
 	6300 2750 6500 2750
 Wire Wire Line
@@ -583,7 +583,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 3250 7850 3100
 Wire Wire Line
-	3750 5800 4700 5800
+	3750 5800 4050 5800
 Wire Wire Line
 	1600 5300 1600 5200
 Connection ~ 1600 5300
@@ -612,7 +612,7 @@ Wire Wire Line
 Wire Wire Line
 	11650 4400 11100 4400
 Wire Wire Line
-	10550 4100 10550 4800
+	10550 4100 10550 4300
 Wire Wire Line
 	11650 4100 10550 4100
 Wire Wire Line
@@ -629,7 +629,7 @@ Wire Wire Line
 Wire Wire Line
 	11850 5550 11300 5550
 Wire Wire Line
-	10450 5450 10450 6450
+	10450 5450 10450 6150
 Wire Wire Line
 	11850 5450 10450 5450
 Connection ~ 10450 6150
@@ -689,7 +689,7 @@ Connection ~ 10450 6350
 Wire Wire Line
 	1550 850  1700 850 
 Wire Wire Line
-	3750 5300 5000 5300
+	3750 5300 4050 5300
 Wire Notes Line
 	500  4750 3200 4750
 Wire Notes Line
@@ -800,9 +800,9 @@ Wire Wire Line
 Wire Wire Line
 	6750 5000 6800 5000
 Wire Wire Line
-	850  5300 2600 5300
+	850  5300 1600 5300
 Wire Wire Line
-	2600 5800 850  5800
+	2600 5800 2350 5800
 Wire Wire Line
 	2600 5550 2350 5550
 Wire Wire Line
@@ -810,4 +810,88 @@ Wire Wire Line
 Connection ~ 2350 5800
 Text Notes 7800 1050 0    61   ~ 0
 Schematic Correct\nLayout Wrong
+Wire Wire Line
+	1600 5300 1850 5300
+Wire Wire Line
+	4050 5300 4850 5300
+Wire Wire Line
+	4050 5800 4700 5800
+Wire Wire Line
+	10550 4300 10550 4800
+Wire Wire Line
+	10450 6150 10450 6250
+Wire Wire Line
+	4850 5300 5000 5300
+Wire Wire Line
+	10450 6250 10450 6350
+Wire Wire Line
+	10450 6350 10450 6450
+Wire Wire Line
+	6750 1250 7300 1250
+Wire Wire Line
+	2350 5800 1850 5800
+$Comp
+L Circuit_layout-rescue:C C14
+U 1 1 5DAFECA7
+P 1850 5550
+F 0 "C14" H 2028 5596 50  0000 L CNN
+F 1 "0.1u" H 2028 5505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1850 5550 50  0001 C CNN
+F 3 "" H 1850 5550 50  0001 C CNN
+	1    1850 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 5300
+Wire Wire Line
+	1850 5300 2600 5300
+Connection ~ 1850 5800
+Wire Wire Line
+	1850 5800 850  5800
+$Comp
+L Circuit_layout-rescue:C C17
+U 1 1 5DAFF5E4
+P 4050 5550
+F 0 "C17" H 4228 5596 50  0000 L CNN
+F 1 "0.1u" H 4228 5505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4050 5550 50  0001 C CNN
+F 3 "" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1650 4900 2250 4900
+Wire Notes Line
+	2250 4900 2250 6050
+Wire Notes Line
+	2250 6050 1650 6050
+Wire Notes Line
+	1650 6050 1650 4900
+Wire Notes Line
+	3750 4950 3750 6000
+Wire Notes Line
+	3750 6000 4500 6000
+Wire Notes Line
+	4500 6000 4500 4950
+Wire Notes Line
+	4500 4950 3750 4950
+Text Notes 2350 4950 0    61   ~ 0
+Change 4. Add bypass caps
+Wire Notes Line
+	3650 4900 3800 4900
+Wire Notes Line
+	3800 4900 3800 4950
+Wire Notes Line
+	2250 5150 2500 5150
+Wire Notes Line
+	2500 4950 2500 5150
+Wire Notes Line
+	7300 800  8050 800 
+Wire Notes Line
+	8050 800  8050 1550
+Wire Notes Line
+	8050 1550 7400 1550
+Wire Notes Line
+	7400 1550 7400 800 
+Text Notes 7350 750  0    39   ~ 0
+Change 7: Wiring fixed in layout
 $EndSCHEMATC

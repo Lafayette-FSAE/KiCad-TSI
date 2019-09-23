@@ -383,9 +383,11 @@ F 3 "" H 1800 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP2
+L Circuit_layout-rescue:Jumper-Device JP2
 U 1 1 5C5A07B5
 P 5350 1900
+AR Path="/5C5A07B5" Ref="JP2"  Part="1" 
+AR Path="/58A62F55/5C5A07B5" Ref="JP2"  Part="1" 
 F 0 "JP2" H 5350 2050 50  0000 C CNN
 F 1 "Jumper" H 5350 1820 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5350 1900 50  0001 C CNN
@@ -527,16 +529,16 @@ F 6 "ERJ-6ENF1002V" V 2250 5500 60  0001 C CNN "Man P/N"
 	0    -1   -1   0   
 $EndComp
 Text Label 2850 5800 0    60   ~ 0
-CH_gnd
+LV_RTN
 Text Label 2700 5950 0    60   ~ 0
-CH_gnd
+LV_RTN
 Text Notes 3000 5400 0    60   ~ 12
 For model 3204 MHS and Status need \nexternal pull down resistor 2.2k\n\npin 4 need saparate line connect to \nChasis gnd according to datasheet
 $Comp
-L power:PWR_FLAG #FLG2
+L Circuit_layout-rescue:PWR_FLAG-power #FLG02
 U 1 1 5C66720A
 P 6000 2900
-F 0 "#FLG2" H 6000 2975 50  0001 C CNN
+F 0 "#FLG02" H 6000 2975 50  0001 C CNN
 F 1 "PWR_FLAG" H 6000 3050 50  0000 C CNN
 F 2 "" H 6000 2900 50  0001 C CNN
 F 3 "" H 6000 2900 50  0001 C CNN
@@ -549,7 +551,7 @@ U 1 1 5C6751AE
 P 9600 5200
 F 0 "K2" H 10050 5350 50  0000 L CNN
 F 1 "G6B-1174P-US-DC24" H 10050 5250 50  0000 L CNN
-F 2 "Relays_THT:Relay_SPST_Finder_32.21-x300" H 10870 5170 50  0001 C CNN
+F 2 "custom_footprints:Relay_SPST_Finder_32.21-x300_special" H 10870 5170 50  0001 C CNN
 F 3 "" H 9600 5200 50  0001 C CNN
 	1    9600 5200
 	1    0    0    -1  
@@ -775,10 +777,6 @@ Wire Wire Line
 	9400 4900 9400 4750
 Wire Wire Line
 	9400 5500 9400 5600
-Text Label 9400 4650 2    60   ~ 0
-IMD_Status
-Text Label 9400 5850 2    60   ~ 0
-LV_RTN
 Wire Wire Line
 	1800 4150 1550 4150
 Text Label 1800 4150 0    60   ~ 0
@@ -839,7 +837,7 @@ Wire Wire Line
 	8600 4750 8600 5000
 Connection ~ 9400 4750
 $Comp
-L Diode:1N4001 D9
+L Circuit_layout-rescue:1N4001-Diode D9
 U 1 1 5C6D1B71
 P 8600 5150
 F 0 "D9" H 8600 5250 50  0000 C CNN
@@ -906,4 +904,28 @@ Wire Wire Line
 	9400 4750 9400 4650
 Wire Wire Line
 	9400 5600 9400 5850
+Wire Notes Line
+	2300 5700 3550 5700
+Wire Notes Line
+	3550 5700 3550 6300
+Wire Notes Line
+	3550 6300 2300 6300
+Wire Notes Line
+	2300 6300 2300 5700
+Text Notes 2350 6100 0    61   ~ 0
+Change 5 replace IMD CH_gnd to LV_RTN 
+Text Label 9400 5850 2    60   ~ 0
+LV_RTN
+Text Label 9400 4650 2    60   ~ 0
+IMD_Status
+Wire Notes Line
+	8900 4450 9650 4450
+Wire Notes Line
+	9650 4450 9650 6150
+Wire Notes Line
+	9650 6150 8900 6150
+Wire Notes Line
+	8900 6150 8900 4450
+Text Notes 8700 4400 0    39   ~ 0
+Change 10. pinA1 and A2 switched in new footprint
 $EndSCHEMATC

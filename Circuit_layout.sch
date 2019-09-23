@@ -135,24 +135,6 @@ F 6 "ERJ-6ENF1002V" V 1150 2300 60  0001 C CNN "Man P/N"
 $EndComp
 Text Label 1750 2500 0    60   ~ 0
 ~MCLR
-$Comp
-L Circuit_layout-rescue:SW_PUSH SW4
-U 1 1 5BC93AD3
-P 10550 6000
-F 0 "SW4" H 10700 6110 50  0000 C CNN
-F 1 "SW_PUSH" H 10550 5920 50  0000 C CNN
-F 2 "custom_footprints:SW_RACON_8" H 10550 6000 50  0001 C CNN
-F 3 "" H 10550 6000 50  0001 C CNN
-F 4 "1715-1676-1-ND" H 10550 6000 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/products/en?keywords=ckn9363ct-nd" H 10550 6000 60  0001 C CNN "URL"
-F 6 "1.14100.5030000" H 10550 6000 60  0001 C CNN "Man P/N"
-F 7 "SWITCH PUSH SPST-NO 0.1A 42V" H 10550 6000 60  0001 C CNN "Description"
-F 8 "2.40" H 10550 6000 60  0001 C CNN "Cost"
-	1    10550 6000
-	1    0    0    -1  
-$EndComp
-Text Label 10050 6000 0    60   ~ 0
-~MCLR
 Text Label 6850 4000 2    60   ~ 0
 D_LED_CTRL
 Text Label 6650 4900 2    60   ~ 0
@@ -271,7 +253,7 @@ Text Label 5950 7300 0    60   ~ 0
 Text Label 5950 7400 0    60   ~ 0
 LV_RTN
 $Comp
-L pspice:CAP C24
+L Circuit_layout-rescue:CAP-pspice C24
 U 1 1 5BDA3BAE
 P 1150 2850
 F 0 "C24" H 1250 3000 50  0000 C CNN
@@ -351,7 +333,7 @@ NoConn ~ 6050 5200
 Text Label 11100 2850 0    60   ~ 0
 +3.3V
 $Comp
-L pspice:INDUCTOR L2
+L Circuit_layout-rescue:INDUCTOR-pspice L2
 U 1 1 5BDFBF50
 P 5650 2050
 F 0 "L2" H 5650 2150 50  0000 C CNN
@@ -724,8 +706,6 @@ Wire Wire Line
 	1150 2150 1150 2100
 Wire Wire Line
 	1150 3100 1150 3200
-Wire Wire Line
-	10250 6000 10050 6000
 Wire Wire Line
 	6050 2600 6950 2600
 Wire Wire Line
@@ -1179,4 +1159,24 @@ Wire Wire Line
 	4400 2050 4400 2100
 Wire Notes Line
 	900  6200 4800 6200
+Wire Wire Line
+	10250 6000 10050 6000
+Text Label 10050 6000 0    60   ~ 0
+~MCLR
+$Comp
+L Circuit_layout-rescue:SW_PUSH SW4
+U 1 1 5BC93AD3
+P 10550 6000
+F 0 "SW4" H 10700 6110 50  0000 C CNN
+F 1 "SW_PUSH" H 10550 5920 50  0000 C CNN
+F 2 "custom_footprints:SW_RACON_8" H 10550 6000 50  0001 C CNN
+F 3 "" H 10550 6000 50  0001 C CNN
+F 4 "1715-1676-1-ND" H 10550 6000 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/products/en?keywords=ckn9363ct-nd" H 10550 6000 60  0001 C CNN "URL"
+F 6 "1.14100.5030000" H 10550 6000 60  0001 C CNN "Man P/N"
+F 7 "SWITCH PUSH SPST-NO 0.1A 42V" H 10550 6000 60  0001 C CNN "Description"
+F 8 "2.40" H 10550 6000 60  0001 C CNN "Cost"
+	1    10550 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
