@@ -16,8 +16,6 @@ Comment4 "DEVELOPMENT ONLY"
 $EndDescr
 Text Label 10000 3600 2    60   ~ 0
 CANTX
-Text Label 10000 3800 2    60   ~ 0
-CANRX
 Text Label 6650 3400 2    60   ~ 0
 CANTX
 Text Label 6650 3500 2    60   ~ 0
@@ -398,8 +396,6 @@ Text Label 10900 5350 0    60   ~ 0
 +24V
 Text Label 12900 4500 0    60   ~ 0
 BP
-Text Label 10000 3950 2    60   ~ 0
-+10V
 Text Label 10000 4100 2    60   ~ 0
 +3.3V
 Text Label 10000 4500 2    60   ~ 0
@@ -422,24 +418,6 @@ $EndComp
 NoConn ~ 6100 1300
 Text Label 6250 1000 0    60   ~ 0
 LV_RTN
-$Sheet
-S 8500 3500 1050 1950
-U 58A62F55
-F0 "GLV Interface" 60
-F1 "GLV_tcvr.sch" 60
-F2 "CANTX" O R 9550 3600 60 
-F3 "CANRX" O R 9550 3800 60 
-F4 "+10V" O R 9550 3950 60 
-F5 "+3.3V" O R 9550 4100 60 
-F6 "+24V" O R 9550 4650 60 
-F7 "+5V" O R 9550 4250 60 
-F8 "LV_RTN" O R 9550 4500 60 
-F9 "CH_gnd" O R 9550 4350 59 
-F10 "Safety_Loop" O R 9550 4800 61 
-F11 "IMD_Status" O R 9550 5000 61 
-F12 "AIRs+" O R 9550 5200 61 
-F13 "AIRs-" O R 9550 5350 61 
-$EndSheet
 Text Label 6250 1100 0    60   ~ 0
 PGEC
 Text Label 6250 1200 0    60   ~ 0
@@ -589,39 +567,39 @@ Text Label 2850 6450 2    60   ~ 0
 +5V
 Text Label 6850 4100 2    60   ~ 0
 FlowRate
-Text Label 1050 7050 0    60   ~ 0
-CoolTemp_2
 Text Label 1050 6850 0    60   ~ 0
+CoolTemp_2
+Text Label 1050 6650 0    60   ~ 0
 CoolTemp_1
-Text Label 1050 6450 0    60   ~ 0
+Text Label 1050 6250 0    60   ~ 0
 FlowRate
-Text Label 1050 6950 0    60   ~ 0
+Text Label 1050 6750 0    60   ~ 0
 Temp_RTN_1
-Text Label 1050 7150 0    60   ~ 0
+Text Label 1050 6950 0    60   ~ 0
 Temp_RTN_2
-NoConn ~ 1700 6750
+NoConn ~ 1700 6650
 $Comp
-L Circuit_layout-rescue:Conn_01x08-conn J2
+L Circuit_layout-rescue:Conn_01x10-conn J2
 U 1 1 5C60204C
-P 1900 6750
-F 0 "J2" H 1900 7150 50  0000 C CNN
-F 1 "CoolingSystem" H 1900 6250 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 1900 6750 50  0001 C CNN
-F 3 "" H 1900 6750 50  0001 C CNN
-	1    1900 6750
+P 1900 6650
+F 0 "J2" H 1900 7050 50  0000 C CNN
+F 1 "CoolingSystem" H 1900 6050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-10A_2x05x4.20mm_Straight" H 1900 6650 50  0001 C CNN
+F 3 "" H 1900 6650 50  0001 C CNN
+	1    1900 6650
 	1    0    0    -1  
 $EndComp
-Text Label 1050 6550 0    60   ~ 0
+Text Label 1050 6350 0    60   ~ 0
 FlowRate_5V
-Text Label 1050 6650 0    60   ~ 0
+Text Label 1050 6450 0    60   ~ 0
 FlowRate_RTN
-Text Label 2100 7550 2    60   ~ 0
+Text Label 2100 7600 2    60   ~ 0
 FlowRate_5V
-Text Label 2100 7650 2    60   ~ 0
+Text Label 2100 7700 2    60   ~ 0
 FlowRate_RTN
-Text Label 1250 7550 2    60   ~ 0
+Text Label 1250 7600 2    60   ~ 0
 +5V
-Text Label 1250 7650 2    60   ~ 0
+Text Label 1250 7700 2    60   ~ 0
 LV_RTN
 Text Notes 1700 8000 0    79   ~ 16
 Cooling moved outside the enclousre\nwires go to the LV side
@@ -660,8 +638,6 @@ Text Label 8350 6700 2    60   ~ 0
 +1.24Vref
 Text Label 8550 2150 2    60   ~ 0
 +1.24Vref
-Wire Wire Line
-	9550 3800 10000 3800
 Wire Wire Line
 	6050 3400 6650 3400
 Wire Wire Line
@@ -846,8 +822,6 @@ Wire Wire Line
 Wire Wire Line
 	9550 4100 10000 4100
 Wire Wire Line
-	9550 3950 10000 3950
-Wire Wire Line
 	9550 4650 10000 4650
 Wire Wire Line
 	9550 4500 10000 4500
@@ -970,23 +944,23 @@ Wire Wire Line
 Wire Wire Line
 	2850 7000 2850 6850
 Wire Wire Line
-	1700 7050 1050 7050
+	1700 6850 1050 6850
 Wire Wire Line
-	1050 6850 1700 6850
+	1050 6650 1700 6650
 Wire Wire Line
-	1700 6450 1050 6450
+	1700 6250 1050 6250
+Wire Wire Line
+	1700 6750 1050 6750
 Wire Wire Line
 	1700 6950 1050 6950
 Wire Wire Line
-	1700 7150 1050 7150
+	1700 6350 1050 6350
 Wire Wire Line
-	1700 6550 1050 6550
+	1700 6450 1050 6450
 Wire Wire Line
-	1700 6650 1050 6650
+	1250 7600 2100 7600
 Wire Wire Line
-	1250 7550 2100 7550
-Wire Wire Line
-	1250 7650 2100 7650
+	1250 7700 2100 7700
 Wire Wire Line
 	4000 6450 4000 6550
 Wire Wire Line
@@ -995,12 +969,6 @@ Wire Wire Line
 	6050 4100 6850 4100
 Wire Wire Line
 	6850 4300 6050 4300
-Wire Notes Line
-	4800 6200 4800 7900
-Wire Notes Line
-	4800 7900 900  7900
-Wire Notes Line
-	900  7900 900  6200
 Wire Wire Line
 	9550 5350 10250 5350
 Wire Wire Line
@@ -1157,8 +1125,6 @@ Wire Wire Line
 	5150 1100 5150 2100
 Wire Wire Line
 	4400 2050 4400 2100
-Wire Notes Line
-	900  6200 4800 6200
 Wire Wire Line
 	10250 6000 10050 6000
 Text Label 10050 6000 0    60   ~ 0
@@ -1179,4 +1145,57 @@ F 8 "2.40" H 10550 6000 60  0001 C CNN "Cost"
 	1    10550 6000
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	4800 6050 4800 7900
+Wire Notes Line
+	650  6050 650  7900
+Wire Wire Line
+	9550 3950 10000 3950
+Text Label 10000 3950 2    60   ~ 0
++10V
+Wire Wire Line
+	9550 3800 10000 3800
+Text Label 10000 3800 2    60   ~ 0
+CANRX
+$Sheet
+S 8500 3500 1050 2150
+U 58A62F55
+F0 "GLV Interface" 60
+F1 "GLV_tcvr.sch" 60
+F2 "CANTX" O R 9550 3600 60 
+F3 "CANRX" O R 9550 3800 60 
+F4 "+10V" O R 9550 3950 60 
+F5 "+3.3V" O R 9550 4100 60 
+F6 "+24V" O R 9550 4650 60 
+F7 "+5V" O R 9550 4250 60 
+F8 "LV_RTN" O R 9550 4500 60 
+F9 "CH_gnd" O R 9550 4350 59 
+F10 "Safety_Loop" O R 9550 4800 61 
+F11 "IMD_Status" O R 9550 5000 61 
+F12 "AIRs+" O R 9550 5200 61 
+F13 "AIRs-" O R 9550 5350 61 
+F14 "Cooling_power" O R 9550 5500 61 
+$EndSheet
+Wire Wire Line
+	9550 5500 10250 5500
+Text Label 10250 5500 2    61   ~ 0
+Cooling_power
+Wire Wire Line
+	1700 7050 1050 7050
+Wire Wire Line
+	1700 7150 1050 7150
+Text Label 1050 7050 0    61   ~ 0
+Cooling_power
+Text Label 1050 7150 0    61   ~ 0
+Cooling_RTN
+Wire Wire Line
+	1250 7500 2100 7500
+Text Label 2100 7500 2    61   ~ 0
+Cooling_RTN
+Wire Notes Line
+	650  7900 4800 7900
+Wire Notes Line
+	650  6050 4800 6050
+Text Label 1250 7500 2    61   ~ 0
+LV_RTN
 $EndSCHEMATC

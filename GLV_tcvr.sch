@@ -745,8 +745,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 5500 1550 5500
 Wire Wire Line
-	10550 3300 10150 3300
-Wire Wire Line
 	10150 2900 10550 2900
 Wire Wire Line
 	10550 2700 10150 2700
@@ -928,4 +926,69 @@ Wire Notes Line
 	8900 6150 8900 4450
 Text Notes 8700 4400 0    39   ~ 0
 Change 10. pinA1 and A2 switched in new footprint
+$Comp
+L Circuit_layout-rescue:TLP291-opto U26
+U 1 1 5D9CC649
+P 6450 6250
+F 0 "U26" H 6250 6450 50  0000 L CNN
+F 1 "TLP293" H 6450 6450 50  0000 L CNN
+F 2 "Housings_SSOP:SOP-4_4.4x2.8mm_Pitch1.27mm" H 6250 6050 50  0001 L CIN
+F 3 "" H 6450 6250 50  0000 L CNN
+F 4 "TLP293(GB-TPLECT-ND" H 6450 6250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP293(GB-TPL,E/TLP293(GB-TPLECT-ND/4562965" H 6450 6250 60  0001 C CNN "URL"
+F 6 "TLP293(GB-TPLE" H 6450 6250 60  0001 C CNN "Man P/N"
+F 7 "OPTOISOLATOR 3.75KV TRANS 4-SO" H 6450 6250 60  0001 C CNN "Description"
+F 8 "0.52" H 6450 6250 60  0001 C CNN "Price"
+	1    6450 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6350 5350 6350
+Text Label 5350 6150 2    61   ~ 0
+Safety_Loop
+Text Label 5350 6350 2    61   ~ 0
+LV_RTN
+Wire Wire Line
+	6750 6150 7650 6150
+Wire Wire Line
+	6750 6350 7650 6350
+$Comp
+L TSI_HV_Isolater-cache:R R99
+U 1 1 5D9F3F8F
+P 5900 6150
+F 0 "R99" V 5800 6150 50  0000 C CNN
+F 1 "5k" V 5900 6150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5830 6150 50  0001 C CNN
+F 3 "" H 5900 6150 50  0001 C CNN
+	1    5900 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 6150 5350 6150
+Wire Wire Line
+	6050 6150 6150 6150
+Text Label 7650 6150 0    61   ~ 0
++24V
+Text Label 7650 6350 0    61   ~ 0
+Cooling_power
+Text HLabel 10450 3500 2    61   Output ~ 0
+Cooling_power
+Wire Wire Line
+	10550 3300 10150 3300
+Wire Wire Line
+	10450 3500 10100 3500
+Text Label 10100 3500 2    61   ~ 0
+Cooling_power
+Text Notes 6400 5900 2    99   ~ 0
+Cooling System Power
+Wire Notes Line
+	4700 6500 8450 6500
+Wire Notes Line
+	8450 6500 8450 5750
+Wire Notes Line
+	8450 5750 4700 5750
+Wire Notes Line
+	4700 5700 4700 6500
+Text Notes 8350 5850 2    39   ~ 0
+Change 12. Add cooling system power
 $EndSCHEMATC

@@ -510,10 +510,8 @@ F 3 "https://www.digikey.com/products/en?keywords=TLP293(GB-TPLECT-ND" H 3950 10
 $EndComp
 Text Label 6100 10400 2    60   ~ 0
 I/O_Ground
-Text Label 2300 10400 0    60   ~ 0
+Text Label 2300 10200 0    60   ~ 0
 PC_ready
-Text Notes 3450 10700 0    60   ~ 0
-Optoisolator 5V to 5V\n
 Text HLabel 1100 6350 0    61   Input ~ 0
 +5V
 Text Label 1350 6350 0    61   ~ 0
@@ -903,8 +901,6 @@ Wire Wire Line
 Wire Wire Line
 	10250 2300 11150 2300
 Wire Wire Line
-	10600 3100 11150 3100
-Wire Wire Line
 	11150 3100 11150 2900
 Connection ~ 9800 3300
 Wire Wire Line
@@ -1050,8 +1046,6 @@ Connection ~ 6950 9650
 Connection ~ 7400 10300
 Wire Wire Line
 	4250 10400 6100 10400
-Wire Wire Line
-	3650 10200 2300 10200
 Wire Wire Line
 	1100 6350 1350 6350
 Wire Wire Line
@@ -1328,17 +1322,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4350 3500 50 
 $EndComp
 Wire Wire Line
 	2300 3400 4000 3400
-$Comp
-L Circuit_layout-rescue:Q_NMOS_DGS-Device Q4
-U 1 1 5BE75F38
-P 10500 3300
-F 0 "Q4" H 10700 3350 50  0000 L CNN
-F 1 "STN3NF06L" H 10700 3250 50  0000 L CNN
-F 2 "custom_footprints:SOT230P700X180-4N-speical" H 10700 3400 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/93/f0/a9/a9/40/d7/CD00002430.pdf/files/CD00002430.pdf/jcr:content/translations/en.CD00002430.pdf" H 10500 3300 50  0001 C CNN
-	1    10500 3300
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	10350 3550 10950 3550
 Wire Notes Line
@@ -1359,8 +1342,6 @@ Wire Notes Line
 	12050 5500 12050 5050
 Text Notes 11150 5450 0    39   ~ 0
 Change 9. new pin# on new footprint\nold pin# does not match datasheet 
-Text Label 14450 7100 2    60   ~ 0
-I/O_ground
 Text Notes 12600 6800 0    39   ~ 0
 same as I/O Ground\nCannot be changed now b/c "/" in invalid in label name
 Wire Notes Line
@@ -1369,46 +1350,22 @@ Wire Notes Line
 	13800 6850 13800 7050
 Wire Notes Line
 	13800 7050 13900 7050
-Wire Wire Line
-	2500 1050 2500 1200
-Wire Wire Line
-	2650 3200 2650 1350
-Wire Wire Line
-	2650 3200 4000 3200
-$Comp
-L Circuit_layout-rescue:POT_TRIM RV1
-U 1 1 5D89931C
-P 2500 1350
-F 0 "RV1" H 2430 1396 50  0000 R CNN
-F 1 "POT_TRIM" H 2430 1305 50  0000 R CNN
-F 2 "TC33X-2-103E:35WR" H 2500 1350 50  0001 C CNN
-F 3 "" H 2500 1350 50  0001 C CNN
-	1    2500 1350
-	1    0    0    -1  
-$EndComp
-Text Label 2300 10200 0    61   ~ 0
+Text Label 2300 10400 0    61   ~ 0
 LV_RTN
-Wire Wire Line
-	2300 10400 2850 10400
-Wire Wire Line
-	2850 10400 3650 10400
-Connection ~ 2850 10400
-Wire Wire Line
-	2850 10150 2850 10400
 $Comp
 L TSI_HV_Isolater-cache:R R33
 U 1 1 5D8ED66B
-P 2850 10000
-F 0 "R33" H 2920 10046 50  0000 L CNN
-F 1 "5k" H 2920 9955 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2920 9909 50  0001 L CNN
-F 3 "" H 2850 10000 50  0000 C CNN
-	1    2850 10000
+P 2900 9850
+F 0 "R33" H 2970 9896 50  0000 L CNN
+F 1 "5k" H 2970 9805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2970 9759 50  0001 L CNN
+F 3 "" H 2900 9850 50  0000 C CNN
+	1    2900 9850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 9850 2850 9700
-Text Label 2850 9700 0    61   ~ 0
+	2900 9700 2900 9550
+Text Label 2900 9550 0    61   ~ 0
 +5V
 Wire Notes Line
 	2400 10600 3200 10600
@@ -1482,4 +1439,51 @@ Wire Notes Line
 	13350 5850 13350 5100
 Text Notes 13250 5600 0    39   ~ 0
 Change 12. Jumper for MC
+Text Label 14450 7100 2    60   ~ 0
+I/O_ground
+Wire Wire Line
+	2750 3200 4000 3200
+Wire Wire Line
+	2500 1050 2500 1200
+Wire Wire Line
+	2650 1350 2750 1350
+Wire Wire Line
+	2750 1350 2750 3200
+Wire Wire Line
+	2300 10400 3650 10400
+Wire Wire Line
+	10600 3100 10800 3100
+$Comp
+L Circuit_layout-rescue:Q_NMOS_DGS-Device_4pin_special Q4
+U 1 1 5BE75F38
+P 10500 3300
+F 0 "Q4" H 10700 3350 50  0000 L CNN
+F 1 "STN3NF06L" H 10700 3250 50  0000 L CNN
+F 2 "custom_footprints:SOT230P700X180-4N-speical" H 10700 3400 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/93/f0/a9/a9/40/d7/CD00002430.pdf/files/CD00002430.pdf/jcr:content/translations/en.CD00002430.pdf" H 10500 3300 50  0001 C CNN
+	1    10500 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 10700 0    60   ~ 0
+Optoisolator 5V to 5V\n
+$Comp
+L Circuit_layout-rescue:POT_TRIM RV1
+U 1 1 5D89931C
+P 2500 1350
+F 0 "RV1" H 2430 1396 50  0000 R CNN
+F 1 "3296W-1-103LF" H 2430 1305 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296W" H 2500 1350 50  0001 C CNN
+F 3 "" H 2500 1350 50  0001 C CNN
+	1    2500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 10200 2300 10200
+Wire Wire Line
+	10700 3200 10800 3200
+Wire Wire Line
+	10800 3200 10800 3100
+Connection ~ 10800 3100
+Wire Wire Line
+	10800 3100 11150 3100
 $EndSCHEMATC

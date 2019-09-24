@@ -813,9 +813,9 @@ Schematic Correct\nLayout Wrong
 Wire Wire Line
 	1600 5300 1850 5300
 Wire Wire Line
-	4050 5300 4850 5300
+	4050 5300 4150 5300
 Wire Wire Line
-	4050 5800 4700 5800
+	4050 5800 4150 5800
 Wire Wire Line
 	10550 4300 10550 4800
 Wire Wire Line
@@ -835,9 +835,10 @@ L Circuit_layout-rescue:C C14
 U 1 1 5DAFECA7
 P 1850 5550
 F 0 "C14" H 2028 5596 50  0000 L CNN
-F 1 "0.1u" H 2028 5505 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1850 5550 50  0001 C CNN
-F 3 "" H 1850 5550 50  0001 C CNN
+F 1 "1u" H 2028 5505 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L18.0mm_W9.0mm_P15.00mm_FKS3_FKP3" H 1850 5550 50  0001 C CNN
+F 3 "https://www.tdk-electronics.tdk.com/inf/20/20/db/fc_2009/B32520_529.pdf" H 1850 5550 50  0001 C CNN
+F 4 "B32522C3105000" H 1850 5550 50  0001 C CNN "Ordering Code"
 	1    1850 5550
 	1    0    0    -1  
 $EndComp
@@ -850,12 +851,12 @@ Wire Wire Line
 $Comp
 L Circuit_layout-rescue:C C17
 U 1 1 5DAFF5E4
-P 4050 5550
-F 0 "C17" H 4228 5596 50  0000 L CNN
-F 1 "0.1u" H 4228 5505 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4050 5550 50  0001 C CNN
-F 3 "" H 4050 5550 50  0001 C CNN
-	1    4050 5550
+P 4150 5550
+F 0 "C17" H 4328 5596 50  0000 L CNN
+F 1 "4.7u" H 4328 5505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4150 5550 50  0001 C CNN
+F 3 "" H 4150 5550 50  0001 C CNN
+	1    4150 5550
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -894,4 +895,10 @@ Wire Notes Line
 	7400 1550 7400 800 
 Text Notes 7350 750  0    39   ~ 0
 Change 7: Wiring fixed in layout
+Connection ~ 4150 5300
+Wire Wire Line
+	4150 5300 4850 5300
+Connection ~ 4150 5800
+Wire Wire Line
+	4150 5800 4700 5800
 $EndSCHEMATC
