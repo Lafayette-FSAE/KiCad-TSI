@@ -7,10 +7,10 @@ encoding utf-8
 Sheet 5 6
 Title "Tractive System Interface"
 Date "2019-03-26"
-Rev "2.2"
+Rev "1"
 Comp "Lafayette College"
-Comment1 "Spring 2019"
-Comment2 "Xiaonan Chen, Tianyu Zhu and Yuqiu Zhang"
+Comment1 "Fall 2019"
+Comment2 "Feng Qiu, Zhengxie Hu, Phillip Harding"
 Comment3 ""
 Comment4 "DEVELOPMENT ONLY"
 $EndDescr
@@ -171,7 +171,7 @@ F 12 "https://www.arrow.com/en/products/ts431ilt/stmicroelectronics" H 10950 660
 	1    10000 7600
 	1    0    0    -1  
 $EndComp
-Text Notes 9900 8300 0    60   ~ 0
+Text Notes 9350 8550 0    60   ~ 0
 Voltage reference_1.24V
 NoConn ~ 10000 7600
 NoConn ~ 10000 7700
@@ -849,15 +849,8 @@ Wire Wire Line
 Wire Wire Line
 	9800 7800 9850 7800
 Wire Wire Line
-	9850 7800 9850 7050
+	9850 7800 9850 7350
 Connection ~ 9850 7800
-Wire Wire Line
-	11650 7600 11650 8150
-Wire Wire Line
-	11650 8150 9950 8150
-Wire Wire Line
-	9950 8150 9950 7800
-Connection ~ 9950 7800
 Wire Wire Line
 	11100 7700 11100 7800
 Wire Wire Line
@@ -1225,10 +1218,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 9250 3000 9250
 Wire Wire Line
-	9850 7800 9950 7800
-Wire Wire Line
-	9950 7800 10000 7800
-Wire Wire Line
 	9800 3300 9800 4350
 Wire Wire Line
 	11150 3100 11600 3100
@@ -1486,4 +1475,76 @@ Wire Wire Line
 Connection ~ 10800 3100
 Wire Wire Line
 	10800 3100 11150 3100
+Wire Wire Line
+	11650 7600 11650 8000
+Wire Wire Line
+	11650 7500 11650 7600
+Connection ~ 11650 7600
+Wire Wire Line
+	11650 8300 11650 8400
+Wire Wire Line
+	11650 7200 11650 7100
+Text Label 11650 8400 0    60   ~ 0
+I/O_Ground
+$Comp
+L TSI_HV_Isolater-cache:R R101
+U 1 1 5D8F52B8
+P 11650 8150
+F 0 "R101" H 11720 8196 50  0000 L CNN
+F 1 "10k" H 11720 8105 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11580 8150 50  0001 C CNN
+F 3 "" H 11650 8150 50  0001 C CNN
+	1    11650 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Circuit_layout-rescue:POT_TRIM RV2
+U 1 1 5D8F6548
+P 11650 7350
+F 0 "RV2" H 11580 7304 50  0000 R CNN
+F 1 "POT_TRIM" H 11580 7395 50  0000 R CNN
+F 2 "custom_footprints:23BR10KLFTR" H 11650 7350 50  0001 C CNN
+F 3 "" H 11650 7350 50  0001 C CNN
+	1    11650 7350
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	11500 7150 12000 7150
+Wire Notes Line
+	12000 7150 12000 8300
+Wire Notes Line
+	12000 8300 11500 8300
+Wire Notes Line
+	11500 8300 11500 7150
+Text Notes 11800 7900 0    39   ~ 0
+Change 15. Change the output voltage
+Text Label 15500 4050 0    60   ~ 0
++24HV
+Text Label 15450 4650 0    60   ~ 0
+IGNI_VCC
+Text Notes 12950 4700 0    60   ~ 0
+Indicator\n
+Text Notes 13900 4800 0    60   ~ 0
+Protection\nDiode\n
+Text Notes 14150 5250 0    60   ~ 0
+Logic power supply switch\n
+Text Label 12950 5900 0    60   ~ 0
+I/O_Ground
+Text Label 12350 4050 0    61   ~ 0
++5HV
+Text Label 14950 5000 0    79   ~ 0
+Pre_charge_Ready
+Text Notes 14650 5450 0    61   ~ 0
+Change 1. Move Pre_charge_Ready from pin A1 to Pin 11
+Text Notes 11150 5450 0    39   ~ 0
+Change 9. new pin# on new footprint\nold pin# does not match datasheet 
+Text Notes 13250 5600 0    39   ~ 0
+Change 12. Jumper for MC
+Wire Wire Line
+	9850 7800 10000 7800
+Wire Wire Line
+	11500 7350 9850 7350
+Connection ~ 9850 7350
+Wire Wire Line
+	9850 7350 9850 7050
 $EndSCHEMATC

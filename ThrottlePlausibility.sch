@@ -7,10 +7,10 @@ encoding utf-8
 Sheet 4 6
 Title "Tractive System Interface"
 Date "2019-03-26"
-Rev "2.2"
+Rev "1"
 Comp "Lafayette College"
-Comment1 "Spring 2019"
-Comment2 "Xiaonan Chen, Tianyu Zhu and Yuqiu Zhang"
+Comment1 "Fall 2019"
+Comment2 "Feng Qiu, Zhengxie Hu, Phillip Harding"
 Comment3 ""
 Comment4 "DEVELOPMENT ONLY"
 $EndDescr

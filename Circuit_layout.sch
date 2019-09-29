@@ -6,11 +6,11 @@ $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 1 6
 Title "Tractive System Interface"
-Date "2019-03-26"
-Rev "2.2"
+Date "2019-09-24"
+Rev "1"
 Comp "Lafayette College"
-Comment1 "Spring 2019"
-Comment2 "Xiaonan Chen, Tianyu Zhu and Yuqiu Zhang"
+Comment1 "Fall 2019"
+Comment2 "Feng Qiu, Zhengxie Hu, Phillip Harding"
 Comment3 ""
 Comment4 "DEVELOPMENT ONLY"
 $EndDescr
@@ -18,8 +18,6 @@ Text Label 10000 3600 2    60   ~ 0
 CANTX
 Text Label 6650 3400 2    60   ~ 0
 CANTX
-Text Label 6650 3500 2    60   ~ 0
-CANRX
 Text Notes 8350 3400 0    99   ~ 0
 GLV/CAN/AIR/IMD\nInterface
 $Sheet
@@ -133,12 +131,8 @@ F 6 "ERJ-6ENF1002V" V 1150 2300 60  0001 C CNN "Man P/N"
 $EndComp
 Text Label 1750 2500 0    60   ~ 0
 ~MCLR
-Text Label 6850 4000 2    60   ~ 0
-D_LED_CTRL
 Text Label 6650 4900 2    60   ~ 0
 RTDS_CTRL
-Text Label 6850 3900 2    60   ~ 0
-SPARE_LED_CTRL
 Text Label 1750 3500 0    60   ~ 0
 Safety_Loop
 Text Label 1750 3900 0    60   ~ 0
@@ -313,12 +307,9 @@ F17 "+1.24Vref" O R 7900 6700 61
 $EndSheet
 Text Label 5950 7750 0    60   ~ 0
 Safety_Loop
-NoConn ~ 6050 3800
 NoConn ~ 6050 4400
 NoConn ~ 6050 4500
 NoConn ~ 6050 5100
-NoConn ~ 2400 4900
-NoConn ~ 2400 5100
 NoConn ~ 2400 4200
 NoConn ~ 2400 3100
 Text Label 1800 2700 0    60   ~ 0
@@ -434,8 +425,6 @@ Text Label 5950 7050 0    60   ~ 0
 Throttle_HV
 Text Label 5950 7200 0    60   ~ 0
 BP
-NoConn ~ 2400 5000
-NoConn ~ 2400 5200
 NoConn ~ 6050 4700
 NoConn ~ 6050 4800
 Text Label 12900 4700 0    60   ~ 0
@@ -511,8 +500,6 @@ Text Label 7400 750  0    60   ~ 0
 SDA
 Text Label 7400 850  0    60   ~ 0
 SCL
-Text Label 6850 3700 2    61   ~ 0
-PC_ready
 Text Label 7400 950  0    61   ~ 0
 PC_ready
 Text Label 7400 1050 0    60   ~ 0
@@ -565,33 +552,32 @@ Text Label 2850 7650 2    60   ~ 0
 LV_RTN
 Text Label 2850 6450 2    60   ~ 0
 +5V
-Text Label 6850 4100 2    60   ~ 0
+Text Label 1750 5000 2    60   ~ 0
 FlowRate
-Text Label 1050 6850 0    60   ~ 0
+Text Label 850  7000 0    60   ~ 0
 CoolTemp_2
-Text Label 1050 6650 0    60   ~ 0
+Text Label 850  6800 0    60   ~ 0
 CoolTemp_1
-Text Label 1050 6250 0    60   ~ 0
+Text Label 850  6400 0    60   ~ 0
 FlowRate
-Text Label 1050 6750 0    60   ~ 0
+Text Label 850  6900 0    60   ~ 0
 Temp_RTN_1
-Text Label 1050 6950 0    60   ~ 0
+Text Label 850  7100 0    60   ~ 0
 Temp_RTN_2
-NoConn ~ 1700 6650
 $Comp
-L Circuit_layout-rescue:Conn_01x10-conn J2
+L Circuit_layout-rescue:Conn_01x08-conn J2
 U 1 1 5C60204C
-P 1900 6650
-F 0 "J2" H 1900 7050 50  0000 C CNN
-F 1 "CoolingSystem" H 1900 6050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-10A_2x05x4.20mm_Straight" H 1900 6650 50  0001 C CNN
-F 3 "" H 1900 6650 50  0001 C CNN
-	1    1900 6650
+P 1700 6700
+F 0 "J2" H 1700 7100 50  0000 C CNN
+F 1 "CoolingSystem" H 1700 6200 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 1700 6700 50  0001 C CNN
+F 3 "" H 1700 6700 50  0001 C CNN
+	1    1700 6700
 	1    0    0    -1  
 $EndComp
-Text Label 1050 6350 0    60   ~ 0
+Text Label 850  6500 0    60   ~ 0
 FlowRate_5V
-Text Label 1050 6450 0    60   ~ 0
+Text Label 850  6600 0    60   ~ 0
 FlowRate_RTN
 Text Label 2100 7600 2    60   ~ 0
 FlowRate_5V
@@ -603,31 +589,14 @@ Text Label 1250 7700 2    60   ~ 0
 LV_RTN
 Text Notes 1700 8000 0    79   ~ 16
 Cooling moved outside the enclousre\nwires go to the LV side
-$Comp
-L Circuit_layout-rescue:PIC32MZ2048EFM064-I_PT U9
-U 1 1 5BDE8224
-P 4200 4000
-F 0 "U9" H 2598 5722 50  0000 L BNN
-F 1 "PIC32MZ2048EFM064-I/PT" H 2600 2200 50  0000 L BNN
-F 2 "PIC32MZ2048EFM064-I_PT:QFP50P1200X1200X120-64N" H 4200 4000 50  0001 L BNN
-F 3 "https://www.digikey.com/product-detail/en/microchip-technology/PIC32MZ2048EFM064-I-PT/PIC32MZ2048EFM064-I-PT-ND/5323571?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4200 4000 50  0001 L BNN
-F 4 "TQFP-64 Microchip" H 4200 4000 50  0001 L BNN "Field4"
-F 5 "PIC32MZ2048EFM064-I/PT" H 4200 4000 50  0001 L BNN "Field5"
-F 6 "PIC32MZ2048EFM064-I/PT-ND" H 4200 4000 50  0001 L BNN "Field6"
-F 7 "Microchip" H 4200 4000 50  0001 L BNN "Field7"
-F 8 "32 Bit MCU FPU 2MB Flash 512KB RAM 200MHz 64Pin USB-HS ENET CAN Crypto" H 4200 4000 50  0001 L BNN "Field8"
-	1    4200 4000
-	1    0    0    -1  
-$EndComp
-Text Label 6850 4300 2    60   ~ 0
+Text Label 1750 5100 2    60   ~ 0
 CoolTemp_2
-Text Label 6850 4200 2    60   ~ 0
+Text Label 1750 4900 2    60   ~ 0
 CoolTemp_1
 Text Label 10250 5200 2    60   ~ 0
 AIRs+
 Text Label 10250 5350 2    60   ~ 0
 AIRs-
-NoConn ~ 2400 3600
 Text Label 10250 4800 2    60   ~ 0
 Safety_Loop
 Text Label 10250 5000 2    60   ~ 0
@@ -640,8 +609,6 @@ Text Label 8550 2150 2    60   ~ 0
 +1.24Vref
 Wire Wire Line
 	6050 3400 6650 3400
-Wire Wire Line
-	6050 3500 6650 3500
 Wire Wire Line
 	11100 1100 11700 1100
 Wire Wire Line
@@ -672,8 +639,6 @@ Wire Wire Line
 	11100 1850 11700 1850
 Connection ~ 7150 5550
 Wire Wire Line
-	7150 2500 7150 4850
-Wire Wire Line
 	1200 2500 1150 2500
 Wire Wire Line
 	1150 2450 1150 2500
@@ -695,8 +660,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 4000 6850 4000
 Wire Wire Line
-	6050 3900 6850 3900
-Wire Wire Line
 	1750 3500 2400 3500
 Wire Wire Line
 	1750 4000 2400 4000
@@ -706,9 +669,6 @@ Wire Wire Line
 	1750 4100 2400 4100
 Wire Wire Line
 	7900 6550 8250 6550
-Wire Wire Line
-	6950 2600 6950 5550
-Connection ~ 6950 5550
 Wire Wire Line
 	8750 1700 8550 1700
 Wire Wire Line
@@ -763,8 +723,6 @@ Wire Wire Line
 	6100 5500 6100 5550
 Wire Wire Line
 	6100 5600 6050 5600
-Wire Wire Line
-	6100 5550 6950 5550
 Connection ~ 6100 5550
 Wire Wire Line
 	800  3300 800  3800
@@ -894,8 +852,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 750  7400 750 
 Wire Wire Line
-	6050 3700 6850 3700
-Wire Wire Line
 	2400 3800 1750 3800
 Wire Wire Line
 	7250 950  7400 950 
@@ -944,19 +900,19 @@ Wire Wire Line
 Wire Wire Line
 	2850 7000 2850 6850
 Wire Wire Line
-	1700 6850 1050 6850
+	1500 7000 850  7000
 Wire Wire Line
-	1050 6650 1700 6650
+	850  6800 1500 6800
 Wire Wire Line
-	1700 6250 1050 6250
+	1500 6400 850  6400
 Wire Wire Line
-	1700 6750 1050 6750
+	1500 6900 850  6900
 Wire Wire Line
-	1700 6950 1050 6950
+	1500 7100 850  7100
 Wire Wire Line
-	1700 6350 1050 6350
+	1500 6500 850  6500
 Wire Wire Line
-	1700 6450 1050 6450
+	1500 6600 850  6600
 Wire Wire Line
 	1250 7600 2100 7600
 Wire Wire Line
@@ -964,17 +920,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 6450 4000 6550
 Wire Wire Line
-	6850 4200 6050 4200
-Wire Wire Line
-	6050 4100 6850 4100
-Wire Wire Line
-	6850 4300 6050 4300
-Wire Wire Line
 	9550 5350 10250 5350
 Wire Wire Line
 	9550 5200 10250 5200
-Wire Wire Line
-	9550 5000 10250 5000
 Wire Wire Line
 	9550 4800 10250 4800
 Wire Wire Line
@@ -1100,8 +1048,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 2500 1150 2600
 Wire Wire Line
-	6950 5550 7150 5550
-Wire Wire Line
 	6100 5550 6100 5600
 Wire Wire Line
 	1000 3300 1200 3300
@@ -1157,8 +1103,108 @@ Wire Wire Line
 	9550 3800 10000 3800
 Text Label 10000 3800 2    60   ~ 0
 CANRX
+Wire Wire Line
+	9550 5500 10250 5500
+Text Label 10250 5500 2    61   ~ 0
+Cooling_power
+Wire Wire Line
+	1500 6100 850  6100
+Wire Wire Line
+	1500 6200 850  6200
+Text Label 850  6100 0    61   ~ 0
+Cooling_power
+Text Label 850  6200 0    61   ~ 0
+Cooling_RTN
+Wire Wire Line
+	1250 7500 2100 7500
+Text Label 2100 7500 2    61   ~ 0
+Cooling_RTN
+Wire Notes Line
+	650  7900 4800 7900
+Wire Notes Line
+	650  6000 4800 6000
+Text Label 1250 7500 2    61   ~ 0
+LV_RTN
+NoConn ~ 6050 4300
+NoConn ~ 6050 4200
+NoConn ~ 6050 4100
+Wire Wire Line
+	2400 4900 1750 4900
+Wire Wire Line
+	2400 5000 1750 5000
+Wire Wire Line
+	2400 5100 1750 5100
+Wire Notes Line
+	1900 4700 1050 4700
+Text Notes 850  4650 0    39   ~ 0
+Change 14. Reroute signals to analog pins
+Wire Wire Line
+	6950 5550 7150 5550
+Wire Wire Line
+	6100 5550 6950 5550
+Connection ~ 6950 5550
+Wire Wire Line
+	9550 5000 10250 5000
+Wire Wire Line
+	6050 3700 6850 3700
+Wire Wire Line
+	6950 2600 6950 5550
+Wire Wire Line
+	6050 3900 6850 3900
+Wire Wire Line
+	7150 2500 7150 4850
+Wire Wire Line
+	6050 3500 6650 3500
+$Comp
+L Circuit_layout-rescue:PIC32MZ2048EFM064-I_PT U9
+U 1 1 5BDE8224
+P 4200 4000
+F 0 "U9" H 2598 5722 50  0000 L BNN
+F 1 "PIC32MZ2048EFM064-I/PT" H 2600 2200 50  0000 L BNN
+F 2 "PIC32MZ2048EFM064-I_PT:QFP50P1200X1200X120-64N" H 4200 4000 50  0001 L BNN
+F 3 "https://www.digikey.com/product-detail/en/microchip-technology/PIC32MZ2048EFM064-I-PT/PIC32MZ2048EFM064-I-PT-ND/5323571?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4200 4000 50  0001 L BNN
+F 4 "TQFP-64 Microchip" H 4200 4000 50  0001 L BNN "Field4"
+F 5 "PIC32MZ2048EFM064-I/PT" H 4200 4000 50  0001 L BNN "Field5"
+F 6 "PIC32MZ2048EFM064-I/PT-ND" H 4200 4000 50  0001 L BNN "Field6"
+F 7 "Microchip" H 4200 4000 50  0001 L BNN "Field7"
+F 8 "32 Bit MCU FPU 2MB Flash 512KB RAM 200MHz 64Pin USB-HS ENET CAN Crypto" H 4200 4000 50  0001 L BNN "Field8"
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+Text Label 6850 3700 2    61   ~ 0
+PC_ready
+NoConn ~ 6050 3800
+Text Label 6850 3900 2    60   ~ 0
+SPARE_LED_CTRL
+Text Label 6850 4000 2    60   ~ 0
+D_LED_CTRL
+Text Label 6650 3500 2    60   ~ 0
+CANRX
+Wire Wire Line
+	2400 3600 1750 3600
+Text Label 1750 3600 0    61   ~ 0
+Cooling_CTRL
+NoConn ~ 1500 6700
+$Comp
+L conn:Conn_01x02 J10
+U 1 1 5DAED037
+P 1700 6100
+F 0 "J10" H 1780 6092 50  0000 L CNN
+F 1 "Conn_01x02" H 1780 6001 50  0000 L CNN
+F 2 "1217861-1:TE_1217861-1" H 1700 6100 50  0001 C CNN
+F 3 "~" H 1700 6100 50  0001 C CNN
+	1    1700 6100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1900 5200 1900 4700
+Wire Notes Line
+	1050 4700 1050 5200
+Wire Notes Line
+	1050 5200 1900 5200
+NoConn ~ 2400 5200
 $Sheet
-S 8500 3500 1050 2150
+S 8500 3500 1050 2350
 U 58A62F55
 F0 "GLV Interface" 60
 F1 "GLV_tcvr.sch" 60
@@ -1175,27 +1221,14 @@ F11 "IMD_Status" O R 9550 5000 61
 F12 "AIRs+" O R 9550 5200 61 
 F13 "AIRs-" O R 9550 5350 61 
 F14 "Cooling_power" O R 9550 5500 61 
+F15 "Cooling_CTRL" I L 8500 5700 61 
 $EndSheet
+Text Label 7850 5700 0    61   ~ 0
+Cooling_CTRL
 Wire Wire Line
-	9550 5500 10250 5500
-Text Label 10250 5500 2    61   ~ 0
-Cooling_power
-Wire Wire Line
-	1700 7050 1050 7050
-Wire Wire Line
-	1700 7150 1050 7150
-Text Label 1050 7050 0    61   ~ 0
-Cooling_power
-Text Label 1050 7150 0    61   ~ 0
-Cooling_RTN
-Wire Wire Line
-	1250 7500 2100 7500
-Text Label 2100 7500 2    61   ~ 0
-Cooling_RTN
+	7850 5700 8500 5700
 Wire Notes Line
-	650  7900 4800 7900
+	1400 4600 1400 3550
 Wire Notes Line
-	650  6050 4800 6050
-Text Label 1250 7500 2    61   ~ 0
-LV_RTN
+	1400 3550 1700 3550
 $EndSCHEMATC

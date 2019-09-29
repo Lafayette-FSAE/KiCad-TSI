@@ -7,10 +7,10 @@ encoding utf-8
 Sheet 2 6
 Title "Tractive System Interface"
 Date "2019-03-26"
-Rev "2.2"
+Rev "1"
 Comp "Lafayette College"
-Comment1 "Spring 2019"
-Comment2 "Xiaonan Chen, Tianyu Zhu and Yuqiu Zhang"
+Comment1 "Fall 2019"
+Comment2 "Feng Qiu, Zhengxie Hu, Phillip Harding"
 Comment3 ""
 Comment4 "DEVELOPMENT ONLY"
 $EndDescr
@@ -901,4 +901,10 @@ Wire Wire Line
 Connection ~ 4150 5800
 Wire Wire Line
 	4150 5800 4700 5800
+Text Notes 1050 5600 0    39   ~ 0
+Voltage rating: 240V
+Text Notes 2500 6100 0    39   ~ 0
+input: 40-160V
+Text Notes 4550 6050 0    39   ~ 0
+greater than 12V
 $EndSCHEMATC
