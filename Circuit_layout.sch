@@ -258,7 +258,6 @@ $EndComp
 NoConn ~ 2400 2400
 NoConn ~ 6050 2900
 NoConn ~ 6050 3000
-NoConn ~ 2400 5600
 NoConn ~ 2400 5500
 NoConn ~ 6050 3300
 Text Label 800  3800 1    60   ~ 0
@@ -510,54 +509,54 @@ Text Label 7400 1150 0    60   ~ 0
 IMD_Status
 Text Label 7400 1250 0    60   ~ 0
 Throttle_SEL
-Text Label 4000 7000 2    60   ~ 0
+Text Label 4300 6600 0    60   ~ 0
 CoolTemp_1
 $Comp
 L TSI_HV_Isolater-cache:R R16
 U 1 1 5C601300
-P 4000 6700
-F 0 "R16" V 4080 6700 50  0000 C CNN
-F 1 "10k" V 4000 6700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 6700 50  0001 C CNN
-F 3 "" H 4000 6700 50  0000 C CNN
-	1    4000 6700
+P 4000 6350
+F 0 "R16" V 4080 6350 50  0000 C CNN
+F 1 "10k" V 4000 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 6350 50  0001 C CNN
+F 3 "" H 4000 6350 50  0000 C CNN
+	1    4000 6350
 	-1   0    0    -1  
 $EndComp
-Text Notes 4400 7300 2    60   ~ 0
+Text Notes 4400 7400 2    60   ~ 0
 Cooling\nR1
-Text Label 4150 7500 0    60   ~ 0
+Text Label 4150 7600 0    60   ~ 0
 Temp_RTN_1
-Text Label 4000 7650 2    60   ~ 0
+Text Label 4000 7750 2    60   ~ 0
 LV_RTN
-Text Label 4000 6450 2    60   ~ 0
+Text Label 4000 6100 2    60   ~ 0
 +5V
-Text Label 2850 7000 2    60   ~ 0
+Text Label 3150 6600 0    60   ~ 0
 CoolTemp_2
 $Comp
 L TSI_HV_Isolater-cache:R R14
 U 1 1 5C60130C
-P 2850 6700
-F 0 "R14" V 2930 6700 50  0000 C CNN
-F 1 "10k" V 2850 6700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 6700 50  0001 C CNN
-F 3 "" H 2850 6700 50  0000 C CNN
-	1    2850 6700
+P 2850 6350
+F 0 "R14" V 2930 6350 50  0000 C CNN
+F 1 "10k" V 2850 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 6350 50  0001 C CNN
+F 3 "" H 2850 6350 50  0000 C CNN
+	1    2850 6350
 	-1   0    0    -1  
 $EndComp
-Text Notes 3250 7300 2    60   ~ 0
+Text Notes 3250 7400 2    60   ~ 0
 Cooling\nR2
-Text Label 3000 7500 0    60   ~ 0
+Text Label 3000 7600 0    60   ~ 0
 Temp_RTN_2
-Text Label 2850 7650 2    60   ~ 0
+Text Label 2850 7750 2    60   ~ 0
 LV_RTN
-Text Label 2850 6450 2    60   ~ 0
+Text Label 2850 6100 2    60   ~ 0
 +5V
 Text Label 1750 5000 2    60   ~ 0
 FlowRate
 Text Label 850  7000 0    60   ~ 0
-CoolTemp_2
+CoolTemp_In_2
 Text Label 850  6800 0    60   ~ 0
-CoolTemp_1
+CoolTemp_In_1
 Text Label 850  6400 0    60   ~ 0
 FlowRate
 Text Label 850  6900 0    60   ~ 0
@@ -862,43 +861,43 @@ Wire Wire Line
 Wire Wire Line
 	7250 1250 7400 1250
 Wire Notes Line
-	4050 7400 4050 7100
+	4050 7500 4050 7200
 Wire Notes Line
-	4000 7100 4000 7050
+	4000 7200 4000 7150
 Wire Notes Line
-	4000 7400 4000 7450
+	4000 7500 4000 7550
 Wire Notes Line
-	3950 7100 3950 7400
+	3950 7200 3950 7500
 Wire Notes Line
-	4050 7100 3950 7100
+	4050 7200 3950 7200
 Wire Notes Line
-	3950 7400 4050 7400
+	3950 7500 4050 7500
 Wire Wire Line
-	4150 7500 4000 7500
+	4150 7600 4000 7600
 Wire Wire Line
-	4000 7500 4000 7650
+	4000 7600 4000 7750
 Wire Wire Line
-	4000 7000 4000 6850
+	4000 6650 4000 6600
 Wire Notes Line
-	2900 7400 2900 7100
+	2900 7500 2900 7200
 Wire Notes Line
-	2850 7100 2850 7050
+	2850 7200 2850 7150
 Wire Notes Line
-	2850 7400 2850 7450
+	2850 7500 2850 7550
 Wire Notes Line
-	2800 7100 2800 7400
+	2800 7200 2800 7500
 Wire Notes Line
-	2900 7100 2800 7100
+	2900 7200 2800 7200
 Wire Notes Line
-	2800 7400 2900 7400
+	2800 7500 2900 7500
 Wire Wire Line
-	3000 7500 2850 7500
+	3000 7600 2850 7600
 Wire Wire Line
-	2850 7500 2850 7650
+	2850 7600 2850 7750
 Wire Wire Line
-	2850 6450 2850 6550
+	2850 6100 2850 6200
 Wire Wire Line
-	2850 7000 2850 6850
+	2850 6650 2850 6600
 Wire Wire Line
 	1500 7000 850  7000
 Wire Wire Line
@@ -918,7 +917,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 7700 2100 7700
 Wire Wire Line
-	4000 6450 4000 6550
+	4000 6100 4000 6200
 Wire Wire Line
 	9550 5350 10250 5350
 Wire Wire Line
@@ -1041,8 +1040,6 @@ Wire Wire Line
 	5150 900  5150 1100
 Connection ~ 5150 1100
 Connection ~ 4400 2050
-NoConn ~ 2400 4600
-NoConn ~ 2400 4700
 Wire Wire Line
 	7150 5550 7750 5550
 Wire Wire Line
@@ -1125,15 +1122,12 @@ Wire Notes Line
 	650  6000 4800 6000
 Text Label 1250 7500 2    61   ~ 0
 LV_RTN
-NoConn ~ 6050 4300
-NoConn ~ 6050 4200
-NoConn ~ 6050 4100
 Wire Wire Line
-	2400 4900 1750 4900
+	2400 4900 2200 4900
 Wire Wire Line
 	2400 5000 1750 5000
 Wire Wire Line
-	2400 5100 1750 5100
+	2400 5100 2300 5100
 Wire Notes Line
 	1900 4700 1050 4700
 Text Notes 850  4650 0    39   ~ 0
@@ -1173,7 +1167,6 @@ F 8 "32 Bit MCU FPU 2MB Flash 512KB RAM 200MHz 64Pin USB-HS ENET CAN Crypto" H 4
 $EndComp
 Text Label 6850 3700 2    61   ~ 0
 PC_ready
-NoConn ~ 6050 3800
 Text Label 6850 3900 2    60   ~ 0
 SPARE_LED_CTRL
 Text Label 6850 4000 2    60   ~ 0
@@ -1204,7 +1197,7 @@ Wire Notes Line
 	1050 5200 1900 5200
 NoConn ~ 2400 5200
 $Sheet
-S 8500 3500 1050 2350
+S 8500 3500 1050 2450
 U 58A62F55
 F0 "GLV Interface" 60
 F1 "GLV_tcvr.sch" 60
@@ -1221,14 +1214,99 @@ F11 "IMD_Status" O R 9550 5000 61
 F12 "AIRs+" O R 9550 5200 61 
 F13 "AIRs-" O R 9550 5350 61 
 F14 "Cooling_power" O R 9550 5500 61 
-F15 "Cooling_CTRL" I L 8500 5700 61 
+F15 "Cooling_CTRL" I L 8500 4650 61 
+F16 "Break_OverTravel" O R 9550 5650 61 
 $EndSheet
-Text Label 7850 5700 0    61   ~ 0
+Text Label 7850 4650 0    61   ~ 0
 Cooling_CTRL
 Wire Wire Line
-	7850 5700 8500 5700
+	7850 4650 8500 4650
 Wire Notes Line
 	1400 4600 1400 3550
 Wire Notes Line
 	1400 3550 1700 3550
+Wire Wire Line
+	2400 5600 1750 5600
+Text Label 1750 5600 0    61   ~ 0
+PC_ready
+Text Label 6850 4200 2    60   ~ 0
+CoolTemp_1
+Text Label 6850 4100 2    60   ~ 0
+FlowRate
+Text Label 6850 4300 2    60   ~ 0
+CoolTemp_2
+Wire Wire Line
+	6050 4100 6850 4100
+Wire Wire Line
+	6050 4200 6850 4200
+Wire Wire Line
+	6050 4300 6850 4300
+Wire Wire Line
+	2400 4600 2200 4600
+Wire Wire Line
+	2200 4600 2200 4900
+Connection ~ 2200 4900
+Wire Wire Line
+	2200 4900 1750 4900
+Wire Wire Line
+	2400 4700 2300 4700
+Wire Wire Line
+	2300 4700 2300 5100
+Connection ~ 2300 5100
+Wire Wire Line
+	2300 5100 1750 5100
+Text Notes 4500 7200 0    39   ~ 0
+SEN-TPL010K
+Text Notes 4750 6900 1    39   ~ 0
+Cooling System Power: 1.4A
+Text Notes 2650 4850 0    39   ~ 0
+Max: 15mA
+$Comp
+L TSI_HV_Isolater-cache:R R99
+U 1 1 5D98AF96
+P 2850 6800
+F 0 "R99" H 2920 6846 50  0000 L CNN
+F 1 "1.6k" H 2920 6755 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 6800 50  0001 C CNN
+F 3 "" H 2850 6800 50  0001 C CNN
+	1    2850 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSI_HV_Isolater-cache:R R102
+U 1 1 5D98B5DE
+P 4000 6800
+F 0 "R102" H 4070 6846 50  0000 L CNN
+F 1 "1.6k" H 4070 6755 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 6800 50  0001 C CNN
+F 3 "" H 4000 6800 50  0001 C CNN
+	1    4000 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6600 3150 6600
+Connection ~ 2850 6600
+Wire Wire Line
+	2850 6600 2850 6500
+Wire Wire Line
+	4000 6600 4300 6600
+Connection ~ 4000 6600
+Wire Wire Line
+	4000 6600 4000 6500
+Wire Wire Line
+	2850 6950 2850 7100
+Wire Wire Line
+	4000 6950 4000 7100
+Text Label 2850 7100 2    61   ~ 0
+CoolTemp_In_1
+Text Label 4000 7100 2    61   ~ 0
+CoolTemp_In_2
+Wire Wire Line
+	6050 3800 6850 3800
+Text Label 10400 5650 2    61   ~ 0
+Break_OverTravel
+Wire Wire Line
+	9550 5650 10400 5650
+Text Label 6850 3800 2    61   ~ 0
+Break_OverTravel
 $EndSCHEMATC

@@ -34,28 +34,28 @@ CANRX
 Text Label 7550 1350 2    60   ~ 0
 CANTX
 NoConn ~ 7100 1550
-Text HLabel 10500 1050 2    60   Output ~ 0
+Text HLabel 10650 700  2    60   Output ~ 0
 CANTX
-Text HLabel 10500 1200 2    60   Output ~ 0
+Text HLabel 10650 850  2    60   Output ~ 0
 CANRX
-Text Label 9900 1050 0    60   ~ 0
+Text Label 10050 700  0    60   ~ 0
 CANTX
-Text Label 9900 1200 0    60   ~ 0
+Text Label 10050 850  0    60   ~ 0
 CANRX
 $Comp
 L Circuit_layout-rescue:C C18
 U 1 1 58B93C80
-P 8350 1450
+P 7800 1300
 AR Path="/58B93C80" Ref="C18"  Part="1" 
 AR Path="/58A62F55/58B93C80" Ref="C18"  Part="1" 
-F 0 "C18" H 8375 1550 50  0000 L CNN
-F 1 "0.1u" H 8375 1350 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8388 1300 50  0001 C CNN
-F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 8350 1450 50  0001 C CNN
-F 4 "399-1168-1-ND" H 8350 1450 60  0001 C CNN "Digikey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C104K3RACTU/399-1168-1-ND/411443" H 8350 1450 60  0001 C CNN "URL"
-F 6 "C0805C104K3RACTU" H 8350 1450 60  0001 C CNN "Man P/N"
-	1    8350 1450
+F 0 "C18" H 7825 1400 50  0000 L CNN
+F 1 "0.1u" H 7825 1200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7838 1150 50  0001 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 7800 1300 50  0001 C CNN
+F 4 "399-1168-1-ND" H 7800 1300 60  0001 C CNN "Digikey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C104K3RACTU/399-1168-1-ND/411443" H 7800 1300 60  0001 C CNN "URL"
+F 6 "C0805C104K3RACTU" H 7800 1300 60  0001 C CNN "Man P/N"
+	1    7800 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -88,11 +88,9 @@ F 8 "Yageo" V 5350 1450 60  0001 C CNN "Manufacturer"
 	1    5350 1450
 	1    0    0    1   
 $EndComp
-Text Label 8350 1200 1    60   ~ 0
+Text Label 7800 1050 1    60   ~ 0
 +5DC
-Text Label 8350 1700 3    60   ~ 0
-LV_RTN
-Text Label 7650 1650 0    60   ~ 0
+Text Label 7900 1650 0    60   ~ 0
 LV_RTN
 Text Label 6600 1850 3    60   ~ 0
 LV_RTN
@@ -152,7 +150,7 @@ Text Label 1450 7500 0    60   ~ 0
 +24V
 Text Label 1450 7600 0    60   ~ 0
 LV_RTN
-Text Label 3050 7500 2    60   ~ 0
+Text Label 3050 7300 0    60   ~ 0
 +24V
 Text Label 3050 7600 2    60   ~ 0
 LV_RTN
@@ -167,174 +165,174 @@ CH_gnd
 $Comp
 L Circuit_layout-rescue:PDQ U41
 U 1 1 5BE48F84
-P 4550 2900
-F 0 "U41" H 4550 2800 50  0000 C CNN
-F 1 "PDQ10-Q24-D5-D" H 4550 3000 50  0000 C CNN
-F 2 "custom_footprints:PDQ_DCDC" H 4550 2500 50  0001 C CNN
-F 3 "" H 4550 2400 50  0001 C CNN
-F 4 "102-3876-ND " H 4550 2900 60  0001 C CNN "DigiKey P/N"
-F 5 "https://www.digikey.com/product-detail/en/cui-inc/PDQ15-Q24-D5-D/102-3876-ND/6165386detail/en/cui-inc/PDQ10-Q24-S5-D/102-3865-ND/6165206" H 4550 2900 60  0001 C CNN "URL"
-F 6 "PDQ10-Q24-D5-D" H 4550 2900 60  0001 C CNN "Man P/N"
-	1    4550 2900
+P 3000 2850
+F 0 "U41" H 3000 2750 50  0000 C CNN
+F 1 "PDQ10-Q24-D5-D" H 3000 2950 50  0000 C CNN
+F 2 "custom_footprints:PDQ_DCDC" H 3000 2450 50  0001 C CNN
+F 3 "" H 3000 2350 50  0001 C CNN
+F 4 "102-3876-ND " H 3000 2850 60  0001 C CNN "DigiKey P/N"
+F 5 "https://www.digikey.com/product-detail/en/cui-inc/PDQ15-Q24-D5-D/102-3876-ND/6165386detail/en/cui-inc/PDQ10-Q24-S5-D/102-3865-ND/6165206" H 3000 2850 60  0001 C CNN "URL"
+F 6 "PDQ10-Q24-D5-D" H 3000 2850 60  0001 C CNN "Man P/N"
+	1    3000 2850
 	1    0    0    -1  
 $EndComp
-Text Notes 4100 3450 0    60   ~ 0
+Text Notes 2550 3400 0    60   ~ 0
 DC DC Converter\n9V-36V to +5V/-5V
-NoConn ~ 3650 3000
-Text Label 2350 3050 0    60   ~ 0
+NoConn ~ 2100 2950
+Text Label 800  3000 0    60   ~ 0
 LV_RTN
 $Comp
 L Circuit_layout-rescue:C C56
 U 1 1 5BE48F91
-P 2800 2800
+P 1250 2750
 AR Path="/5BE48F91" Ref="C56"  Part="1" 
 AR Path="/58A62F55/5BE48F91" Ref="C56"  Part="1" 
-F 0 "C56" H 2825 2900 50  0000 L CNN
-F 1 "10u" H 2825 2700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2838 2650 50  0001 C CNN
-F 3 "" H 2800 2800 50  0000 C CNN
-F 4 "490-10515-1-ND" H 2800 2800 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR6YA106ME43L/490-10515-1-ND/5026446" H 2800 2800 60  0001 C CNN "URL"
-F 6 "GRM21BR6YA106ME43L" H 2800 2800 60  0001 C CNN "Man P/N"
-	1    2800 2800
+F 0 "C56" H 1275 2850 50  0000 L CNN
+F 1 "10u" H 1275 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1288 2600 50  0001 C CNN
+F 3 "" H 1250 2750 50  0000 C CNN
+F 4 "490-10515-1-ND" H 1250 2750 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR6YA106ME43L/490-10515-1-ND/5026446" H 1250 2750 60  0001 C CNN "URL"
+F 6 "GRM21BR6YA106ME43L" H 1250 2750 60  0001 C CNN "Man P/N"
+	1    1250 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C57
 U 1 1 5BE48F9B
-P 3150 2800
+P 1600 2750
 AR Path="/5BE48F9B" Ref="C57"  Part="1" 
 AR Path="/58A62F55/5BE48F9B" Ref="C57"  Part="1" 
-F 0 "C57" H 3175 2900 50  0000 L CNN
-F 1 "10u" H 3175 2700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3188 2650 50  0001 C CNN
-F 3 "" H 3150 2800 50  0000 C CNN
-F 4 "490-10515-1-ND" H 3150 2800 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR6YA106ME43L/490-10515-1-ND/5026446" H 3150 2800 60  0001 C CNN "URL"
-F 6 "GRM21BR6YA106ME43L" H 3150 2800 60  0001 C CNN "Man P/N"
-	1    3150 2800
+F 0 "C57" H 1625 2850 50  0000 L CNN
+F 1 "10u" H 1625 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1638 2600 50  0001 C CNN
+F 3 "" H 1600 2750 50  0000 C CNN
+F 4 "490-10515-1-ND" H 1600 2750 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR6YA106ME43L/490-10515-1-ND/5026446" H 1600 2750 60  0001 C CNN "URL"
+F 6 "GRM21BR6YA106ME43L" H 1600 2750 60  0001 C CNN "Man P/N"
+	1    1600 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C58
 U 1 1 5BE48FA5
-P 6250 3250
+P 4700 3200
 AR Path="/5BE48FA5" Ref="C58"  Part="1" 
 AR Path="/58A62F55/5BE48FA5" Ref="C58"  Part="1" 
-F 0 "C58" H 6275 3350 50  0000 L CNN
-F 1 "0.1u" H 6275 3150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6288 3100 50  0001 C CNN
-F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 6250 3250 50  0001 C CNN
-F 4 "399-1168-1-ND" H 6250 3250 60  0001 C CNN "Digikey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C104K3RACTU/399-1168-1-ND/411443" H 6250 3250 60  0001 C CNN "URL"
-F 6 "C0805C104K3RACTU" H 6250 3250 60  0001 C CNN "Man P/N"
-	1    6250 3250
+F 0 "C58" H 4725 3300 50  0000 L CNN
+F 1 "0.1u" H 4725 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 3050 50  0001 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 4700 3200 50  0001 C CNN
+F 4 "399-1168-1-ND" H 4700 3200 60  0001 C CNN "Digikey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C104K3RACTU/399-1168-1-ND/411443" H 4700 3200 60  0001 C CNN "URL"
+F 6 "C0805C104K3RACTU" H 4700 3200 60  0001 C CNN "Man P/N"
+	1    4700 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Circuit_layout-rescue:LT1763CS8-3.3PBF U?
 U 1 1 5BE48FB1
-P 7850 3500
+P 6300 3450
 AR Path="/5BE48FB1" Ref="U?"  Part="1" 
 AR Path="/58ADE5BC/5BE48FB1" Ref="U?"  Part="1" 
 AR Path="/58A62F55/5BE48FB1" Ref="U42"  Part="1" 
-F 0 "U42" H 7664 4160 50  0000 L BNN
-F 1 "LT1763CS8-3.3PBF" H 7627 4059 50  0000 L BNN
-F 2 "LT1763CS8-3.3PBF:SOIC127P600X175-8N" H 7850 3500 50  0001 L BNN
-F 3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" H 7850 3500 50  0001 L BNN
-F 4 "Linear Technology/Analog" H 7850 3500 50  0001 L BNN "Field4"
-F 5 "SOIC-8 Linear Technology" H 7850 3500 50  0001 L BNN "Field5"
-F 6 "LT1763CS8-3.3#PBF" H 7850 3500 50  0001 L BNN "Field6"
-F 7 "None" H 7850 3500 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 7850 3500 50  0001 L BNN "Field8"
-	1    7850 3500
+F 0 "U42" H 6114 4110 50  0000 L BNN
+F 1 "LT1763CS8-3.3PBF" H 6077 4009 50  0000 L BNN
+F 2 "LT1763CS8-3.3PBF:SOIC127P600X175-8N" H 6300 3450 50  0001 L BNN
+F 3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" H 6300 3450 50  0001 L BNN
+F 4 "Linear Technology/Analog" H 6300 3450 50  0001 L BNN "Field4"
+F 5 "SOIC-8 Linear Technology" H 6300 3450 50  0001 L BNN "Field5"
+F 6 "LT1763CS8-3.3#PBF" H 6300 3450 50  0001 L BNN "Field6"
+F 7 "None" H 6300 3450 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 6300 3450 50  0001 L BNN "Field8"
+	1    6300 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C59
 U 1 1 5BE48FBB
-P 6650 3450
+P 5100 3400
 AR Path="/5BE48FBB" Ref="C59"  Part="1" 
 AR Path="/58A62F55/5BE48FBB" Ref="C59"  Part="1" 
-F 0 "C59" H 6675 3550 50  0000 L CNN
-F 1 "1u" H 6675 3350 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 3300 50  0001 C CNN
-F 3 "" H 6650 3450 50  0001 C CNN
-F 4 "399-1108-1-ND" H 6650 3450 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C100J5GACTU/399-1108-1-ND/411383" H 6650 3450 60  0001 C CNN "URL"
-F 6 "C0805C100J5GACTU" H 6650 3450 60  0001 C CNN "Man P/N"
-	1    6650 3450
+F 0 "C59" H 5125 3500 50  0000 L CNN
+F 1 "1u" H 5125 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5138 3250 50  0001 C CNN
+F 3 "" H 5100 3400 50  0001 C CNN
+F 4 "399-1108-1-ND" H 5100 3400 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C100J5GACTU/399-1108-1-ND/411383" H 5100 3400 60  0001 C CNN "URL"
+F 6 "C0805C100J5GACTU" H 5100 3400 60  0001 C CNN "Man P/N"
+	1    5100 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C60
 U 1 1 5BE48FC5
-P 6750 4300
+P 5200 4250
 AR Path="/5BE48FC5" Ref="C60"  Part="1" 
 AR Path="/58A62F55/5BE48FC5" Ref="C60"  Part="1" 
-F 0 "C60" H 6775 4400 50  0000 L CNN
-F 1 "1u" H 6775 4200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6788 4150 50  0001 C CNN
-F 3 "" H 6750 4300 50  0001 C CNN
-F 4 "399-1108-1-ND" H 6750 4300 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C100J5GACTU/399-1108-1-ND/411383" H 6750 4300 60  0001 C CNN "URL"
-F 6 "C0805C100J5GACTU" H 6750 4300 60  0001 C CNN "Man P/N"
-	1    6750 4300
+F 0 "C60" H 5225 4350 50  0000 L CNN
+F 1 "1u" H 5225 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5238 4100 50  0001 C CNN
+F 3 "" H 5200 4250 50  0001 C CNN
+F 4 "399-1108-1-ND" H 5200 4250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C100J5GACTU/399-1108-1-ND/411383" H 5200 4250 60  0001 C CNN "URL"
+F 6 "C0805C100J5GACTU" H 5200 4250 60  0001 C CNN "Man P/N"
+	1    5200 4250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C61
 U 1 1 5BE48FCF
-P 8750 3550
+P 7200 3500
 AR Path="/5BE48FCF" Ref="C61"  Part="1" 
 AR Path="/58A62F55/5BE48FCF" Ref="C61"  Part="1" 
-F 0 "C61" H 8775 3650 50  0000 L CNN
-F 1 "10u" H 8775 3450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8788 3400 50  0001 C CNN
-F 3 "" H 8750 3550 50  0001 C CNN
-F 4 "399-1108-1-ND" H 8750 3550 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C100J5GACTU/399-1108-1-ND/411383" H 8750 3550 60  0001 C CNN "URL"
-F 6 "C0805C100J5GACTU" H 8750 3550 60  0001 C CNN "Man P/N"
-	1    8750 3550
+F 0 "C61" H 7225 3600 50  0000 L CNN
+F 1 "10u" H 7225 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7238 3350 50  0001 C CNN
+F 3 "" H 7200 3500 50  0001 C CNN
+F 4 "399-1108-1-ND" H 7200 3500 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C100J5GACTU/399-1108-1-ND/411383" H 7200 3500 60  0001 C CNN "URL"
+F 6 "C0805C100J5GACTU" H 7200 3500 60  0001 C CNN "Man P/N"
+	1    7200 3500
 	1    0    0    -1  
 $EndComp
-Text Notes 7300 2550 0    99   ~ 0
+Text Notes 5750 2500 0    99   ~ 0
 3.3V Regulator
-Text HLabel 10350 1600 2    60   Output ~ 0
+Text HLabel 10500 1250 2    60   Output ~ 0
 +5V
-Text Label 10150 1600 2    60   ~ 0
+Text Label 10300 1250 2    60   ~ 0
 +5DC
-Text HLabel 10350 1450 2    60   Output ~ 0
+Text HLabel 10500 1100 2    60   Output ~ 0
 +10V
-Text Label 10150 1450 2    60   ~ 0
+Text Label 10300 1100 2    60   ~ 0
 +10DC
-Text Label 5450 2900 0    60   ~ 0
+Text Label 3900 2850 0    60   ~ 0
 +5DC
-Text Label 9050 3200 0    60   ~ 0
+Text Label 7500 3150 0    60   ~ 0
 V3.3
-Text Label 7100 4500 0    60   ~ 0
+Text Label 5550 4450 0    60   ~ 0
 LV_RTN
-Text Label 8750 4050 0    60   ~ 0
+Text Label 7200 4000 0    60   ~ 0
 LV_RTN
-Text Label 2350 2550 0    60   ~ 0
+Text Label 800  2500 0    60   ~ 0
 +24V
-Text HLabel 10350 1750 2    60   Output ~ 0
+Text HLabel 10500 1400 2    60   Output ~ 0
 +3.3V
-Text Label 10150 1750 2    60   ~ 0
+Text Label 10300 1400 2    60   ~ 0
 V3.3
-Text Label 6650 3800 3    60   ~ 0
+Text Label 5100 3750 3    60   ~ 0
 LV_RTN
-Text Label 5700 2800 2    60   ~ 0
+Text Label 4150 2750 2    60   ~ 0
 +10DC
-Text Notes 4050 3550 0    39   ~ 0
+Text Notes 2500 3500 0    39   ~ 0
 Can be turn off when Remote < 1.2V\n
-Text Label 9950 2000 0    60   ~ 0
+Text Label 10100 1650 0    60   ~ 0
 +24V
-Text Label 9950 2200 0    60   ~ 0
+Text Label 10100 1850 0    60   ~ 0
 LV_RTN
-Text HLabel 10550 2000 2    60   Output ~ 0
+Text HLabel 10700 1650 2    60   Output ~ 0
 +24V
-Text HLabel 10550 2200 2    60   Output ~ 0
+Text HLabel 10700 1850 2    60   Output ~ 0
 LV_RTN
 $Comp
 L Circuit_layout-rescue:Mounting_hole_new U17
@@ -397,73 +395,73 @@ F 3 "" H 5350 1900 50  0001 C CNN
 $EndComp
 Text Notes 1650 2100 0    118  ~ 24
 Jumper is added to CAN terminator\n
-Text Label 9950 2400 0    60   ~ 0
+Text Label 10100 2050 0    60   ~ 0
 CH_gnd
-Text HLabel 10550 2400 2    60   Output ~ 0
+Text HLabel 10700 2050 2    60   Output ~ 0
 CH_gnd
 Text Notes 5250 800  0    99   ~ 0
 CAN Tranceiver
 $Comp
 L Circuit_layout-rescue:TLP291-opto U24
 U 1 1 5C61BBE2
-P 4300 4400
-F 0 "U24" H 4100 4600 50  0000 L CNN
-F 1 "TLP293" H 4300 4600 50  0000 L CNN
-F 2 "Housings_SSOP:SOP-4_4.4x2.8mm_Pitch1.27mm" H 4100 4200 50  0001 L CIN
-F 3 "" H 4300 4400 50  0000 L CNN
-F 4 "TLP293(GB-TPLECT-ND" H 4300 4400 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP293(GB-TPL,E/TLP293(GB-TPLECT-ND/4562965" H 4300 4400 60  0001 C CNN "URL"
-F 6 "TLP293(GB-TPLE" H 4300 4400 60  0001 C CNN "Man P/N"
-F 7 "OPTOISOLATOR 3.75KV TRANS 4-SO" H 4300 4400 60  0001 C CNN "Description"
-F 8 "0.52" H 4300 4400 60  0001 C CNN "Price"
-	1    4300 4400
+P 2750 4350
+F 0 "U24" H 2550 4550 50  0000 L CNN
+F 1 "TLP293" H 2750 4550 50  0000 L CNN
+F 2 "Housings_SSOP:SOP-4_4.4x2.8mm_Pitch1.27mm" H 2550 4150 50  0001 L CIN
+F 3 "" H 2750 4350 50  0000 L CNN
+F 4 "TLP293(GB-TPLECT-ND" H 2750 4350 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TLP293(GB-TPL,E/TLP293(GB-TPLECT-ND/4562965" H 2750 4350 60  0001 C CNN "URL"
+F 6 "TLP293(GB-TPLE" H 2750 4350 60  0001 C CNN "Man P/N"
+F 7 "OPTOISOLATOR 3.75KV TRANS 4-SO" H 2750 4350 60  0001 C CNN "Description"
+F 8 "0.52" H 2750 4350 60  0001 C CNN "Price"
+	1    2750 4350
 	1    0    0    -1  
 $EndComp
-Text Notes 2900 4050 0    99   ~ 0
+Text Notes 1350 4000 0    99   ~ 0
 AIRs Measurement
 $Comp
 L TSI_HV_Isolater-cache:R R45
 U 1 1 5C61BBEF
-P 3750 4300
-F 0 "R45" V 3830 4300 50  0000 C CNN
-F 1 "2.4k" V 3750 4300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3680 4300 50  0001 C CNN
-F 3 "" H 3750 4300 50  0000 C CNN
-F 4 "P249KCCT-ND" V 3750 4300 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF2493V/P249KCCT-ND/119664" V 3750 4300 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF2493V" V 3750 4300 60  0001 C CNN "Man P/N"
-F 7 "RES SMD 249K OHM 1% 1/8W 0805" V 3750 4300 60  0001 C CNN "Description"
-F 8 "0.10" V 3750 4300 60  0001 C CNN "Cost"
-	1    3750 4300
+P 2200 4250
+F 0 "R45" V 2280 4250 50  0000 C CNN
+F 1 "2.4k" V 2200 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2130 4250 50  0001 C CNN
+F 3 "" H 2200 4250 50  0000 C CNN
+F 4 "P249KCCT-ND" V 2200 4250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF2493V/P249KCCT-ND/119664" V 2200 4250 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF2493V" V 2200 4250 60  0001 C CNN "Man P/N"
+F 7 "RES SMD 249K OHM 1% 1/8W 0805" V 2200 4250 60  0001 C CNN "Description"
+F 8 "0.10" V 2200 4250 60  0001 C CNN "Cost"
+	1    2200 4250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R55
 U 1 1 5C61BBF9
-P 5450 4300
-F 0 "R55" V 5530 4300 50  0000 C CNN
-F 1 "10k" V 5450 4300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5380 4300 50  0001 C CNN
-F 3 "" H 5450 4300 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 5450 4300 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 5450 4300 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 5450 4300 60  0001 C CNN "Man P/N"
-	1    5450 4300
+P 3900 4250
+F 0 "R55" V 3980 4250 50  0000 C CNN
+F 1 "10k" V 3900 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 4250 50  0001 C CNN
+F 3 "" H 3900 4250 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 3900 4250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 3900 4250 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 3900 4250 60  0001 C CNN "Man P/N"
+	1    3900 4250
 	0    -1   -1   0   
 $EndComp
-Text Label 4600 4300 0    60   ~ 0
+Text Label 3050 4250 0    60   ~ 0
 Safety_Loop
-Text Label 10150 3150 2    60   ~ 0
+Text Label 8950 1700 2    60   ~ 0
 Safety_Loop
-Text Label 3200 4300 2    60   ~ 0
+Text Label 1650 4250 2    60   ~ 0
 AIRs+
-Text Label 3200 4500 2    60   ~ 0
+Text Label 1650 4450 2    60   ~ 0
 AIRs-
-Text HLabel 10550 3150 2    60   Output ~ 0
+Text HLabel 9350 1700 2    60   Output ~ 0
 Safety_Loop
-Text Label 5800 4150 0    60   ~ 0
+Text Label 4250 4100 0    60   ~ 0
 +5DC
-Text Label 5100 4500 0    60   ~ 0
+Text Label 3550 4450 0    60   ~ 0
 LV_RTN
 Text Label 1050 4850 0    60   ~ 0
 AIRs+
@@ -487,17 +485,17 @@ Text Label 1400 5400 0    60   ~ 0
 +24V
 Text Label 850  5700 0    60   ~ 0
 IMD_MHS
-Text Label 10150 3300 2    60   ~ 0
+Text Label 8950 1850 2    60   ~ 0
 IMD_Status
-Text HLabel 10550 3300 2    60   Output ~ 0
+Text HLabel 9350 1850 2    60   Output ~ 0
 IMD_Status
-Text Label 10150 2700 2    60   ~ 0
+Text Label 8950 1250 2    60   ~ 0
 AIRs+
-Text Label 10150 2900 2    60   ~ 0
+Text Label 8950 1450 2    60   ~ 0
 AIRs-
-Text HLabel 10550 2700 2    60   Output ~ 0
+Text HLabel 9350 1250 2    60   Output ~ 0
 AIRs+
-Text HLabel 10550 2900 2    60   Output ~ 0
+Text HLabel 9350 1450 2    60   Output ~ 0
 AIRs-
 $Comp
 L TSI_HV_Isolater-cache:R R36
@@ -537,12 +535,12 @@ For model 3204 MHS and Status need \nexternal pull down resistor 2.2k\n\npin 4 n
 $Comp
 L Circuit_layout-rescue:PWR_FLAG-power #FLG02
 U 1 1 5C66720A
-P 6000 2900
-F 0 "#FLG02" H 6000 2975 50  0001 C CNN
-F 1 "PWR_FLAG" H 6000 3050 50  0000 C CNN
-F 2 "" H 6000 2900 50  0001 C CNN
-F 3 "" H 6000 2900 50  0001 C CNN
-	1    6000 2900
+P 4450 2850
+F 0 "#FLG02" H 4450 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 3000 50  0000 C CNN
+F 2 "" H 4450 2850 50  0001 C CNN
+F 3 "" H 4450 2850 50  0001 C CNN
+	1    4450 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -561,13 +559,11 @@ Wire Wire Line
 	5500 1550 5500 2200
 Connection ~ 5350 1300
 Wire Wire Line
-	7500 1650 7650 1650
-Wire Wire Line
 	7200 1650 7100 1650
 Wire Wire Line
-	10500 1050 9900 1050
+	10650 700  10050 700 
 Wire Wire Line
-	10500 1200 9900 1200
+	10650 850  10050 850 
 Wire Wire Line
 	1450 7200 850  7200
 Wire Wire Line
@@ -590,13 +586,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 7500 3650 7500
 Wire Wire Line
-	2350 7400 3450 7400
-Wire Wire Line
-	3650 7300 3450 7300
-Wire Wire Line
-	3450 7300 3450 7400
-Connection ~ 3450 7400
-Wire Wire Line
 	1450 6550 850  6550
 Wire Wire Line
 	1450 6450 850  6450
@@ -609,113 +598,113 @@ Wire Wire Line
 Wire Wire Line
 	1000 1550 1800 1550
 Wire Wire Line
-	3500 2800 3650 2800
+	1950 2750 2100 2750
 Wire Wire Line
-	3500 2550 3500 2800
+	1950 2500 1950 2750
 Wire Wire Line
-	3650 2900 3500 2900
+	2100 2850 1950 2850
 Wire Wire Line
-	3500 2900 3500 3050
+	1950 2850 1950 3000
 Wire Wire Line
-	3500 3050 3150 3050
-Connection ~ 3150 3050
-Connection ~ 2800 3050
+	1950 3000 1600 3000
+Connection ~ 1600 3000
+Connection ~ 1250 3000
 Wire Wire Line
-	5400 2900 6000 2900
+	3850 2850 4450 2850
 Wire Wire Line
-	2350 2550 2800 2550
+	800  2500 1250 2500
 Wire Wire Line
-	6550 3200 6650 3200
+	5000 3150 5100 3150
 Wire Wire Line
-	6650 3800 6650 3700
+	5100 3750 5100 3650
 Wire Wire Line
-	7000 3200 7000 3600
+	5450 3150 5450 3550
 Wire Wire Line
-	7000 3600 7150 3600
-Connection ~ 7000 3200
+	5450 3550 5600 3550
+Connection ~ 5450 3150
 Wire Wire Line
-	7150 3400 6900 3400
+	5600 3350 5350 3350
 Wire Wire Line
-	6900 2650 6900 3400
+	5350 2600 5350 3350
 Wire Wire Line
-	6900 3800 6750 3800
+	5350 3750 5200 3750
 Wire Wire Line
-	7050 3500 7050 4550
+	5500 3450 5500 4500
 Wire Wire Line
-	7050 3500 7150 3500
+	5500 3450 5600 3450
 Wire Wire Line
-	7150 3800 7100 3800
+	5600 3750 5550 3750
 Wire Wire Line
-	7100 3800 7100 3900
+	5550 3750 5550 3850
 Wire Wire Line
-	7100 3900 7150 3900
+	5550 3850 5600 3850
 Wire Wire Line
-	7100 4000 7150 4000
-Connection ~ 7100 3900
-Connection ~ 7100 4000
+	5550 3950 5600 3950
+Connection ~ 5550 3850
+Connection ~ 5550 3950
 Wire Wire Line
-	8550 3200 8650 3200
+	7000 3150 7100 3150
 Wire Wire Line
-	8650 3200 8650 2650
+	7100 3150 7100 2600
 Wire Wire Line
-	8650 2650 6900 2650
-Connection ~ 6900 3400
-Connection ~ 8650 3200
+	7100 2600 5350 2600
+Connection ~ 5350 3350
+Connection ~ 7100 3150
 Wire Wire Line
-	8750 3200 8750 3300
+	7200 3150 7200 3250
 Wire Wire Line
-	8750 4050 8750 3800
+	7200 4000 7200 3750
 Wire Wire Line
-	6250 2900 6250 3000
-Connection ~ 6250 2900
-Connection ~ 8750 3200
+	4700 2850 4700 2950
+Connection ~ 4700 2850
+Connection ~ 7200 3150
 Wire Wire Line
-	10350 1600 10150 1600
+	10500 1250 10300 1250
 Wire Wire Line
-	10350 1450 10150 1450
+	10500 1100 10300 1100
 Wire Wire Line
-	5400 3000 5750 3000
+	3850 2950 4200 2950
 Wire Wire Line
-	2600 3050 2600 3750
-Connection ~ 2600 3050
+	1050 3000 1050 3700
+Connection ~ 1050 3000
 Wire Wire Line
-	10350 1750 10150 1750
+	10500 1400 10300 1400
 Wire Wire Line
-	2600 3750 5750 3750
+	1050 3700 4200 3700
 Wire Wire Line
-	5750 3000 5750 3750
-Connection ~ 5750 3750
+	4200 2950 4200 3700
+Connection ~ 4200 3700
 Wire Wire Line
-	6250 3750 6250 3500
+	4700 3700 4700 3450
 Wire Wire Line
-	5400 2800 5700 2800
+	3850 2750 4150 2750
 Wire Wire Line
-	6550 2900 6550 3200
+	5000 2850 5000 3150
 Wire Wire Line
-	9950 2200 10550 2200
+	10100 1850 10700 1850
 Wire Wire Line
-	10550 2000 9950 2000
+	10700 1650 10100 1650
 Wire Wire Line
 	5500 2200 5350 2200
 Connection ~ 5350 2200
 Wire Wire Line
-	9950 2400 10550 2400
+	10100 2050 10700 2050
 Wire Wire Line
-	3200 4500 4000 4500
+	1650 4450 2450 4450
 Wire Wire Line
-	4000 4300 3900 4300
+	2450 4250 2350 4250
 Wire Wire Line
-	4600 4300 5300 4300
+	3050 4250 3750 4250
 Wire Wire Line
-	4600 4500 5100 4500
+	3050 4450 3550 4450
 Wire Wire Line
-	3600 4300 3200 4300
+	2050 4250 1650 4250
 Wire Wire Line
-	5600 4300 5800 4300
+	4050 4250 4250 4250
 Wire Wire Line
-	5800 4300 5800 4150
+	4250 4250 4250 4100
 Wire Wire Line
-	10150 3150 10550 3150
+	8950 1700 9350 1700
 Wire Wire Line
 	850  4950 1050 4950
 Wire Wire Line
@@ -734,9 +723,9 @@ Wire Wire Line
 Wire Wire Line
 	1400 6000 850  6000
 Wire Wire Line
-	10150 2900 10550 2900
+	8950 1450 9350 1450
 Wire Wire Line
-	10550 2700 10150 2700
+	9350 1250 8950 1250
 Wire Wire Line
 	850  5600 2000 5600
 Wire Wire Line
@@ -753,17 +742,17 @@ Wire Wire Line
 	1700 5700 1700 5750
 Wire Wire Line
 	6600 1050 6600 900 
-Connection ~ 2800 2550
-Connection ~ 3150 2550
-Connection ~ 6650 3200
+Connection ~ 1250 2500
+Connection ~ 1600 2500
+Connection ~ 5100 3150
 Wire Wire Line
-	6750 3800 6750 4050
+	5200 3750 5200 4000
 Wire Wire Line
-	7050 4550 6750 4550
+	5500 4500 5200 4500
 Wire Wire Line
 	1100 4650 850  4650
 Text Label 1100 4650 0    60   ~ 0
-SL1
+SL1_In
 $Comp
 L Circuit_layout-rescue:Conn_01x04-conn J6
 U 1 1 5C676ED6
@@ -778,60 +767,58 @@ $EndComp
 Wire Wire Line
 	1100 4750 850  4750
 Text Label 1100 4750 0    60   ~ 0
-SL1_RTN
+SL1_Out
 $Comp
 L Circuit_layout-rescue:TEST_1P-conn 3.3V_TP1
 U 1 1 5C6727F6
-P 8950 3200
-F 0 "3.3V_TP1" H 8950 3470 50  0000 C CNN
-F 1 "3.3V_TP" H 8950 3400 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 9150 3200 50  0001 C CNN
-F 3 "" H 9150 3200 50  0001 C CNN
-	1    8950 3200
+P 7400 3150
+F 0 "3.3V_TP1" H 7400 3420 50  0000 C CNN
+F 1 "3.3V_TP" H 7400 3350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 7600 3150 50  0001 C CNN
+F 3 "" H 7600 3150 50  0001 C CNN
+	1    7400 3150
 	1    0    0    -1  
 $EndComp
-Connection ~ 8950 3200
+Connection ~ 7400 3150
 $Comp
 L Circuit_layout-rescue:TEST_1P-conn 5V_TP1
 U 1 1 5C673212
-P 6400 2900
-F 0 "5V_TP1" H 6400 3170 50  0000 C CNN
-F 1 "5V_TP" H 6400 3100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6600 2900 50  0001 C CNN
-F 3 "" H 6600 2900 50  0001 C CNN
-	1    6400 2900
+P 4850 2850
+F 0 "5V_TP1" H 4850 3120 50  0000 C CNN
+F 1 "5V_TP" H 4850 3050 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    4850 2850
 	1    0    0    -1  
 $EndComp
-Connection ~ 6000 2900
-Connection ~ 6400 2900
+Connection ~ 4450 2850
+Connection ~ 4850 2850
 Wire Wire Line
 	5350 1300 4900 1300
 Wire Wire Line
 	1050 7400 2150 7400
 Wire Wire Line
-	3450 7400 3650 7400
+	1600 3000 1250 3000
 Wire Wire Line
-	3150 3050 2800 3050
+	1250 3000 1050 3000
 Wire Wire Line
-	2800 3050 2600 3050
+	5450 3150 5600 3150
 Wire Wire Line
-	7000 3200 7150 3200
+	5550 3850 5550 3950
 Wire Wire Line
-	7100 3900 7100 4000
+	5550 3950 5550 4450
 Wire Wire Line
-	7100 4000 7100 4500
+	5350 3350 5350 3750
 Wire Wire Line
-	6900 3400 6900 3800
+	7100 3150 7200 3150
 Wire Wire Line
-	8650 3200 8750 3200
+	4700 2850 4850 2850
 Wire Wire Line
-	6250 2900 6400 2900
+	7200 3150 7400 3150
 Wire Wire Line
-	8750 3200 8950 3200
+	1050 3000 800  3000
 Wire Wire Line
-	2600 3050 2350 3050
-Wire Wire Line
-	5750 3750 6250 3750
+	4200 3700 4700 3700
 Wire Wire Line
 	5350 2200 4900 2200
 Wire Wire Line
@@ -841,17 +828,17 @@ Wire Wire Line
 Wire Wire Line
 	2150 5700 2150 6000
 Wire Wire Line
-	2800 2550 3150 2550
+	1250 2500 1600 2500
 Wire Wire Line
-	3150 2550 3500 2550
+	1600 2500 1950 2500
 Wire Wire Line
-	6650 3200 7000 3200
+	5100 3150 5450 3150
 Wire Wire Line
-	8950 3200 9050 3200
+	7400 3150 7500 3150
 Wire Wire Line
-	6000 2900 6250 2900
+	4450 2850 4700 2850
 Wire Wire Line
-	6400 2900 6550 2900
+	4850 2850 5000 2850
 Wire Notes Line
 	1600 6200 2850 6200
 Wire Notes Line
@@ -864,82 +851,82 @@ Text Notes 1650 6600 0    61   ~ 0
 Change 5 replace IMD CH_gnd to LV_RTN 
 Text Label 7150 6050 0    61   ~ 0
 Cooling_power
-Text HLabel 10450 3500 2    61   Output ~ 0
+Text HLabel 9250 2050 2    61   Output ~ 0
 Cooling_power
 Wire Wire Line
-	10550 3300 10150 3300
+	9350 1850 8950 1850
 Wire Wire Line
-	10450 3500 10100 3500
-Text Label 10100 3500 2    61   ~ 0
+	9250 2050 8900 2050
+Text Label 8900 2050 2    61   ~ 0
 Cooling_power
 Text Notes 4650 5550 2    99   ~ 0
 Cooling System Power
 Text Notes 6800 7050 2    39   ~ 0
 Change 13. Add cooling system power
-Text Notes 8800 4150 0    39   ~ 0
+Text Notes 8550 4700 0    39   ~ 0
 Change 10. pinA1 and A2 switched in new footprint
 Wire Notes Line
-	9000 5900 9000 4200
+	8750 6450 8750 4750
 Wire Notes Line
-	9000 4200 9750 4200
-Text Label 9500 4400 2    60   ~ 0
+	8750 4750 9500 4750
+Text Label 9250 4950 2    60   ~ 0
 IMD_Status
 Wire Wire Line
-	8700 5050 8700 5350
+	8450 5600 8450 5900
 $Comp
 L Circuit_layout-rescue:1N4001-Diode D9
 U 1 1 5C6D1B71
-P 8700 4900
-F 0 "D9" H 8700 5000 50  0000 C CNN
-F 1 "1N4001" H 8700 4800 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 8700 4725 50  0001 C CNN
-F 3 "" H 8700 4900 50  0001 C CNN
-	1    8700 4900
+P 8450 5450
+F 0 "D9" H 8450 5550 50  0000 C CNN
+F 1 "1N4001" H 8450 5350 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 8450 5275 50  0001 C CNN
+F 3 "" H 8450 5450 50  0001 C CNN
+	1    8450 5450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 4500 8700 4750
+	8450 5050 8450 5300
 $Comp
 L Circuit_layout-rescue:FINDER-32.21-x300-relays K2
 U 1 1 5C6751AE
-P 9700 4950
-F 0 "K2" H 10150 5100 50  0000 L CNN
-F 1 "G6B-1174P-US-DC24" H 10150 5000 50  0000 L CNN
-F 2 "custom_footprints:Relay_SPST_Finder_32.21-x300_special" H 10970 4920 50  0001 C CNN
-F 3 "" H 9700 4950 50  0001 C CNN
-	1    9700 4950
+P 9450 5500
+F 0 "K2" H 9900 5650 50  0000 L CNN
+F 1 "G6B-1174P-US-DC24" H 9900 5550 50  0000 L CNN
+F 2 "custom_footprints:Relay_SPST_Finder_32.21-x300_special" H 10720 5470 50  0001 C CNN
+F 3 "" H 9450 5500 50  0001 C CNN
+	1    9450 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 4650 9500 4500
+	9250 5200 9250 5050
 Wire Wire Line
-	9500 5250 9500 5350
+	9250 5800 9250 5900
 Wire Wire Line
-	10000 4650 10000 4500
+	9750 5200 9750 5050
 Wire Wire Line
-	9900 5250 9900 5400
-Text Label 9900 5400 0    61   ~ 0
-SL1
-Text Label 10000 4500 0    61   ~ 0
-SL1_RTN
-Text Notes 10200 5250 0    61   ~ 0
+	9650 5800 9650 5950
+Text Label 9650 5950 0    61   ~ 0
+SL1_In
+Text Label 9750 5050 0    61   ~ 0
+SL1_Out
+Text Notes 9950 5800 0    61   ~ 0
 IMD Relay(Safetyloop)\n
 Wire Wire Line
-	9500 4500 8700 4500
-Connection ~ 9500 4500
+	9250 5050 8450 5050
+Connection ~ 9250 5050
 Wire Wire Line
-	8700 5350 9500 5350
-Connection ~ 9500 5350
+	8450 5900 9250 5900
+Connection ~ 9250 5900
 Wire Wire Line
-	9500 4500 9500 4400
+	9250 5050 9250 4950
 Wire Wire Line
-	9500 5350 9500 5600
-Text Label 9500 5600 2    60   ~ 0
+	9250 5900 9250 6150
+Text Label 9250 6150 2    60   ~ 0
 LV_RTN
 Wire Notes Line
-	9750 4200 9750 5900
+	9500 4750 9500 6450
 Wire Notes Line
-	9750 5900 9000 5900
+	9500 6450 8750 6450
 Text Label 1800 2300 0    61   ~ 0
 Cooling_CTRL
 Wire Wire Line
@@ -1109,4 +1096,128 @@ Wire Notes Line
 	4250 6650 4250 7100
 Text Label 7700 5100 0    61   ~ 0
 +24V
+Wire Wire Line
+	7500 1650 7800 1650
+Wire Wire Line
+	7800 1550 7800 1650
+Connection ~ 7800 1650
+Wire Wire Line
+	7800 1650 7900 1650
+$Comp
+L Circuit_layout-rescue:FINDER-32.21-x300-relays K3
+U 1 1 5DADC533
+P 9400 3750
+F 0 "K3" H 9850 3900 50  0000 L CNN
+F 1 "G6B-1174P-US-DC24" H 9850 3800 50  0000 L CNN
+F 2 "custom_footprints:Relay_SPST_Finder_32.21-x300_special" H 10670 3720 50  0001 C CNN
+F 3 "" H 9400 3750 50  0001 C CNN
+	1    9400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3450 9200 3250
+Wire Wire Line
+	9200 4050 9200 4200
+$Comp
+L Circuit_layout-rescue:1N4001-Diode D11
+U 1 1 5DAF8A6F
+P 8450 3800
+F 0 "D11" H 8450 3900 50  0000 C CNN
+F 1 "1N4001" H 8450 3700 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 8450 3625 50  0001 C CNN
+F 3 "" H 8450 3800 50  0001 C CNN
+	1    8450 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 4200 8450 4200
+Wire Wire Line
+	8450 4200 8450 3950
+Connection ~ 9200 4200
+Wire Wire Line
+	9200 4200 9200 4400
+Wire Wire Line
+	9200 3250 8450 3250
+Wire Wire Line
+	8450 3250 8450 3650
+Connection ~ 9200 3250
+Wire Wire Line
+	9200 3250 9200 3050
+Text Label 9200 3050 0    61   ~ 0
+Break_OverTravel
+Text Label 9200 4400 0    61   ~ 0
+LV_RTN
+Text Label 9600 4200 0    61   ~ 0
+SL2_In
+Wire Wire Line
+	9600 4050 9600 4200
+Wire Wire Line
+	9700 3450 9700 3250
+Text Label 9700 3250 0    61   ~ 0
+SL2_Out
+$Comp
+L conn:Conn_01x02 J11
+U 1 1 5DB1B74D
+P 10400 2350
+F 0 "J11" H 10480 2342 50  0000 L CNN
+F 1 "SL2" H 10480 2251 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 10400 2350 50  0001 C CNN
+F 3 "~" H 10400 2350 50  0001 C CNN
+	1    10400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J12
+U 1 1 5DB243D2
+P 10400 2650
+F 0 "J12" H 10480 2642 50  0000 L CNN
+F 1 "Break_OverTravel" H 10480 2551 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 10400 2650 50  0001 C CNN
+F 3 "~" H 10400 2650 50  0001 C CNN
+	1    10400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2650 9950 2650
+Wire Wire Line
+	10200 2750 9950 2750
+Wire Wire Line
+	10200 2450 9950 2450
+Wire Wire Line
+	10200 2350 9950 2350
+Text Label 9950 2350 2    61   ~ 0
+SL2_In
+Text Label 9950 2450 2    61   ~ 0
+SL2_Out
+Text Label 9950 2650 2    61   ~ 0
+Break_OverTravel
+Text Label 9950 2750 2    61   ~ 0
+LV_RTN
+Text Notes 9600 4350 0    61   ~ 0
+Break Overtravel Relay(Safetyloop)\n
+Text Label 9750 2200 2    60   ~ 0
+Break_OverTravel
+Text HLabel 10350 2200 2    60   Output ~ 0
+Break_OverTravel
+Wire Wire Line
+	9750 2200 10350 2200
+Wire Notes Line
+	2550 6950 2550 7750
+Wire Notes Line
+	2550 7750 3650 7750
+Wire Notes Line
+	3650 7750 3650 6950
+Wire Notes Line
+	3650 6950 2550 6950
+Text Notes 2300 7700 0    39   ~ 0
+pin3 and pin 5 flipped from original design
+Wire Wire Line
+	2350 7400 3050 7400
+Wire Wire Line
+	3650 7300 3050 7300
+Wire Wire Line
+	3050 7500 3050 7400
+Connection ~ 3050 7400
+Wire Wire Line
+	3050 7400 3650 7400
 $EndSCHEMATC
