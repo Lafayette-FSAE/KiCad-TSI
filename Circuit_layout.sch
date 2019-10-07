@@ -487,27 +487,27 @@ BP_RTN
 $Comp
 L Circuit_layout-rescue:Conn_01x06-conn J5
 U 1 1 5C5CE098
-P 7050 950
-F 0 "J5" H 7050 1250 50  0000 C CNN
-F 1 "Testing Connector" H 7050 550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 7050 950 50  0001 C CNN
-F 3 "" H 7050 950 50  0001 C CNN
-	1    7050 950 
+P 7050 1000
+F 0 "J5" H 7050 1300 50  0000 C CNN
+F 1 "Testing Connector" H 7050 600 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 7050 1000 50  0001 C CNN
+F 3 "" H 7050 1000 50  0001 C CNN
+	1    7050 1000
 	-1   0    0    -1  
 $EndComp
-Text Label 7400 750  0    60   ~ 0
+Text Label 7400 800  0    60   ~ 0
 SDA
-Text Label 7400 850  0    60   ~ 0
+Text Label 7400 900  0    60   ~ 0
 SCL
-Text Label 7400 950  0    61   ~ 0
+Text Label 7400 1000 0    61   ~ 0
 PC_ready
-Text Label 7400 1050 0    60   ~ 0
+Text Label 7400 1100 0    60   ~ 0
 Safety_Loop
 Text Label 1750 3800 0    60   ~ 0
 IMD_Status
-Text Label 7400 1150 0    60   ~ 0
+Text Label 7400 1200 0    60   ~ 0
 IMD_Status
-Text Label 7400 1250 0    60   ~ 0
+Text Label 7400 1300 0    60   ~ 0
 Throttle_SEL
 Text Label 4300 6600 0    60   ~ 0
 CoolTemp_1
@@ -553,30 +553,30 @@ Text Label 2850 6100 2    60   ~ 0
 +5V
 Text Label 1750 5000 2    60   ~ 0
 FlowRate
-Text Label 850  7000 0    60   ~ 0
+Text Label 850  7250 0    60   ~ 0
 CoolTemp_In_2
-Text Label 850  6800 0    60   ~ 0
+Text Label 850  7050 0    60   ~ 0
 CoolTemp_In_1
-Text Label 850  6400 0    60   ~ 0
+Text Label 850  6650 0    60   ~ 0
 FlowRate
-Text Label 850  6900 0    60   ~ 0
+Text Label 850  7150 0    60   ~ 0
 Temp_RTN_1
-Text Label 850  7100 0    60   ~ 0
+Text Label 850  7350 0    60   ~ 0
 Temp_RTN_2
 $Comp
 L Circuit_layout-rescue:Conn_01x08-conn J2
 U 1 1 5C60204C
-P 1700 6700
-F 0 "J2" H 1700 7100 50  0000 C CNN
-F 1 "CoolingSystem" H 1700 6200 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 1700 6700 50  0001 C CNN
-F 3 "" H 1700 6700 50  0001 C CNN
-	1    1700 6700
+P 1700 6950
+F 0 "J2" H 2000 6650 50  0000 C CNN
+F 1 "CoolingSystem" H 2050 6550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 1700 6950 50  0001 C CNN
+F 3 "" H 1700 6950 50  0001 C CNN
+	1    1700 6950
 	1    0    0    -1  
 $EndComp
-Text Label 850  6500 0    60   ~ 0
+Text Label 850  6750 0    60   ~ 0
 FlowRate_5V
-Text Label 850  6600 0    60   ~ 0
+Text Label 850  6850 0    60   ~ 0
 FlowRate_RTN
 Text Label 2100 7600 2    60   ~ 0
 FlowRate_5V
@@ -847,19 +847,19 @@ Wire Wire Line
 Wire Wire Line
 	11100 2100 11700 2100
 Wire Wire Line
-	7250 850  7400 850 
+	7250 900  7400 900 
 Wire Wire Line
-	7250 750  7400 750 
+	7250 800  7400 800 
 Wire Wire Line
 	2400 3800 1750 3800
 Wire Wire Line
-	7250 950  7400 950 
+	7250 1000 7400 1000
 Wire Wire Line
-	7250 1050 7400 1050
+	7250 1100 7400 1100
 Wire Wire Line
-	7250 1150 7400 1150
+	7250 1200 7400 1200
 Wire Wire Line
-	7250 1250 7400 1250
+	7250 1300 7400 1300
 Wire Notes Line
 	4050 7500 4050 7200
 Wire Notes Line
@@ -899,19 +899,19 @@ Wire Wire Line
 Wire Wire Line
 	2850 6650 2850 6600
 Wire Wire Line
-	1500 7000 850  7000
+	1500 7250 850  7250
 Wire Wire Line
-	850  6800 1500 6800
+	850  7050 1500 7050
 Wire Wire Line
-	1500 6400 850  6400
+	1500 6650 850  6650
 Wire Wire Line
-	1500 6900 850  6900
+	1500 7150 850  7150
 Wire Wire Line
-	1500 7100 850  7100
+	1500 7350 850  7350
 Wire Wire Line
-	1500 6500 850  6500
+	1500 6750 850  6750
 Wire Wire Line
-	1500 6600 850  6600
+	1500 6850 850  6850
 Wire Wire Line
 	1250 7600 2100 7600
 Wire Wire Line
@@ -1105,12 +1105,10 @@ Wire Wire Line
 Text Label 10250 5500 2    61   ~ 0
 Cooling_power
 Wire Wire Line
-	1500 6100 850  6100
-Wire Wire Line
-	1500 6200 850  6200
+	1500 6100 1350 6100
 Text Label 850  6100 0    61   ~ 0
 Cooling_power
-Text Label 850  6200 0    61   ~ 0
+Text Label 850  6350 0    61   ~ 0
 Cooling_RTN
 Wire Wire Line
 	1250 7500 2100 7500
@@ -1177,13 +1175,13 @@ Wire Wire Line
 	2400 3600 1750 3600
 Text Label 1750 3600 0    61   ~ 0
 Cooling_CTRL
-NoConn ~ 1500 6700
+NoConn ~ 1500 6950
 $Comp
 L conn:Conn_01x02 J10
 U 1 1 5DAED037
 P 1700 6100
 F 0 "J10" H 1780 6092 50  0000 L CNN
-F 1 "Conn_01x02" H 1780 6001 50  0000 L CNN
+F 1 "CoolingPower" H 1780 6001 50  0000 L CNN
 F 2 "1217861-1:TE_1217861-1" H 1700 6100 50  0001 C CNN
 F 3 "~" H 1700 6100 50  0001 C CNN
 	1    1700 6100
@@ -1309,4 +1307,31 @@ Wire Wire Line
 	9550 5650 10400 5650
 Text Label 6850 3800 2    61   ~ 0
 Break_OverTravel
+$Comp
+L conn:Conn_01x02 J13
+U 1 1 5D97F06F
+P 1700 6350
+F 0 "J13" H 1780 6342 50  0000 L CNN
+F 1 "Cooling_RTN" H 1780 6251 50  0000 L CNN
+F 2 "1217861-1:TE_1217861-1" H 1700 6350 50  0001 C CNN
+F 3 "~" H 1700 6350 50  0001 C CNN
+	1    1700 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6200 1350 6200
+Wire Wire Line
+	1350 6200 1350 6100
+Connection ~ 1350 6100
+Wire Wire Line
+	1350 6100 850  6100
+Wire Wire Line
+	1500 6350 1350 6350
+Wire Wire Line
+	1500 6450 1350 6450
+Wire Wire Line
+	1350 6450 1350 6350
+Connection ~ 1350 6350
+Wire Wire Line
+	1350 6350 850  6350
 $EndSCHEMATC
