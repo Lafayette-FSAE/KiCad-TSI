@@ -14,7 +14,7 @@ Comment2 "Feng Qiu, Zhengxie Hu, Phillip Harding"
 Comment3 ""
 Comment4 "DEVELOPMENT ONLY"
 $EndDescr
-Text Label 10000 3600 2    60   ~ 0
+Text Label 10050 3600 2    60   ~ 0
 CANTX
 Text Label 6650 3400 2    60   ~ 0
 CANTX
@@ -65,39 +65,39 @@ Text Notes 11700 750  0    99   ~ 0
 Status Lights
 Text Notes 8650 1150 0    99   ~ 0
 Isolators
-Text Notes 1500 5500 2    99   ~ 0
+Text Notes 7700 1750 2    99   ~ 0
 I2C Pullup
 $Comp
 L TSI_HV_Isolater-cache:R R11
 U 1 1 58BE675F
-P 1150 5700
-F 0 "R11" V 1230 5700 50  0000 C CNN
-F 1 "10k" V 1150 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 1080 5700 50  0001 C CNN
-F 3 "" H 1150 5700 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 1150 5700 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 1150 5700 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 1150 5700 60  0001 C CNN "Man P/N"
-	1    1150 5700
+P 7350 1950
+F 0 "R11" V 7430 1950 50  0000 C CNN
+F 1 "10k" V 7350 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7280 1950 50  0001 C CNN
+F 3 "" H 7350 1950 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 7350 1950 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 7350 1950 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 7350 1950 60  0001 C CNN "Man P/N"
+	1    7350 1950
 	0    -1   -1   0   
 $EndComp
-Text Label 700  5700 0    60   ~ 0
+Text Label 6900 1950 0    60   ~ 0
 SCL
 $Comp
 L TSI_HV_Isolater-cache:R R8
 U 1 1 58D09A11
-P 1150 5900
-F 0 "R8" V 1230 5900 50  0000 C CNN
-F 1 "10k" V 1150 5900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 1080 5900 50  0001 C CNN
-F 3 "" H 1150 5900 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 1150 5900 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 1150 5900 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 1150 5900 60  0001 C CNN "Man P/N"
-	1    1150 5900
+P 7350 2150
+F 0 "R8" V 7430 2150 50  0000 C CNN
+F 1 "10k" V 7350 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7280 2150 50  0001 C CNN
+F 3 "" H 7350 2150 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 7350 2150 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 7350 2150 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 7350 2150 60  0001 C CNN "Man P/N"
+	1    7350 2150
 	0    -1   -1   0   
 $EndComp
-Text Label 700  5900 0    60   ~ 0
+Text Label 6900 2150 0    60   ~ 0
 SDA
 Text Label 10950 1400 0    60   ~ 0
 SPARE_LED_CTRL
@@ -230,9 +230,9 @@ Text Label 7750 5550 2    60   ~ 0
 LV_RTN
 Text Label 1150 3200 2    60   ~ 0
 LV_RTN
-Text Label 1500 5700 2    60   ~ 0
+Text Label 7700 1950 2    60   ~ 0
 +5V
-Text Label 1500 5900 2    60   ~ 0
+Text Label 7700 2150 2    60   ~ 0
 +5V
 Text Label 5950 6550 0    60   ~ 0
 HV+
@@ -386,13 +386,13 @@ Text Label 10900 5350 0    60   ~ 0
 +24V
 Text Label 12900 4500 0    60   ~ 0
 BP
-Text Label 10000 4100 2    60   ~ 0
+Text Label 10050 4100 2    60   ~ 0
 +3.3V
-Text Label 10000 4500 2    60   ~ 0
+Text Label 10050 4500 2    60   ~ 0
 LV_RTN
-Text Label 10000 4650 2    60   ~ 0
+Text Label 10050 4650 2    60   ~ 0
 +24V
-Text Label 10000 4250 2    60   ~ 0
+Text Label 10050 4250 2    60   ~ 0
 +5V
 $Comp
 L Circuit_layout-rescue:Conn_01x06-conn J18
@@ -478,7 +478,7 @@ Text Label 12900 5050 0    59   ~ 0
 Throttle_PL
 Text Label 1750 3700 0    59   ~ 0
 Throttle_PL
-Text Label 10000 4350 2    60   ~ 0
+Text Label 10050 4350 2    60   ~ 0
 CH_gnd
 Text Label 12900 5200 0    59   ~ 0
 BP_RTN
@@ -592,13 +592,13 @@ Text Label 1750 5100 2    60   ~ 0
 CoolTemp_2
 Text Label 1750 4900 2    60   ~ 0
 CoolTemp_1
-Text Label 10250 5200 2    60   ~ 0
+Text Label 10300 5200 2    60   ~ 0
 AIRs+
-Text Label 10250 5350 2    60   ~ 0
+Text Label 10300 5350 2    60   ~ 0
 AIRs-
-Text Label 10250 4800 2    60   ~ 0
+Text Label 10300 4800 2    60   ~ 0
 Safety_Loop
-Text Label 10250 5000 2    60   ~ 0
+Text Label 10300 5000 2    60   ~ 0
 IMD_Status
 Text Label 11100 2950 0    60   ~ 0
 +5V
@@ -619,15 +619,15 @@ Wire Wire Line
 Wire Wire Line
 	8750 1550 8550 1550
 Wire Wire Line
-	1300 5700 1500 5700
+	7500 1950 7700 1950
 Wire Wire Line
-	1000 5700 700  5700
+	7200 1950 6900 1950
 Wire Wire Line
-	9550 3600 10000 3600
+	9600 3600 10050 3600
 Wire Wire Line
-	1300 5900 1500 5900
+	7500 2150 7700 2150
 Wire Wire Line
-	1000 5900 700  5900
+	7200 2150 6900 2150
 Wire Wire Line
 	10950 1400 11700 1400
 Wire Wire Line
@@ -777,13 +777,13 @@ Wire Wire Line
 Wire Wire Line
 	12700 4500 12900 4500
 Wire Wire Line
-	9550 4100 10000 4100
+	9600 4100 10050 4100
 Wire Wire Line
-	9550 4650 10000 4650
+	9600 4650 10050 4650
 Wire Wire Line
-	9550 4500 10000 4500
+	9600 4500 10050 4500
 Wire Wire Line
-	9550 4250 10000 4250
+	9600 4250 10050 4250
 Wire Wire Line
 	6100 900  6250 900 
 Wire Wire Line
@@ -841,7 +841,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 3700 1750 3700
 Wire Wire Line
-	9550 4350 10000 4350
+	9600 4350 10050 4350
 Wire Wire Line
 	12700 5200 12900 5200
 Wire Wire Line
@@ -919,11 +919,11 @@ Wire Wire Line
 Wire Wire Line
 	4000 6100 4000 6200
 Wire Wire Line
-	9550 5350 10250 5350
+	9600 5350 10300 5350
 Wire Wire Line
-	9550 5200 10250 5200
+	9600 5200 10300 5200
 Wire Wire Line
-	9550 4800 10250 4800
+	9600 4800 10300 4800
 Wire Wire Line
 	11700 2950 11100 2950
 Wire Wire Line
@@ -1093,16 +1093,16 @@ Wire Notes Line
 Wire Notes Line
 	650  6050 650  7900
 Wire Wire Line
-	9550 3950 10000 3950
-Text Label 10000 3950 2    60   ~ 0
+	9600 3950 10050 3950
+Text Label 10050 3950 2    60   ~ 0
 +10V
 Wire Wire Line
-	9550 3800 10000 3800
-Text Label 10000 3800 2    60   ~ 0
+	9600 3800 10050 3800
+Text Label 10050 3800 2    60   ~ 0
 CANRX
 Wire Wire Line
-	9550 5500 10250 5500
-Text Label 10250 5500 2    61   ~ 0
+	9600 5500 10300 5500
+Text Label 10300 5500 2    61   ~ 0
 Cooling_power
 Wire Wire Line
 	1500 6100 1350 6100
@@ -1136,7 +1136,7 @@ Wire Wire Line
 	6100 5550 6950 5550
 Connection ~ 6950 5550
 Wire Wire Line
-	9550 5000 10250 5000
+	9600 5000 10300 5000
 Wire Wire Line
 	6050 3700 6850 3700
 Wire Wire Line
@@ -1195,25 +1195,24 @@ Wire Notes Line
 	1050 5200 1900 5200
 NoConn ~ 2400 5200
 $Sheet
-S 8500 3500 1050 2450
+S 8500 3500 1100 2150
 U 58A62F55
 F0 "GLV Interface" 60
 F1 "GLV_tcvr.sch" 60
-F2 "CANTX" O R 9550 3600 60 
-F3 "CANRX" O R 9550 3800 60 
-F4 "+10V" O R 9550 3950 60 
-F5 "+3.3V" O R 9550 4100 60 
-F6 "+24V" O R 9550 4650 60 
-F7 "+5V" O R 9550 4250 60 
-F8 "LV_RTN" O R 9550 4500 60 
-F9 "CH_gnd" O R 9550 4350 59 
-F10 "Safety_Loop" O R 9550 4800 61 
-F11 "IMD_Status" O R 9550 5000 61 
-F12 "AIRs+" O R 9550 5200 61 
-F13 "AIRs-" O R 9550 5350 61 
-F14 "Cooling_power" O R 9550 5500 61 
+F2 "CANTX" O R 9600 3600 60 
+F3 "CANRX" O R 9600 3800 60 
+F4 "+10V" O R 9600 3950 60 
+F5 "+3.3V" O R 9600 4100 60 
+F6 "+24V" O R 9600 4650 60 
+F7 "+5V" O R 9600 4250 60 
+F8 "LV_RTN" O R 9600 4500 60 
+F9 "CH_gnd" O R 9600 4350 59 
+F10 "Safety_Loop" O R 9600 4800 61 
+F11 "IMD_Status" O R 9600 5000 61 
+F12 "AIRs+" O R 9600 5200 61 
+F13 "AIRs-" O R 9600 5350 61 
+F14 "Cooling_power" O R 9600 5500 61 
 F15 "Cooling_CTRL" I L 8500 4650 61 
-F16 "Break_OverTravel" O R 9550 5650 61 
 $EndSheet
 Text Label 7850 4650 0    61   ~ 0
 Cooling_CTRL
@@ -1299,14 +1298,6 @@ Text Label 2850 7100 2    61   ~ 0
 CoolTemp_In_1
 Text Label 4000 7100 2    61   ~ 0
 CoolTemp_In_2
-Wire Wire Line
-	6050 3800 6850 3800
-Text Label 10400 5650 2    61   ~ 0
-Break_OverTravel
-Wire Wire Line
-	9550 5650 10400 5650
-Text Label 6850 3800 2    61   ~ 0
-Break_OverTravel
 $Comp
 L conn:Conn_01x02 J13
 U 1 1 5D97F06F
@@ -1334,4 +1325,5 @@ Wire Wire Line
 Connection ~ 1350 6350
 Wire Wire Line
 	1350 6350 850  6350
+NoConn ~ 6050 3800
 $EndSCHEMATC

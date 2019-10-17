@@ -171,8 +171,8 @@ F 12 "https://www.arrow.com/en/products/ts431ilt/stmicroelectronics" H 10950 660
 	1    10000 7600
 	1    0    0    -1  
 $EndComp
-Text Notes 9350 8550 0    60   ~ 0
-Voltage reference_1.24V
+Text Notes 9500 8200 0    60   ~ 0
+Voltage reference (adjustable)
 NoConn ~ 10000 7600
 NoConn ~ 10000 7700
 Text Label 9000 7800 0    60   ~ 0
