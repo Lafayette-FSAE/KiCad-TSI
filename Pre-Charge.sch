@@ -14,9 +14,9 @@ Comment2 "Feng Qiu, Zhengxie Hu, Phillip Harding"
 Comment3 ""
 Comment4 "DEVELOPMENT ONLY"
 $EndDescr
-Text Label 1450 4200 0    60   ~ 0
+Text Label 1400 4200 0    60   ~ 0
 HV+
-Text Label 1450 4350 0    60   ~ 0
+Text Label 1400 4350 0    60   ~ 0
 HV-
 Text Label 1200 8600 0    60   ~ 0
 +24V
@@ -121,13 +121,13 @@ Text Notes 7250 9450 0    60   ~ 0
 25mA\n
 NoConn ~ 4900 9150
 NoConn ~ 3000 9350
-Text HLabel 1200 4200 0    60   Input ~ 0
+Text HLabel 1150 4200 0    60   Input ~ 0
 HV+
-Text HLabel 1200 4350 0    60   Input ~ 0
+Text HLabel 1150 4350 0    60   Input ~ 0
 HV-
-Text Label 1450 5000 0    60   ~ 0
+Text Label 1400 5000 0    60   ~ 0
 I/O_Ground
-Text HLabel 1200 5000 0    60   Input ~ 0
+Text HLabel 1150 5000 0    60   Input ~ 0
 I/O_Ground
 Text HLabel 1100 5650 0    60   Input ~ 0
 +24V
@@ -192,13 +192,13 @@ Text Label 9850 7050 0    60   ~ 0
 +1.24Vref
 Text Label 11100 7800 0    60   ~ 0
 I/O_Ground
-Text HLabel 1200 4550 0    60   Input ~ 0
+Text HLabel 1150 4550 0    60   Input ~ 0
 MC_V
-Text HLabel 1200 4750 0    60   Input ~ 0
+Text HLabel 1150 4750 0    60   Input ~ 0
 TSV_V
-Text Label 1650 4750 0    60   ~ 0
+Text Label 1600 4750 0    60   ~ 0
 TSV_Voltage
-Text Label 1650 4550 0    60   ~ 0
+Text Label 1600 4550 0    60   ~ 0
 MC_Voltage
 Text Label 13850 6600 0    60   ~ 0
 I/O_Ground
@@ -225,7 +225,7 @@ F 3 "" H 15400 7200 50  0001 C CNN
 	1    15400 7200
 	1    0    0    -1  
 $EndComp
-Text HLabel 1200 5200 0    60   Input ~ 0
+Text HLabel 1150 5200 0    60   Input ~ 0
 Throttle_HV
 Text Label 14450 7600 2    60   ~ 0
 BP_HV
@@ -417,7 +417,7 @@ IGNI_VCC
 Text Label 15250 6600 2    60   ~ 0
 IGNI_GND
 NoConn ~ 15200 7200
-Text Label 1450 5200 0    60   ~ 0
+Text Label 1400 5200 0    60   ~ 0
 Throttle_HV
 Text Label 14450 7300 2    60   ~ 0
 Throttle_HV
@@ -469,7 +469,7 @@ Text Label 5100 1800 0    60   ~ 0
 TSV_Ready
 Text Label 5600 3300 2    60   ~ 0
 Precharge_Ready
-Text Label 5550 4150 2    60   ~ 0
+Text Label 4150 4300 2    60   ~ 0
 Safety_Loop_HV
 Text Notes 6900 1700 0    60   ~ 0
 ~S
@@ -653,35 +653,35 @@ Text Notes 4000 5900 0    59   ~ 0
 NC
 Text Notes 11750 2700 0    59   ~ 0
 NO
-Text Notes 8450 700  0    59   ~ 12
-S
-Text Notes 8950 700  0    61   ~ 12
-R
-Text Notes 9250 700  0    61   ~ 12
+Text Notes 8650 800  0    59   ~ 12
+~S
+Text Notes 9150 800  0    61   ~ 12
+~R
+Text Notes 9450 800  0    61   ~ 12
 Q
-Text Notes 8450 800  0    61   ~ 12
+Text Notes 8650 900  0    61   ~ 12
 0
-Text Notes 8950 800  0    61   ~ 12
+Text Notes 9150 900  0    61   ~ 12
 0
-Text Notes 8450 950  0    61   ~ 12
+Text Notes 8650 1050 0    61   ~ 12
 0
-Text Notes 8950 1150 0    61   ~ 12
+Text Notes 9150 1250 0    61   ~ 12
 0
-Text Notes 8450 1150 0    61   ~ 12
+Text Notes 8650 1250 0    61   ~ 12
 1
-Text Notes 8950 950  0    61   ~ 12
+Text Notes 9150 1050 0    61   ~ 12
 1
-Text Notes 8450 1350 0    61   ~ 12
+Text Notes 8650 1450 0    61   ~ 12
 1
-Text Notes 8950 1350 0    61   ~ 12
+Text Notes 9150 1450 0    61   ~ 12
 1
-Text Notes 9200 800  0    61   ~ 12
+Text Notes 9400 900  0    61   ~ 12
 N/A
-Text Notes 9250 950  0    61   ~ 12
+Text Notes 9450 1050 0    61   ~ 12
 1
-Text Notes 9250 1150 0    61   ~ 12
+Text Notes 9450 1250 0    61   ~ 12
 0
-Text Notes 9200 1350 0    39   ~ 8
+Text Notes 9400 1450 0    39   ~ 8
 Not \nchange\n
 $Comp
 L Circuit_layout-rescue:74HC00 U19
@@ -697,12 +697,12 @@ $EndComp
 $Comp
 L Circuit_layout-rescue:74HC00 U19
 U 2 1 5C5D011C
-P 6250 4150
-F 0 "U19" H 6250 4200 50  0000 C CNN
-F 1 "74HC00" H 6250 4050 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6250 4150 50  0001 C CNN
-F 3 "" H 6250 4150 50  0001 C CNN
-	2    6250 4150
+P 4850 4300
+F 0 "U19" H 4850 4350 50  0000 C CNN
+F 1 "74HC00" H 4850 4200 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4850 4300 50  0001 C CNN
+F 3 "" H 4850 4300 50  0001 C CNN
+	2    4850 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -791,9 +791,9 @@ F 3 "" H 3500 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 4350 1450 4350
+	1150 4350 1400 4350
 Wire Wire Line
-	1200 4200 1450 4200
+	1150 4200 1400 4200
 Wire Wire Line
 	1200 9250 2300 9250
 Wire Wire Line
@@ -833,7 +833,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 10300 7400 10300
 Wire Wire Line
-	1200 5000 1450 5000
+	1150 5000 1400 5000
 Wire Wire Line
 	4350 8100 4550 8100
 Wire Wire Line
@@ -854,9 +854,9 @@ Connection ~ 9850 7800
 Wire Wire Line
 	11100 7700 11100 7800
 Wire Wire Line
-	1200 4550 1650 4550
+	1150 4550 1600 4550
 Wire Wire Line
-	1200 4750 1650 4750
+	1150 4750 1600 4750
 Wire Wire Line
 	13850 6600 14700 6600
 Wire Wire Line
@@ -926,7 +926,7 @@ Wire Wire Line
 	14100 4600 14100 5000
 Connection ~ 14100 5000
 Wire Wire Line
-	1200 5200 1450 5200
+	1150 5200 1400 5200
 Wire Wire Line
 	1100 6500 1350 6500
 Wire Wire Line
@@ -964,8 +964,6 @@ Wire Wire Line
 	4600 1800 5650 1800
 Wire Wire Line
 	5650 3300 4600 3300
-Wire Wire Line
-	5650 2000 5650 3300
 Connection ~ 2500 1700
 Wire Wire Line
 	6950 2800 8300 2800
@@ -1046,14 +1044,10 @@ Wire Wire Line
 Wire Wire Line
 	6950 2100 6950 2800
 Wire Wire Line
-	5550 4150 5650 4150
+	4150 4300 4250 4300
 Wire Wire Line
-	5650 4050 5650 4150
-Connection ~ 5650 4150
-Wire Wire Line
-	7100 3400 6850 3400
-Wire Wire Line
-	6850 3400 6850 4150
+	4250 4200 4250 4300
+Connection ~ 4250 4300
 Wire Wire Line
 	6850 2600 6850 3200
 Wire Wire Line
@@ -1124,25 +1118,15 @@ Wire Wire Line
 Wire Wire Line
 	8150 2000 8550 2000
 Wire Bus Line
-	8300 600  9450 600 
+	9650 1500 9350 1500
 Wire Bus Line
-	9450 600  9450 1400
-Wire Bus Line
-	9450 1400 8300 1400
-Wire Bus Line
-	8300 1400 8300 600 
-Wire Bus Line
-	8300 700  9450 700 
-Wire Bus Line
-	8750 600  8750 1400
-Wire Bus Line
-	9150 600  9150 1400
+	8500 800  9650 800 
 Wire Notes Line
-	8300 850  9450 850 
+	8500 950  9650 950 
 Wire Notes Line
-	8300 1000 9450 1000
+	8500 1100 9650 1100
 Wire Notes Line
-	8300 1200 9450 1200
+	8500 1300 9650 1300
 Wire Wire Line
 	6050 2100 6050 2250
 Wire Wire Line
@@ -1211,7 +1195,7 @@ Text Notes 11600 2550 0    47   ~ 0
 GX14CB\n
 Text Notes 4300 5900 0    43   ~ 0
 Z1032-ND
-Text Notes 9550 1000 0    43   ~ 0
+Text Notes 9750 1100 0    43   ~ 0
 logic of SR latch
 Wire Wire Line
 	2300 8600 2450 8600
@@ -1240,7 +1224,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 10300 7400 10700
 Wire Wire Line
-	5650 4150 5650 4250
+	4250 4300 4250 4400
 Wire Wire Line
 	8550 2000 9800 2000
 Wire Wire Line
@@ -1561,4 +1545,79 @@ Wire Wire Line
 Connection ~ 14700 7100
 Wire Wire Line
 	14700 7100 14450 7100
+Wire Bus Line
+	8500 650  8500 800 
+Wire Bus Line
+	8950 650  8950 1500
+Wire Bus Line
+	9650 650  9650 800 
+Wire Bus Line
+	9350 650  9350 1500
+Wire Bus Line
+	8500 650  8950 650 
+$Comp
+L SN74LVC1G08DCKR:SN74LVC1G08DCKR U29
+U 1 1 5DFB3D2B
+P 7050 4100
+F 0 "U29" H 7050 4570 50  0000 C CNN
+F 1 "SN74LVC1G08DCKR" H 7050 4479 50  0000 C CNN
+F 2 "SOT65P210X110-5N" H 7050 4100 50  0001 L BNN
+F 3 "Single 2-Input Positive-AND Gate 5-SC70 -40 to 125" H 7050 4100 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC1G08DCKR/296-11602-1-ND/385741?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 7050 4100 50  0001 L BNN "Field4"
+F 5 "SN74LVC1G08DCKR" H 7050 4100 50  0001 L BNN "Field5"
+F 6 "SC-70-5 Texas Instruments" H 7050 4100 50  0001 L BNN "Field6"
+F 7 "296-11602-1-ND" H 7050 4100 50  0001 L BNN "Field7"
+F 8 "Texas Instruments" H 7050 4100 50  0001 L BNN "Field8"
+	1    7050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4000 6100 4000
+Text Label 6100 4000 0    60   ~ 0
++5HV
+Text Label 5800 4500 0    60   ~ 0
+I/O_Ground
+Wire Wire Line
+	5800 4500 6350 4500
+Wire Wire Line
+	5950 3400 7100 3400
+Wire Wire Line
+	5650 4200 6350 4200
+Text Label 8400 4000 2    60   ~ 0
+pc_and_sl_ready
+Wire Wire Line
+	7750 4000 8400 4000
+Text Label 4850 2000 0    60   ~ 0
+pc_and_sl_ready
+Wire Wire Line
+	4850 2000 5650 2000
+Wire Wire Line
+	5450 4300 5950 4300
+Wire Wire Line
+	5650 3300 5650 4200
+Wire Wire Line
+	5950 3400 5950 4300
+Connection ~ 5950 4300
+Wire Wire Line
+	5950 4300 6350 4300
+Connection ~ 8500 800 
+Wire Bus Line
+	8500 800  8500 1500
+Connection ~ 8950 650 
+Wire Bus Line
+	8950 650  9350 650 
+Connection ~ 8950 1500
+Wire Bus Line
+	8950 1500 8500 1500
+Connection ~ 9350 650 
+Wire Bus Line
+	9350 650  9650 650 
+Connection ~ 9350 1500
+Wire Bus Line
+	9350 1500 8950 1500
+Connection ~ 9650 800 
+Wire Bus Line
+	9650 800  9650 1500
+Text Notes 6900 4800 0    59   ~ 0
+AND gate
 $EndSCHEMATC

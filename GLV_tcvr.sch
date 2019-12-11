@@ -872,9 +872,9 @@ P 6950 5400
 AR Path="/5BCEB271/5D9B1C8C" Ref="K?"  Part="1" 
 AR Path="/58A62F55/5D9B1C8C" Ref="K4"  Part="1" 
 F 0 "K4" H 6800 5900 50  0000 L CNN
-F 1 "APAN3105" H 6800 5800 50  0000 L CNN
+F 1 "G6B-1174P-US-DC24" H 6800 5800 50  0000 L CNN
 F 2 "custom_footprints:Relay_SPST_Finder_32.21-x300_special" H 8220 5370 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Electric%20Works%20PDFs/PA-N_Series.pdf" H 6950 5400 50  0001 C CNN
+F 3 "" H 6950 5400 50  0001 C CNN
 	1    6950 5400
 	1    0    0    -1  
 $EndComp

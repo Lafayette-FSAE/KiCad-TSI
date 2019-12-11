@@ -894,8 +894,6 @@ Wire Wire Line
 	2600 2000 2600 2150
 Wire Wire Line
 	3950 700  3950 850 
-Text Label 4600 3900 2    60   ~ 0
-+5HV
 Text Label 4650 5000 2    60   ~ 0
 +5HV
 Wire Wire Line
@@ -991,355 +989,463 @@ Wire Wire Line
 Text Notes 8350 1550 0    61   ~ 0
 1.24V
 Wire Wire Line
-	8600 5700 9350 5700
+	10900 5000 12900 5000
+Connection ~ 10900 5000
 Wire Wire Line
-	8450 4450 9350 4450
+	10650 5000 10900 5000
+Connection ~ 10900 5600
 Wire Wire Line
-	8250 3250 9700 3250
+	10900 3750 11000 3750
+Connection ~ 10900 3750
 Wire Wire Line
-	9600 5100 11600 5100
-Connection ~ 9600 5100
+	10900 3750 10900 3900
 Wire Wire Line
-	9350 5100 9600 5100
-Connection ~ 9600 5700
-Connection ~ 9350 4450
+	10650 3800 10650 3750
 Wire Wire Line
-	9600 3850 9700 3850
-Connection ~ 9600 3850
+	10650 3750 10900 3750
 Wire Wire Line
-	9600 3850 9600 4000
+	10650 4350 10900 4350
+Connection ~ 10900 4350
 Wire Wire Line
-	9350 3900 9350 3850
+	10900 4350 11450 4350
 Wire Wire Line
-	9350 3850 9600 3850
+	11250 3150 11400 3150
+Connection ~ 11250 3150
 Wire Wire Line
-	9350 4450 9600 4450
-Connection ~ 9600 4450
+	11250 3350 11250 3150
 Wire Wire Line
-	9600 4450 10150 4450
+	11000 3150 11250 3150
 Wire Wire Line
-	9950 3250 10100 3250
-Connection ~ 9950 3250
+	10900 5600 11450 5600
 Wire Wire Line
-	9950 3450 9950 3250
+	10650 5600 10900 5600
 Wire Wire Line
-	9700 3250 9950 3250
-Connection ~ 9700 3250
+	11000 3750 11250 3750
 Wire Wire Line
-	9600 5700 10150 5700
+	10900 4200 10900 4350
 Wire Wire Line
-	9350 5700 9600 5700
+	10650 4300 10650 4350
 Wire Wire Line
-	9700 3850 9950 3850
+	10900 5300 10900 5600
 Wire Wire Line
-	9950 3850 11200 3850
+	10650 5500 10650 5600
 Wire Wire Line
-	9600 4300 9600 4450
+	11250 3650 11250 3750
+Connection ~ 11000 3750
 Wire Wire Line
-	9350 4400 9350 4450
+	11000 3700 11000 3750
 Wire Wire Line
-	9600 5400 9600 5700
-Connection ~ 9350 5700
+	11000 3200 11000 3150
 Wire Wire Line
-	9350 5600 9350 5700
+	12800 5600 12900 5600
 Wire Wire Line
-	9950 3750 9950 3850
-Connection ~ 9700 3850
+	11800 5600 11750 5600
 Wire Wire Line
-	9700 3800 9700 3850
+	12150 5600 12100 5600
 Wire Wire Line
-	9700 3300 9700 3250
+	12500 5600 12450 5600
+Connection ~ 11250 3750
 Wire Wire Line
-	11500 5700 11600 5700
+	11800 4350 11750 4350
 Wire Wire Line
-	10500 5700 10450 5700
+	12150 4350 12100 4350
 Wire Wire Line
-	10850 5700 10800 5700
+	12500 4350 12450 4350
 Wire Wire Line
-	11200 5700 11150 5700
-Connection ~ 9950 3850
+	12400 3150 12450 3150
 Wire Wire Line
-	10500 4450 10450 4450
+	12050 3150 12100 3150
 Wire Wire Line
-	10850 4450 10800 4450
+	11700 3150 11750 3150
 Wire Wire Line
-	11200 4450 11150 4450
+	12750 3150 12850 3150
 Wire Wire Line
-	11100 3250 11150 3250
-Wire Wire Line
-	10750 3250 10800 3250
-Wire Wire Line
-	10400 3250 10450 3250
-Wire Wire Line
-	11450 3250 11550 3250
-Wire Wire Line
-	11500 4450 11600 4450
-Text Label 11600 5100 0    60   ~ 0
-I/O_Ground
-Text Label 11600 5700 0    60   ~ 0
+	12800 4350 12900 4350
+Text Label 12900 5600 0    60   ~ 0
 HV-
 $Comp
 L TSI_HV_Isolater-cache:R R88
 U 1 1 5C60B3E9
-P 11350 5700
-F 0 "R88" V 11430 5700 50  0000 C CNN
-F 1 "150k" V 11350 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 11280 5700 50  0001 C CNN
-F 3 "" H 11350 5700 50  0000 C CNN
-F 4 "P150KCCT-ND" V 11350 5700 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11350 5700 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 11350 5700 60  0001 C CNN "Man P/N"
-	1    11350 5700
+P 12650 5600
+F 0 "R88" V 12730 5600 50  0000 C CNN
+F 1 "150k" V 12650 5600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12580 5600 50  0001 C CNN
+F 3 "" H 12650 5600 50  0000 C CNN
+F 4 "P150KCCT-ND" V 12650 5600 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 12650 5600 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 12650 5600 60  0001 C CNN "Man P/N"
+	1    12650 5600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R87
 U 1 1 5C60B3E0
-P 11000 5700
-F 0 "R87" V 11080 5700 50  0000 C CNN
-F 1 "150k" V 11000 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10930 5700 50  0001 C CNN
-F 3 "" H 11000 5700 50  0000 C CNN
-F 4 "P150KCCT-ND" V 11000 5700 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11000 5700 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 11000 5700 60  0001 C CNN "Man P/N"
-	1    11000 5700
+P 12300 5600
+F 0 "R87" V 12380 5600 50  0000 C CNN
+F 1 "150k" V 12300 5600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12230 5600 50  0001 C CNN
+F 3 "" H 12300 5600 50  0000 C CNN
+F 4 "P150KCCT-ND" V 12300 5600 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 12300 5600 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 12300 5600 60  0001 C CNN "Man P/N"
+	1    12300 5600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R77
 U 1 1 5C60B3D7
-P 10650 5700
-F 0 "R77" V 10730 5700 50  0000 C CNN
-F 1 "150k" V 10650 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10580 5700 50  0001 C CNN
-F 3 "" H 10650 5700 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10650 5700 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10650 5700 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10650 5700 60  0001 C CNN "Man P/N"
-	1    10650 5700
+P 11950 5600
+F 0 "R77" V 12030 5600 50  0000 C CNN
+F 1 "150k" V 11950 5600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11880 5600 50  0001 C CNN
+F 3 "" H 11950 5600 50  0000 C CNN
+F 4 "P150KCCT-ND" V 11950 5600 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11950 5600 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 11950 5600 60  0001 C CNN "Man P/N"
+	1    11950 5600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R76
 U 1 1 5C60B3CE
-P 10300 5700
-F 0 "R76" V 10380 5700 50  0000 C CNN
-F 1 "150k" V 10300 5700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10230 5700 50  0001 C CNN
-F 3 "" H 10300 5700 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10300 5700 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10300 5700 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10300 5700 60  0001 C CNN "Man P/N"
-	1    10300 5700
+P 11600 5600
+F 0 "R76" V 11680 5600 50  0000 C CNN
+F 1 "150k" V 11600 5600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11530 5600 50  0001 C CNN
+F 3 "" H 11600 5600 50  0000 C CNN
+F 4 "P150KCCT-ND" V 11600 5600 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11600 5600 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 11600 5600 60  0001 C CNN "Man P/N"
+	1    11600 5600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C6
 U 1 1 5C60B3C5
-P 9350 5350
-F 0 "C6" H 9375 5450 50  0000 L CNN
-F 1 "100p" H 9375 5250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9388 5200 50  0001 C CNN
-F 3 "" H 9350 5350 50  0000 C CNN
-F 4 "399-1122-1-ND" H 9350 5350 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 9350 5350 60  0001 C CNN "URL"
-F 6 "C0805C101J5GACTU" H 9350 5350 60  0001 C CNN "Man P/N"
-	1    9350 5350
+P 10650 5250
+F 0 "C6" H 10675 5350 50  0000 L CNN
+F 1 "100p" H 10675 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10688 5100 50  0001 C CNN
+F 3 "" H 10650 5250 50  0000 C CNN
+F 4 "399-1122-1-ND" H 10650 5250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 10650 5250 60  0001 C CNN "URL"
+F 6 "C0805C101J5GACTU" H 10650 5250 60  0001 C CNN "Man P/N"
+	1    10650 5250
 	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R60
 U 1 1 5C60B3BC
-P 9600 5250
-F 0 "R60" V 9680 5250 50  0000 C CNN
-F 1 "10k" V 9600 5250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9530 5250 50  0001 C CNN
-F 3 "" H 9600 5250 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 9600 5250 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 9600 5250 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 9600 5250 60  0001 C CNN "Man P/N"
-	1    9600 5250
+P 10900 5150
+F 0 "R60" V 10980 5150 50  0000 C CNN
+F 1 "10k" V 10900 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10830 5150 50  0001 C CNN
+F 3 "" H 10900 5150 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 10900 5150 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 10900 5150 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 10900 5150 60  0001 C CNN "Man P/N"
+	1    10900 5150
 	1    0    0    -1  
 $EndComp
-Text Label 11200 3850 0    60   ~ 0
-I/O_Ground
-Text Notes 10450 3100 0    61   ~ 0
+Text Notes 11750 3000 0    61   ~ 0
 ratio 1/61 
 $Comp
 L TSI_HV_Isolater-cache:R R13
 U 1 1 5BD51C94
-P 11300 3250
-F 0 "R13" V 11380 3250 50  0000 C CNN
-F 1 "150k" V 11300 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 11230 3250 50  0001 C CNN
-F 3 "" H 11300 3250 50  0000 C CNN
-F 4 "P150KCCT-ND" V 11300 3250 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11300 3250 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 11300 3250 60  0001 C CNN "Man P/N"
-	1    11300 3250
+P 12600 3150
+F 0 "R13" V 12680 3150 50  0000 C CNN
+F 1 "150k" V 12600 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12530 3150 50  0001 C CNN
+F 3 "" H 12600 3150 50  0000 C CNN
+F 4 "P150KCCT-ND" V 12600 3150 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 12600 3150 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 12600 3150 60  0001 C CNN "Man P/N"
+	1    12600 3150
 	0    -1   1    0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R10
 U 1 1 5BD51C8B
-P 10950 3250
-F 0 "R10" V 11030 3250 50  0000 C CNN
-F 1 "150k" V 10950 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10880 3250 50  0001 C CNN
-F 3 "" H 10950 3250 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10950 3250 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10950 3250 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10950 3250 60  0001 C CNN "Man P/N"
-	1    10950 3250
+P 12250 3150
+F 0 "R10" V 12330 3150 50  0000 C CNN
+F 1 "150k" V 12250 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12180 3150 50  0001 C CNN
+F 3 "" H 12250 3150 50  0000 C CNN
+F 4 "P150KCCT-ND" V 12250 3150 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 12250 3150 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 12250 3150 60  0001 C CNN "Man P/N"
+	1    12250 3150
 	0    -1   1    0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R9
 U 1 1 5BD51C82
-P 10600 3250
-F 0 "R9" V 10680 3250 50  0000 C CNN
-F 1 "150k" V 10600 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 3250 50  0001 C CNN
-F 3 "" H 10600 3250 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10600 3250 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10600 3250 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10600 3250 60  0001 C CNN "Man P/N"
-	1    10600 3250
+P 11900 3150
+F 0 "R9" V 11980 3150 50  0000 C CNN
+F 1 "150k" V 11900 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11830 3150 50  0001 C CNN
+F 3 "" H 11900 3150 50  0000 C CNN
+F 4 "P150KCCT-ND" V 11900 3150 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11900 3150 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 11900 3150 60  0001 C CNN "Man P/N"
+	1    11900 3150
 	0    -1   1    0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R7
 U 1 1 5BD51C79
-P 10250 3250
-F 0 "R7" V 10330 3250 50  0000 C CNN
-F 1 "150k" V 10250 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10180 3250 50  0001 C CNN
-F 3 "" H 10250 3250 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10250 3250 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10250 3250 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10250 3250 60  0001 C CNN "Man P/N"
-	1    10250 3250
+P 11550 3150
+F 0 "R7" V 11630 3150 50  0000 C CNN
+F 1 "150k" V 11550 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11480 3150 50  0001 C CNN
+F 3 "" H 11550 3150 50  0000 C CNN
+F 4 "P150KCCT-ND" V 11550 3150 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11550 3150 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 11550 3150 60  0001 C CNN "Man P/N"
+	1    11550 3150
 	0    -1   1    0   
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C?
 U 1 1 5BD51C70
-P 9700 3550
+P 11000 3450
 AR Path="/5BD51C70" Ref="C?"  Part="1" 
 AR Path="/58AF3ED4/5BD51C70" Ref="C4"  Part="1" 
-F 0 "C4" H 9725 3650 50  0000 L CNN
-F 1 "100p" H 9725 3450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9738 3400 50  0001 C CNN
-F 3 "" H 9700 3550 50  0000 C CNN
-F 4 "399-1122-1-ND" H 9700 3550 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 9700 3550 60  0001 C CNN "URL"
-F 6 "C0805C101J5GACTU" H 9700 3550 60  0001 C CNN "Man P/N"
-	1    9700 3550
+F 0 "C4" H 11025 3550 50  0000 L CNN
+F 1 "100p" H 11025 3350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 11038 3300 50  0001 C CNN
+F 3 "" H 11000 3450 50  0000 C CNN
+F 4 "399-1122-1-ND" H 11000 3450 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 11000 3450 60  0001 C CNN "URL"
+F 6 "C0805C101J5GACTU" H 11000 3450 60  0001 C CNN "Man P/N"
+	1    11000 3450
 	-1   0    0    -1  
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R6
 U 1 1 5BD51C67
-P 9950 3600
-F 0 "R6" V 10030 3600 50  0000 C CNN
-F 1 "10k" V 9950 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9880 3600 50  0001 C CNN
-F 3 "" H 9950 3600 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 9950 3600 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 9950 3600 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 9950 3600 60  0001 C CNN "Man P/N"
-	1    9950 3600
+P 11250 3500
+F 0 "R6" V 11330 3500 50  0000 C CNN
+F 1 "10k" V 11250 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11180 3500 50  0001 C CNN
+F 3 "" H 11250 3500 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 11250 3500 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 11250 3500 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 11250 3500 60  0001 C CNN "Man P/N"
+	1    11250 3500
 	1    0    0    1   
 $EndComp
-Text Label 11550 3250 0    60   ~ 0
+Text Label 12850 3150 0    60   ~ 0
 MC+
 $Comp
 L TSI_HV_Isolater-cache:R R86
 U 1 1 5BD384B6
-P 11350 4450
-F 0 "R86" V 11430 4450 50  0000 C CNN
-F 1 "150k" V 11350 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 11280 4450 50  0001 C CNN
-F 3 "" H 11350 4450 50  0000 C CNN
-F 4 "P150KCCT-ND" V 11350 4450 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11350 4450 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 11350 4450 60  0001 C CNN "Man P/N"
-	1    11350 4450
+P 12650 4350
+F 0 "R86" V 12730 4350 50  0000 C CNN
+F 1 "150k" V 12650 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12580 4350 50  0001 C CNN
+F 3 "" H 12650 4350 50  0000 C CNN
+F 4 "P150KCCT-ND" V 12650 4350 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 12650 4350 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 12650 4350 60  0001 C CNN "Man P/N"
+	1    12650 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R85
 U 1 1 5BD384AD
-P 11000 4450
-F 0 "R85" V 11080 4450 50  0000 C CNN
-F 1 "150k" V 11000 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10930 4450 50  0001 C CNN
-F 3 "" H 11000 4450 50  0000 C CNN
-F 4 "P150KCCT-ND" V 11000 4450 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11000 4450 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 11000 4450 60  0001 C CNN "Man P/N"
-	1    11000 4450
+P 12300 4350
+F 0 "R85" V 12380 4350 50  0000 C CNN
+F 1 "150k" V 12300 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 12230 4350 50  0001 C CNN
+F 3 "" H 12300 4350 50  0000 C CNN
+F 4 "P150KCCT-ND" V 12300 4350 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 12300 4350 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 12300 4350 60  0001 C CNN "Man P/N"
+	1    12300 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R84
 U 1 1 5BD384A4
-P 10650 4450
-F 0 "R84" V 10730 4450 50  0000 C CNN
-F 1 "150k" V 10650 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10580 4450 50  0001 C CNN
-F 3 "" H 10650 4450 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10650 4450 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10650 4450 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10650 4450 60  0001 C CNN "Man P/N"
-	1    10650 4450
+P 11950 4350
+F 0 "R84" V 12030 4350 50  0000 C CNN
+F 1 "150k" V 11950 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11880 4350 50  0001 C CNN
+F 3 "" H 11950 4350 50  0000 C CNN
+F 4 "P150KCCT-ND" V 11950 4350 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11950 4350 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 11950 4350 60  0001 C CNN "Man P/N"
+	1    11950 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R78
 U 1 1 5BD3849B
-P 10300 4450
-F 0 "R78" V 10380 4450 50  0000 C CNN
-F 1 "150k" V 10300 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10230 4450 50  0001 C CNN
-F 3 "" H 10300 4450 50  0000 C CNN
-F 4 "P150KCCT-ND" V 10300 4450 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 10300 4450 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1503V" V 10300 4450 60  0001 C CNN "Man P/N"
-	1    10300 4450
+P 11600 4350
+F 0 "R78" V 11680 4350 50  0000 C CNN
+F 1 "150k" V 11600 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11530 4350 50  0001 C CNN
+F 3 "" H 11600 4350 50  0000 C CNN
+F 4 "P150KCCT-ND" V 11600 4350 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1503V/P150KCCT-ND/119602" V 11600 4350 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1503V" V 11600 4350 60  0001 C CNN "Man P/N"
+	1    11600 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Circuit_layout-rescue:C C?
 U 1 1 5BD3848D
-P 9350 4150
+P 10650 4050
 AR Path="/5BD3848D" Ref="C?"  Part="1" 
 AR Path="/58AF3ED4/5BD3848D" Ref="C48"  Part="1" 
-F 0 "C48" H 9375 4250 50  0000 L CNN
-F 1 "100p" H 9375 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9388 4000 50  0001 C CNN
-F 3 "" H 9350 4150 50  0000 C CNN
-F 4 "399-1122-1-ND" H 9350 4150 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 9350 4150 60  0001 C CNN "URL"
-F 6 "C0805C101J5GACTU" H 9350 4150 60  0001 C CNN "Man P/N"
-	1    9350 4150
+F 0 "C48" H 10675 4150 50  0000 L CNN
+F 1 "100p" H 10675 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10688 3900 50  0001 C CNN
+F 3 "" H 10650 4050 50  0000 C CNN
+F 4 "399-1122-1-ND" H 10650 4050 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 10650 4050 60  0001 C CNN "URL"
+F 6 "C0805C101J5GACTU" H 10650 4050 60  0001 C CNN "Man P/N"
+	1    10650 4050
 	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R53
 U 1 1 5BD38484
-P 9600 4150
-F 0 "R53" V 9680 4150 50  0000 C CNN
-F 1 "10k" V 9600 4150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9530 4150 50  0001 C CNN
-F 3 "" H 9600 4150 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 9600 4150 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 9600 4150 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 9600 4150 60  0001 C CNN "Man P/N"
-	1    9600 4150
+P 10900 4050
+F 0 "R53" V 10980 4050 50  0000 C CNN
+F 1 "10k" V 10900 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10830 4050 50  0001 C CNN
+F 3 "" H 10900 4050 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 10900 4050 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 10900 4050 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 10900 4050 60  0001 C CNN "Man P/N"
+	1    10900 4050
 	1    0    0    -1  
 $EndComp
-Text Label 11600 4450 0    60   ~ 0
+Text Label 12900 4350 0    60   ~ 0
 HV+
+Connection ~ 10650 5600
+$Comp
+L Circuit_layout-rescue:MCP6004-linear U26
+U 1 1 5DB49A4E
+P 9750 3250
+F 0 "U26" H 9750 3450 50  0000 L CNN
+F 1 "MCP6004" H 9750 3050 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 9700 3350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9800 3450 50  0001 C CNN
+	1    9750 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Circuit_layout-rescue:MCP6004-linear U26
+U 2 1 5DB4B99E
+P 9750 4450
+F 0 "U26" H 9750 4650 50  0000 L CNN
+F 1 "MCP6004" H 9750 4250 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 9700 4550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9800 4650 50  0001 C CNN
+	2    9750 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Circuit_layout-rescue:MCP6004-linear U26
+U 3 1 5DB4CB0B
+P 9750 5700
+F 0 "U26" H 9750 5900 50  0000 L CNN
+F 1 "MCP6004" H 9750 5500 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 9700 5800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9800 5900 50  0001 C CNN
+	3    9750 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3150 11000 3150
+Connection ~ 11000 3150
+Wire Wire Line
+	10050 4350 10650 4350
+Connection ~ 10650 4350
+Wire Wire Line
+	10050 5600 10650 5600
+Wire Wire Line
+	9850 2950 9850 2700
+Wire Wire Line
+	9850 3550 9850 3850
+Text Label 9850 3850 2    60   ~ 0
+I/O_Ground
+Text Label 9850 2700 0    60   ~ 0
++5HV
+Wire Wire Line
+	10050 3350 10200 3350
+Wire Wire Line
+	10200 3350 10200 3650
+Wire Wire Line
+	10200 3650 9300 3650
+Wire Wire Line
+	9300 3650 9300 3250
+Wire Wire Line
+	9450 3250 9300 3250
+Connection ~ 9300 3250
+Wire Wire Line
+	9300 3250 8250 3250
+Wire Wire Line
+	10050 4550 10200 4550
+Wire Wire Line
+	10200 4550 10200 4850
+Wire Wire Line
+	10200 4850 9300 4850
+Wire Wire Line
+	9300 4850 9300 4450
+Wire Wire Line
+	9450 4450 9300 4450
+Connection ~ 9300 4450
+Wire Wire Line
+	9300 4450 8450 4450
+Wire Wire Line
+	10050 5800 10200 5800
+Wire Wire Line
+	10200 5800 10200 6150
+Wire Wire Line
+	10200 6150 9300 6150
+Wire Wire Line
+	9300 6150 9300 5700
+Wire Wire Line
+	9450 5700 9300 5700
+Connection ~ 9300 5700
+Wire Wire Line
+	9300 5700 8600 5700
+Text Notes 7700 6650 0    39   ~ 0
+Changed voltage divider rtn from I/O ground to DiffAmpRef\nDiffAmpRef > I/O ground\nThis allows the buffer to operate with the risk that MC+, HV+ or HV- may be lower than I/O ground, resulting in a negative voltage at the + terminal of buffers with respect to I/O ground 
+Wire Wire Line
+	11250 3750 12900 3750
+Text Label 12900 3750 2    61   ~ 0
+DiffAmpRef
+Text Label 12900 5000 2    61   ~ 0
+DiffAmpRef
+$Comp
+L Circuit_layout-rescue:C C?
+U 1 1 5DAA7904
+P 10600 2600
+AR Path="/5DAA7904" Ref="C?"  Part="1" 
+AR Path="/58AF3ED4/5DAA7904" Ref="C20"  Part="1" 
+F 0 "C20" H 10625 2700 50  0000 L CNN
+F 1 "0.1u" H 10625 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10638 2450 50  0001 C CNN
+F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 10600 2600 50  0001 C CNN
+F 4 "399-1168-1-ND" H 10600 2600 60  0001 C CNN "Digikey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C104K3RACTU/399-1168-1-ND/411443" H 10600 2600 60  0001 C CNN "URL"
+F 6 "C0805C104K3RACTU" H 10600 2600 60  0001 C CNN "Man P/N"
+	1    10600 2600
+	1    0    0    -1  
+$EndComp
+Text Label 10600 3000 0    60   ~ 0
+I/O_Ground
+Text Label 10600 2100 0    60   ~ 0
++5HV
+Wire Wire Line
+	10600 2100 10600 2350
+Wire Wire Line
+	10600 2850 10600 3000
+Text Notes 10250 2500 0    39   ~ 0
+For U26
 $EndSCHEMATC

@@ -1177,7 +1177,7 @@ Text Label 1750 3600 0    61   ~ 0
 Cooling_CTRL
 NoConn ~ 1500 6950
 $Comp
-L conn:Conn_01x02 J10
+L Circuit_layout-rescue:Conn_01x02-conn J10
 U 1 1 5DAED037
 P 1700 6100
 F 0 "J10" H 1780 6092 50  0000 L CNN
@@ -1299,7 +1299,7 @@ CoolTemp_In_1
 Text Label 4000 7100 2    61   ~ 0
 CoolTemp_In_2
 $Comp
-L conn:Conn_01x02 J13
+L Circuit_layout-rescue:Conn_01x02-conn J13
 U 1 1 5D97F06F
 P 1700 6350
 F 0 "J13" H 1780 6342 50  0000 L CNN
