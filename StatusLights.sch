@@ -280,7 +280,7 @@ Text Label 4700 5800 0    60   ~ 0
 LV_RTN
 Text Label 12200 1150 0    60   ~ 0
 +3.3V
-Text Label 7600 950  2    60   ~ 0
+Text Label 7600 600  2    60   ~ 0
 +24V
 Text HLabel 1500 2700 0    60   Input ~ 0
 +3.3V
@@ -397,7 +397,7 @@ Cooling_CTRL
 Text Label 8450 6050 0    60   ~ 0
 LV_RTN
 Text Label 6550 6050 0    60   ~ 0
-+5V
++3.3V
 Text Label 6450 6300 0    60   ~ 0
 Drive_BTN
 $Comp
@@ -419,7 +419,7 @@ U 1 1 5C56BE35
 P 3150 6100
 F 0 "U1" H 3150 6100 61  0000 C CNN
 F 1 "RDE03110S12" H 3150 6200 61  0000 C CNN
-F 2 "custom_footprints:RDE03110S12" H 3150 6100 61  0001 C CNN
+F 2 "custom_footprints:RDE03110S12_new" H 3150 6100 61  0001 C CNN
 F 3 "" H 3150 6100 61  0001 C CNN
 	1    3150 6100
 	1    0    0    -1  
@@ -475,14 +475,12 @@ F 3 "https://www.diodes.com/assets/Datasheets/ZVP1320F.pdf" H 7500 1250 50  0001
 	1    7500 1250
 	1    0    0    1   
 $EndComp
-Text Label 6750 650  0    60   ~ 0
-+24V
 $Comp
 L TSI_HV_Isolater-cache:R R74
 U 1 1 5C617651
 P 6750 950
 F 0 "R74" V 6830 950 50  0000 C CNN
-F 1 "2.4K" V 6750 950 50  0000 C CNN
+F 1 "1M" V 6750 950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 6680 950 50  0001 C CNN
 F 3 "" H 6750 950 50  0000 C CNN
 	1    6750 950 
@@ -499,8 +497,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 1450 5350 1650
 Wire Wire Line
-	6050 1250 6750 1250
-Wire Wire Line
 	6300 2750 6500 2750
 Wire Wire Line
 	6500 2550 6250 2550
@@ -508,8 +504,6 @@ Wire Wire Line
 	7100 2550 7850 2550
 Wire Wire Line
 	7100 2750 7600 2750
-Wire Wire Line
-	6750 800  6750 650 
 Wire Wire Line
 	4900 1250 4400 1250
 Wire Wire Line
@@ -706,9 +700,6 @@ Wire Notes Line
 	9100 5400 6250 5400
 Wire Wire Line
 	6750 1250 6750 1100
-Connection ~ 6750 1250
-Wire Wire Line
-	7600 1050 7600 950 
 Wire Wire Line
 	1500 3100 1700 3100
 Wire Notes Line
@@ -827,7 +818,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 6350 10450 6450
 Wire Wire Line
-	6750 1250 7300 1250
+	6750 1250 7150 1250
 Wire Wire Line
 	2350 5800 1850 5800
 $Comp
@@ -885,16 +876,6 @@ Wire Notes Line
 	2250 5150 2500 5150
 Wire Notes Line
 	2500 4950 2500 5150
-Wire Notes Line
-	7300 800  8050 800 
-Wire Notes Line
-	8050 800  8050 1550
-Wire Notes Line
-	8050 1550 7400 1550
-Wire Notes Line
-	7400 1550 7400 800 
-Text Notes 7350 750  0    39   ~ 0
-Change 7: Wiring fixed in layout
 Connection ~ 4150 5300
 Wire Wire Line
 	4150 5300 4850 5300
@@ -907,4 +888,49 @@ Text Notes 2500 6100 0    39   ~ 0
 input: 40-160V
 Text Notes 4550 6050 0    39   ~ 0
 greater than 12V
+$Comp
+L MMSZ5226B-7-F:MMSZ5231B-7-F D11
+U 1 1 5EB79E98
+P 7150 900
+F 0 "D11" V 7196 795 50  0000 R CNN
+F 1 "MMSZ5231B-7-F" V 7800 1200 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 7150 900 50  0001 L BNN
+F 3 "Good" H 7150 900 50  0001 L BNN
+F 4 "MMSZ5226B-7-F" H 7150 900 50  0001 L BNN "Field4"
+F 5 "SOD-123" H 7150 900 50  0001 L BNN "Field5"
+F 6 "DIODES" H 7150 900 50  0001 L BNN "Field6"
+F 7 "$0.06 USD" H 7150 900 50  0001 L BNN "Field7"
+	1    7150 900 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7150 1250
+Wire Wire Line
+	7150 1250 7300 1250
+Wire Wire Line
+	7150 1200 7150 1250
+$Comp
+L TSI_HV_Isolater-cache:R R110
+U 1 1 5F1A9C7E
+P 6400 1250
+F 0 "R110" V 6480 1250 50  0000 C CNN
+F 1 "10k" V 6400 1250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6330 1250 50  0001 C CNN
+F 3 "" H 6400 1250 50  0000 C CNN
+	1    6400 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 1250 6750 1250
+Connection ~ 6750 1250
+Wire Wire Line
+	6250 1250 6050 1250
+Wire Wire Line
+	7600 600  7600 1050
+Wire Wire Line
+	7150 600  7600 600 
+Connection ~ 7150 600 
+Wire Wire Line
+	6750 600  6750 800 
+Wire Wire Line
+	6750 600  7150 600 
 $EndSCHEMATC

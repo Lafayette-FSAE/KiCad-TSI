@@ -328,11 +328,11 @@ Text Notes 11300 1900 0    60   ~ 0
 Current Sensor Connection
 Text Label 12750 1400 2    60   ~ 0
 +5HV
-Text Label 12750 2550 0    60   ~ 0
+Text Label 10650 1050 0    60   ~ 0
 MC+
-Text Label 12750 2750 0    60   ~ 0
+Text Label 10650 1250 0    60   ~ 0
 HV+
-Text Label 12750 2650 0    60   ~ 0
+Text Label 10650 1150 0    60   ~ 0
 HV-
 Text Label 12500 1100 0    60   ~ 0
 A1_HV
@@ -641,9 +641,9 @@ Wire Wire Line
 Wire Wire Line
 	6050 6800 6200 6800
 Wire Wire Line
-	12350 2650 12750 2650
+	10250 1150 10650 1150
 Wire Wire Line
-	12350 2750 12750 2750
+	10250 1250 10650 1250
 Wire Wire Line
 	12150 1300 12750 1300
 Wire Wire Line
@@ -653,7 +653,7 @@ Wire Wire Line
 Wire Wire Line
 	12150 1400 12750 1400
 Wire Wire Line
-	12350 2550 12750 2550
+	10250 1050 10650 1050
 Wire Wire Line
 	6700 2700 6700 2950
 Wire Wire Line
@@ -832,20 +832,20 @@ Body is too narrow, change another package\n
 $Comp
 L Circuit_layout-rescue:0010844030-0010844030 J1
 U 1 1 5C6CE099
-P 12350 2550
-F 0 "J1" H 13000 2850 50  0000 L CNN
-F 1 "TSV" H 13000 2750 50  0000 L CNN
-F 2 "0010844030:SHDR3W166P0X635_1X3_2032X762X1422P" H 13000 2650 50  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/010844020_sd.pdf" H 13000 2550 50  0001 L CNN
-F 4 "CONN HEADER 3POS .084 VERT TIN" H 13000 2450 50  0001 L CNN "Description"
-F 5 "14.22" H 13000 2350 50  0001 L CNN "Height"
-F 6 "Molex" H 13000 2250 50  0001 L CNN "Manufacturer_Name"
-F 7 "0010844030" H 13000 2150 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 13000 2050 50  0001 L CNN "RS Part Number"
-F 9 "" H 13000 1950 50  0001 L CNN "RS Price/Stock"
-F 10 "N/A" H 13000 1850 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA" H 13000 1750 50  0001 L CNN "Mouser Price/Stock"
-	1    12350 2550
+P 10250 1050
+F 0 "J1" H 10900 1350 50  0000 L CNN
+F 1 "TSV" H 10900 1250 50  0000 L CNN
+F 2 "0010844030:SHDR3W166P0X635_1X3_2032X762X1422P" H 10900 1150 50  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/010844020_sd.pdf" H 10900 1050 50  0001 L CNN
+F 4 "CONN HEADER 3POS .084 VERT TIN" H 10900 950 50  0001 L CNN "Description"
+F 5 "14.22" H 10900 850 50  0001 L CNN "Height"
+F 6 "Molex" H 10900 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "0010844030" H 10900 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10900 550 50  0001 L CNN "RS Part Number"
+F 9 "" H 10900 450 50  0001 L CNN "RS Price/Stock"
+F 10 "N/A" H 10900 350 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA" H 10900 250 50  0001 L CNN "Mouser Price/Stock"
+	1    10250 1050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -995,56 +995,29 @@ Wire Wire Line
 	10650 5000 10900 5000
 Connection ~ 10900 5600
 Wire Wire Line
-	10900 3750 11000 3750
-Connection ~ 10900 3750
+	10700 3750 10700 3900
 Wire Wire Line
-	10900 3750 10900 3900
-Wire Wire Line
-	10650 3800 10650 3750
-Wire Wire Line
-	10650 3750 10900 3750
-Wire Wire Line
-	10650 4350 10900 4350
-Connection ~ 10900 4350
-Wire Wire Line
-	10900 4350 11450 4350
-Wire Wire Line
-	11250 3150 11400 3150
-Connection ~ 11250 3150
-Wire Wire Line
-	11250 3350 11250 3150
-Wire Wire Line
-	11000 3150 11250 3150
-Wire Wire Line
-	10900 5600 11450 5600
+	11100 3350 11100 3150
 Wire Wire Line
 	10650 5600 10900 5600
 Wire Wire Line
-	11000 3750 11250 3750
-Wire Wire Line
-	10900 4200 10900 4350
-Wire Wire Line
-	10650 4300 10650 4350
+	10700 4200 10700 4350
 Wire Wire Line
 	10900 5300 10900 5600
 Wire Wire Line
 	10650 5500 10650 5600
 Wire Wire Line
-	11250 3650 11250 3750
-Connection ~ 11000 3750
+	11100 3650 11100 3750
 Wire Wire Line
-	11000 3700 11000 3750
+	10850 3700 10850 3750
 Wire Wire Line
-	11000 3200 11000 3150
-Wire Wire Line
-	12800 5600 12900 5600
+	10850 3200 10850 3150
 Wire Wire Line
 	11800 5600 11750 5600
 Wire Wire Line
 	12150 5600 12100 5600
 Wire Wire Line
 	12500 5600 12450 5600
-Connection ~ 11250 3750
 Wire Wire Line
 	11800 4350 11750 4350
 Wire Wire Line
@@ -1057,11 +1030,7 @@ Wire Wire Line
 	12050 3150 12100 3150
 Wire Wire Line
 	11700 3150 11750 3150
-Wire Wire Line
-	12750 3150 12850 3150
-Wire Wire Line
-	12800 4350 12900 4350
-Text Label 12900 5600 0    60   ~ 0
+Text Label 13000 5600 0    60   ~ 0
 HV-
 $Comp
 L TSI_HV_Isolater-cache:R R88
@@ -1208,34 +1177,34 @@ $EndComp
 $Comp
 L Circuit_layout-rescue:C C?
 U 1 1 5BD51C70
-P 11000 3450
+P 10850 3450
 AR Path="/5BD51C70" Ref="C?"  Part="1" 
 AR Path="/58AF3ED4/5BD51C70" Ref="C4"  Part="1" 
-F 0 "C4" H 11025 3550 50  0000 L CNN
-F 1 "100p" H 11025 3350 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 11038 3300 50  0001 C CNN
-F 3 "" H 11000 3450 50  0000 C CNN
-F 4 "399-1122-1-ND" H 11000 3450 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 11000 3450 60  0001 C CNN "URL"
-F 6 "C0805C101J5GACTU" H 11000 3450 60  0001 C CNN "Man P/N"
-	1    11000 3450
+F 0 "C4" H 10875 3550 50  0000 L CNN
+F 1 "100p" H 10875 3350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10888 3300 50  0001 C CNN
+F 3 "" H 10850 3450 50  0000 C CNN
+F 4 "399-1122-1-ND" H 10850 3450 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 10850 3450 60  0001 C CNN "URL"
+F 6 "C0805C101J5GACTU" H 10850 3450 60  0001 C CNN "Man P/N"
+	1    10850 3450
 	-1   0    0    -1  
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R6
 U 1 1 5BD51C67
-P 11250 3500
-F 0 "R6" V 11330 3500 50  0000 C CNN
-F 1 "10k" V 11250 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 11180 3500 50  0001 C CNN
-F 3 "" H 11250 3500 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 11250 3500 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 11250 3500 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 11250 3500 60  0001 C CNN "Man P/N"
-	1    11250 3500
+P 11100 3500
+F 0 "R6" V 11180 3500 50  0000 C CNN
+F 1 "10k" V 11100 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 11030 3500 50  0001 C CNN
+F 3 "" H 11100 3500 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 11100 3500 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 11100 3500 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 11100 3500 60  0001 C CNN "Man P/N"
+	1    11100 3500
 	1    0    0    1   
 $EndComp
-Text Label 12850 3150 0    60   ~ 0
+Text Label 13000 3150 0    60   ~ 0
 MC+
 $Comp
 L TSI_HV_Isolater-cache:R R86
@@ -1296,34 +1265,34 @@ $EndComp
 $Comp
 L Circuit_layout-rescue:C C?
 U 1 1 5BD3848D
-P 10650 4050
+P 10450 4050
 AR Path="/5BD3848D" Ref="C?"  Part="1" 
 AR Path="/58AF3ED4/5BD3848D" Ref="C48"  Part="1" 
-F 0 "C48" H 10675 4150 50  0000 L CNN
-F 1 "100p" H 10675 3950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10688 3900 50  0001 C CNN
-F 3 "" H 10650 4050 50  0000 C CNN
-F 4 "399-1122-1-ND" H 10650 4050 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 10650 4050 60  0001 C CNN "URL"
-F 6 "C0805C101J5GACTU" H 10650 4050 60  0001 C CNN "Man P/N"
-	1    10650 4050
+F 0 "C48" H 10475 4150 50  0000 L CNN
+F 1 "100p" H 10475 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10488 3900 50  0001 C CNN
+F 3 "" H 10450 4050 50  0000 C CNN
+F 4 "399-1122-1-ND" H 10450 4050 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1-ND/411397" H 10450 4050 60  0001 C CNN "URL"
+F 6 "C0805C101J5GACTU" H 10450 4050 60  0001 C CNN "Man P/N"
+	1    10450 4050
 	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R53
 U 1 1 5BD38484
-P 10900 4050
-F 0 "R53" V 10980 4050 50  0000 C CNN
-F 1 "10k" V 10900 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10830 4050 50  0001 C CNN
-F 3 "" H 10900 4050 50  0000 C CNN
-F 4 "P10.0KCCT-ND" V 10900 4050 60  0001 C CNN "DigiKey P/N"
-F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 10900 4050 60  0001 C CNN "URL"
-F 6 "ERJ-6ENF1002V" V 10900 4050 60  0001 C CNN "Man P/N"
-	1    10900 4050
+P 10700 4050
+F 0 "R53" V 10780 4050 50  0000 C CNN
+F 1 "10k" V 10700 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10630 4050 50  0001 C CNN
+F 3 "" H 10700 4050 50  0000 C CNN
+F 4 "P10.0KCCT-ND" V 10700 4050 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1002V/P10.0KCCT-ND/119248" V 10700 4050 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF1002V" V 10700 4050 60  0001 C CNN "Man P/N"
+	1    10700 4050
 	1    0    0    -1  
 $EndComp
-Text Label 12900 4350 0    60   ~ 0
+Text Label 13000 4350 0    60   ~ 0
 HV+
 Connection ~ 10650 5600
 $Comp
@@ -1360,11 +1329,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9800 5900 50 
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 3150 11000 3150
-Connection ~ 11000 3150
-Wire Wire Line
-	10050 4350 10650 4350
-Connection ~ 10650 4350
+	10050 3150 10850 3150
 Wire Wire Line
 	10050 5600 10650 5600
 Wire Wire Line
@@ -1416,8 +1381,6 @@ Wire Wire Line
 	9300 5700 8600 5700
 Text Notes 7700 6650 0    39   ~ 0
 Changed voltage divider rtn from I/O ground to DiffAmpRef\nDiffAmpRef > I/O ground\nThis allows the buffer to operate with the risk that MC+, HV+ or HV- may be lower than I/O ground, resulting in a negative voltage at the + terminal of buffers with respect to I/O ground 
-Wire Wire Line
-	11250 3750 12900 3750
 Text Label 12900 3750 2    61   ~ 0
 DiffAmpRef
 Text Label 12900 5000 2    61   ~ 0
@@ -1448,4 +1411,140 @@ Wire Wire Line
 	10600 2850 10600 3000
 Text Notes 10250 2500 0    39   ~ 0
 For U26
+Wire Wire Line
+	10050 4350 10450 4350
+Wire Wire Line
+	10450 3750 10450 3800
+Wire Wire Line
+	10450 4300 10450 4350
+Connection ~ 10450 4350
+Wire Wire Line
+	10450 4350 10700 4350
+Connection ~ 10700 3750
+Wire Wire Line
+	10700 3750 10450 3750
+Connection ~ 10700 4350
+Wire Wire Line
+	10700 3750 10850 3750
+Connection ~ 10850 3150
+Connection ~ 10850 3750
+Wire Wire Line
+	10850 3150 11100 3150
+Wire Wire Line
+	10850 3750 11100 3750
+Connection ~ 11100 3150
+Connection ~ 11100 3750
+Text Notes 12350 3600 0    39   ~ 0
+voltage divider bypass for testing
+NoConn ~ 4600 3900
+$Comp
+L conn:Conn_01x01 J19
+U 1 1 5E5EE397
+P 12850 5850
+F 0 "J19" V 12722 5930 50  0000 L CNN
+F 1 "Conn_01x01" V 12813 5930 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 12850 5850 50  0001 C CNN
+F 3 "~" H 12850 5850 50  0001 C CNN
+	1    12850 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12800 5600 12850 5600
+Wire Wire Line
+	10900 5600 11300 5600
+Wire Wire Line
+	10700 4350 11300 4350
+Wire Wire Line
+	12800 4350 12850 4350
+Wire Wire Line
+	11100 3150 11300 3150
+Wire Wire Line
+	12750 3150 12850 3150
+Wire Wire Line
+	11300 3150 11300 3200
+Connection ~ 11300 3150
+Wire Wire Line
+	11300 3150 11400 3150
+Wire Wire Line
+	12850 3150 12850 3200
+Connection ~ 12850 3150
+Wire Wire Line
+	12850 3150 13000 3150
+Wire Wire Line
+	11100 3750 12900 3750
+Wire Wire Line
+	11300 4350 11300 4400
+Connection ~ 11300 4350
+Wire Wire Line
+	11300 4350 11450 4350
+Wire Wire Line
+	12850 4350 12850 4400
+Connection ~ 12850 4350
+Wire Wire Line
+	12850 4350 13000 4350
+Wire Wire Line
+	11300 5650 11300 5600
+Connection ~ 11300 5600
+Wire Wire Line
+	11300 5600 11450 5600
+Wire Wire Line
+	12850 5600 12850 5650
+Connection ~ 12850 5600
+Wire Wire Line
+	12850 5600 13000 5600
+$Comp
+L conn:Conn_01x01 J15
+U 1 1 5E66BB5A
+P 11300 5850
+F 0 "J15" V 11172 5930 50  0000 L CNN
+F 1 "Conn_01x01" V 11263 5930 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11300 5850 50  0001 C CNN
+F 3 "~" H 11300 5850 50  0001 C CNN
+	1    11300 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L conn:Conn_01x01 J14
+U 1 1 5E677128
+P 11300 4600
+F 0 "J14" V 11172 4680 50  0000 L CNN
+F 1 "Conn_01x01" V 11263 4680 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11300 4600 50  0001 C CNN
+F 3 "~" H 11300 4600 50  0001 C CNN
+	1    11300 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L conn:Conn_01x01 J17
+U 1 1 5E681D73
+P 12850 4600
+F 0 "J17" V 12722 4680 50  0000 L CNN
+F 1 "Conn_01x01" V 12813 4680 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 12850 4600 50  0001 C CNN
+F 3 "~" H 12850 4600 50  0001 C CNN
+	1    12850 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L conn:Conn_01x01 J12
+U 1 1 5E68D0E3
+P 11300 3400
+F 0 "J12" V 11172 3480 50  0000 L CNN
+F 1 "Conn_01x01" V 11263 3480 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11300 3400 50  0001 C CNN
+F 3 "~" H 11300 3400 50  0001 C CNN
+	1    11300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L conn:Conn_01x01 J16
+U 1 1 5E697DB9
+P 12850 3400
+F 0 "J16" V 12722 3480 50  0000 L CNN
+F 1 "Conn_01x01" V 12813 3480 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 12850 3400 50  0001 C CNN
+F 3 "~" H 12850 3400 50  0001 C CNN
+	1    12850 3400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

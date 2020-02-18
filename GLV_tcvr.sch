@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title "Tractive System Interface"
 Date "2019-03-26"
 Rev "1"
@@ -150,7 +150,7 @@ Text Label 1450 7500 0    60   ~ 0
 +24V
 Text Label 1450 7600 0    60   ~ 0
 LV_RTN
-Text Label 3050 7300 0    60   ~ 0
+Text Label 3050 7500 0    60   ~ 0
 +24V
 Text Label 3050 7600 2    60   ~ 0
 LV_RTN
@@ -530,8 +530,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 7600 3050 7600
 Wire Wire Line
-	3050 7500 3650 7500
-Wire Wire Line
 	1450 6550 850  6550
 Wire Wire Line
 	1450 6450 850  6450
@@ -771,18 +769,6 @@ Wire Wire Line
 	4450 2850 4700 2850
 Wire Wire Line
 	4850 2850 5000 2850
-Wire Notes Line
-	1600 6200 2850 6200
-Wire Notes Line
-	2850 6200 2850 6800
-Wire Notes Line
-	2850 6800 1600 6800
-Wire Notes Line
-	1600 6800 1600 6200
-Text Notes 1650 6600 0    61   ~ 0
-Change 5 replace IMD CH_gnd to LV_RTN 
-Text Label 7150 6050 0    61   ~ 0
-Cooling_power
 Text HLabel 9250 2050 2    61   Output ~ 0
 Cooling_power
 Wire Wire Line
@@ -791,16 +777,6 @@ Wire Wire Line
 	9250 2050 8900 2050
 Text Label 8900 2050 2    61   ~ 0
 Cooling_power
-Text Notes 4650 5550 2    99   ~ 0
-Cooling System Power
-Text Notes 6800 7050 2    39   ~ 0
-Change 13. Add cooling system power
-Text Notes 8550 4700 0    39   ~ 0
-Change 10. pinA1 and A2 switched in new footprint
-Wire Notes Line
-	8750 6450 8750 4750
-Wire Notes Line
-	8750 4750 9500 4750
 Text Label 9250 4950 2    60   ~ 0
 IMD_Status
 Wire Wire Line
@@ -856,178 +832,13 @@ Wire Wire Line
 Text Label 9250 6150 2    60   ~ 0
 LV_RTN
 Wire Notes Line
-	9500 4750 9500 6450
-Wire Notes Line
 	9500 6450 8750 6450
-Text Label 1800 2300 0    61   ~ 0
+Text Label 4300 900  0    61   ~ 0
 Cooling_CTRL
 Wire Wire Line
-	1250 2300 1800 2300
-Text HLabel 1250 2300 0    61   Input ~ 0
+	3750 900  4300 900 
+Text HLabel 3750 900  0    61   Input ~ 0
 Cooling_CTRL
-$Comp
-L Circuit_layout-rescue:FINDER-32.21-x300-relays K?
-U 1 1 5D9B1C8C
-P 6950 5400
-AR Path="/5BCEB271/5D9B1C8C" Ref="K?"  Part="1" 
-AR Path="/58A62F55/5D9B1C8C" Ref="K4"  Part="1" 
-F 0 "K4" H 6800 5900 50  0000 L CNN
-F 1 "G6B-1174P-US-DC24" H 6800 5800 50  0000 L CNN
-F 2 "custom_footprints:Relay_SPST_Finder_32.21-x300_special" H 8220 5370 50  0001 C CNN
-F 3 "" H 6950 5400 50  0001 C CNN
-	1    6950 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Circuit_layout-rescue:LED-Device D?
-U 1 1 5D9B1C94
-P 5700 5700
-AR Path="/5BCEB271/5D9B1C94" Ref="D?"  Part="1" 
-AR Path="/58A62F55/5D9B1C94" Ref="D13"  Part="1" 
-F 0 "D13" H 5700 5800 50  0000 C CNN
-F 1 "LED" H 5700 5600 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 5700 5700 50  0001 C CNN
-F 3 "" H 5700 5700 50  0001 C CNN
-	1    5700 5700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TSI_HV_Isolater-cache:R R?
-U 1 1 5D9B1C9A
-P 5700 5400
-AR Path="/5BCEB271/5D9B1C9A" Ref="R?"  Part="1" 
-AR Path="/58A62F55/5D9B1C9A" Ref="R100"  Part="1" 
-F 0 "R100" V 5780 5400 50  0000 C CNN
-F 1 "500" V 5700 5400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5630 5400 50  0001 C CNN
-F 3 "" H 5700 5400 50  0000 C CNN
-	1    5700 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Circuit_layout-rescue:1N4001-Diode D?
-U 1 1 5D9B1CA0
-P 6300 5500
-AR Path="/5BCEB271/5D9B1CA0" Ref="D?"  Part="1" 
-AR Path="/58A62F55/5D9B1CA0" Ref="D15"  Part="1" 
-F 0 "D15" H 6300 5600 50  0000 C CNN
-F 1 "1N4001" H 6300 5400 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6300 5325 50  0001 C CNN
-F 3 "" H 6300 5500 50  0001 C CNN
-	1    6300 5500
-	0    1    1    0   
-$EndComp
-Text Notes 5150 5750 0    60   ~ 0
-Indicator\n
-Text Notes 6100 5850 0    60   ~ 0
-Protection\nDiode\n
-Text Notes 6350 6300 0    60   ~ 0
-Logic power supply switch\n
-Wire Wire Line
-	4550 5100 5700 5100
-Wire Wire Line
-	7250 5100 7700 5100
-Wire Wire Line
-	6750 6050 6750 5700
-Connection ~ 5700 5100
-Wire Wire Line
-	5700 5100 5700 5250
-Wire Wire Line
-	5700 5850 5700 6050
-Connection ~ 5700 6050
-Wire Wire Line
-	6300 5100 6300 5350
-Connection ~ 6300 5100
-Wire Wire Line
-	6300 5650 6300 6050
-Connection ~ 6300 6050
-Wire Wire Line
-	7150 6050 7150 5700
-Wire Wire Line
-	3850 5850 4300 5850
-Wire Wire Line
-	4300 5850 4300 6300
-Wire Wire Line
-	4600 6100 4600 6050
-Wire Wire Line
-	4600 6500 4600 6750
-Wire Wire Line
-	5700 6050 6300 6050
-Wire Wire Line
-	6300 5100 6750 5100
-Wire Wire Line
-	6300 6050 6750 6050
-Wire Wire Line
-	5700 5100 6300 5100
-Wire Wire Line
-	4600 6050 5700 6050
-Wire Wire Line
-	5700 6100 5700 6050
-Wire Wire Line
-	5700 6750 5700 6700
-Wire Wire Line
-	4600 6750 5150 6750
-Wire Wire Line
-	5150 6750 5150 6950
-Connection ~ 5150 6750
-Wire Wire Line
-	5150 6750 5700 6750
-Text Notes 5150 5750 0    60   ~ 0
-Indicator\n
-Text Notes 6100 5850 0    60   ~ 0
-Protection\nDiode\n
-Text Notes 6350 6300 0    60   ~ 0
-Logic power supply switch\n
-$Comp
-L Circuit_layout-rescue:Jumper-Device JP?
-U 1 1 5D9B1D0C
-P 5700 6400
-AR Path="/5BCEB271/5D9B1D0C" Ref="JP?"  Part="1" 
-AR Path="/58A62F55/5D9B1D0C" Ref="JP7"  Part="1" 
-F 0 "JP7" V 5746 6312 50  0000 R CNN
-F 1 "Jumper-Device" V 5655 6312 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5700 6400 50  0001 C CNN
-F 3 "" H 5700 6400 50  0001 C CNN
-	1    5700 6400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Circuit_layout-rescue:Q_NMOS_DGS-Device Q?
-U 1 1 5D9B1D02
-P 4500 6300
-AR Path="/5BCEB271/5D9B1D02" Ref="Q?"  Part="1" 
-AR Path="/58A62F55/5D9B1D02" Ref="Q8"  Part="1" 
-F 0 "Q8" H 4700 6350 50  0000 L CNN
-F 1 "SI1302DL-T1-E3" H 4700 6250 50  0000 L CNN
-F 2 "custom_footprints:SOT-323_SC-70_Handsoldering_special" H 4700 6400 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/71249/71249.pdf" H 4500 6300 50  0001 C CNN
-	1    4500 6300
-	1    0    0    -1  
-$EndComp
-Text Label 5150 6950 0    61   ~ 0
-LV_RTN
-Text Label 3850 5850 2    61   ~ 0
-Cooling_CTRL
-Text Label 4550 5100 2    61   ~ 0
-+5DC
-Wire Notes Line
-	4250 7100 6850 7100
-Wire Notes Line
-	6850 7100 6850 6400
-Wire Notes Line
-	6850 6400 8100 6400
-Wire Notes Line
-	8100 6400 8100 4850
-Wire Notes Line
-	8100 4850 3750 4850
-Wire Notes Line
-	3750 4850 3750 6650
-Wire Notes Line
-	3750 6650 4250 6650
-Wire Notes Line
-	4250 6650 4250 7100
-Text Label 7700 5100 0    61   ~ 0
-+24V
 Wire Wire Line
 	7500 1650 7800 1650
 Wire Wire Line
@@ -1035,22 +846,10 @@ Wire Wire Line
 Connection ~ 7800 1650
 Wire Wire Line
 	7800 1650 7900 1650
-Wire Notes Line
-	2550 6950 2550 7750
-Wire Notes Line
-	2550 7750 3650 7750
-Wire Notes Line
-	3650 7750 3650 6950
-Wire Notes Line
-	3650 6950 2550 6950
-Text Notes 2300 7700 0    39   ~ 0
-pin3 and pin 5 flipped from original design
 Wire Wire Line
 	2350 7400 3050 7400
 Wire Wire Line
 	3650 7300 3050 7300
-Wire Wire Line
-	3050 7500 3050 7400
 Connection ~ 3050 7400
 Wire Wire Line
 	3050 7400 3650 7400
@@ -1121,4 +920,155 @@ Text Notes 9800 3350 0    61   ~ 0
 active low
 Text Notes 8350 4100 0    61   ~ 0
 AIRs are only powered when SL is closed
+Wire Wire Line
+	3050 7400 3050 7300
+Wire Wire Line
+	3650 7500 3050 7500
+Text Label 7550 6400 2    60   ~ 0
+LV_RTN
+$Comp
+L Circuit_layout-rescue:Q_PMOS_GSD-Device Q?
+U 1 1 5E774A4A
+P 6600 5800
+AR Path="/58ADE509/5E774A4A" Ref="Q?"  Part="1" 
+AR Path="/5BCEB271/5E774A4A" Ref="Q?"  Part="1" 
+AR Path="/58A62F55/5E774A4A" Ref="Q7"  Part="1" 
+F 0 "Q7" H 6800 5850 50  0000 L CNN
+F 1 "ZVP1320F" H 6800 5750 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6800 5900 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ZVP1320F.pdf" H 6600 5800 50  0001 C CNN
+	1    6600 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5700 5800 6000 5800
+Wire Wire Line
+	6000 5600 6000 5800
+Connection ~ 6000 5800
+Wire Wire Line
+	6000 5800 6300 5800
+Wire Wire Line
+	6300 5400 6300 5800
+Connection ~ 6300 5800
+Wire Wire Line
+	6300 5800 6400 5800
+$Comp
+L TSI_HV_Isolater-cache:R R?
+U 1 1 5E774A6B
+P 5550 5800
+AR Path="/5BCEB271/5E774A6B" Ref="R?"  Part="1" 
+AR Path="/58A62F55/5E774A6B" Ref="R113"  Part="1" 
+F 0 "R113" V 5450 5800 50  0000 C CNN
+F 1 "10k" V 5550 5800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5480 5800 50  0001 C CNN
+F 3 "" H 5550 5800 50  0000 C CNN
+	1    5550 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Circuit_layout-rescue:1N4001-Diode D?
+U 1 1 5E774A7A
+P 6700 6225
+AR Path="/5BCEB271/5E774A7A" Ref="D?"  Part="1" 
+AR Path="/58A62F55/5E774A7A" Ref="D15"  Part="1" 
+F 0 "D15" H 6700 6325 50  0000 C CNN
+F 1 "1N4001" H 6700 6125 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6700 6050 50  0001 C CNN
+F 3 "" H 6700 6225 50  0001 C CNN
+	1    6700 6225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 4900 6300 4900
+Wire Wire Line
+	6300 4900 6700 4900
+Connection ~ 6300 4900
+Wire Wire Line
+	6300 4900 6300 4750
+Text Label 6300 4750 0    60   ~ 0
++24V
+Text Label 7550 6025 2    60   ~ 0
+Cooling_power
+Text Notes 3850 5050 0    118  ~ 0
+Cooling Control
+Wire Wire Line
+	6000 5000 6000 4900
+Wire Wire Line
+	6700 5600 6700 4900
+$Comp
+L MMSZ5226B-7-F:MMSZ5231B-7-F D?
+U 1 1 5E774A58
+P 6000 5300
+AR Path="/5BCEB271/5E774A58" Ref="D?"  Part="1" 
+AR Path="/58A62F55/5E774A58" Ref="D13"  Part="1" 
+F 0 "D13" V 6200 5750 50  0000 R CNN
+F 1 "MMSZ5231B-7-F" V 6100 6050 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 6000 5300 50  0001 L BNN
+F 3 "Good" H 6000 5300 50  0001 L BNN
+F 4 "MMSZ5226B-7-F" H 6000 5300 50  0001 L BNN "Field4"
+F 5 "SOD-123" H 6000 5300 50  0001 L BNN "Field5"
+F 6 "DIODES" H 6000 5300 50  0001 L BNN "Field6"
+F 7 "$0.06 USD" H 6000 5300 50  0001 L BNN "Field7"
+	1    6000 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 4900 6300 5100
+$Comp
+L TSI_HV_Isolater-cache:R R?
+U 1 1 5E774A44
+P 6300 5250
+AR Path="/5BCEB271/5E774A44" Ref="R?"  Part="1" 
+AR Path="/58A62F55/5E774A44" Ref="R114"  Part="1" 
+F 0 "R114" V 6380 5250 50  0000 C CNN
+F 1 "1M" V 6300 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6230 5250 50  0001 C CNN
+F 3 "" H 6300 5250 50  0000 C CNN
+F 4 "P249KCCT-ND" V 6300 5250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF2493V/P249KCCT-ND/119664" V 6300 5250 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF2493V" V 6300 5250 60  0001 C CNN "Man P/N"
+F 7 "RES SMD 249K OHM 1% 1/8W 0805" V 6300 5250 60  0001 C CNN "Description"
+F 8 "0.10" V 6300 5250 60  0001 C CNN "Cost"
+	1    6300 5250
+	-1   0    0    1   
+$EndComp
+Text Label 4450 5800 0    60   ~ 0
+Cooling_CTRL
+Wire Wire Line
+	6700 6000 6700 6025
+Wire Wire Line
+	6700 6025 7550 6025
+Wire Wire Line
+	6700 6025 6700 6075
+Connection ~ 6700 6025
+Wire Wire Line
+	6700 6375 6700 6400
+Wire Wire Line
+	6700 6400 7550 6400
+$Comp
+L Circuit_layout-rescue:Jumper-Device JP?
+U 1 1 5EDDF5FE
+P 5050 6125
+AR Path="/5EDDF5FE" Ref="JP?"  Part="1" 
+AR Path="/58A62F55/5EDDF5FE" Ref="JP6"  Part="1" 
+F 0 "JP6" H 5050 6275 50  0000 C CNN
+F 1 "Jumper" H 5050 6045 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5050 6125 50  0001 C CNN
+F 3 "" H 5050 6125 50  0001 C CNN
+	1    5050 6125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6125 5375 6125
+Wire Wire Line
+	5375 6125 5375 5800
+Connection ~ 5375 5800
+Wire Wire Line
+	5375 5800 5400 5800
+Wire Wire Line
+	4450 6125 4750 6125
+Text Label 4450 6125 0    60   ~ 0
+V3.3
+Wire Wire Line
+	4450 5800 5375 5800
 $EndSCHEMATC

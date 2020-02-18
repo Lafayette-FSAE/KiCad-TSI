@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 6
+Sheet 6 6
 Title "Tractive System Interface"
 Date "2019-03-26"
 Rev "1"
@@ -139,17 +139,13 @@ Text Label 1400 5450 0    60   ~ 0
 Safety_Loop
 Text HLabel 1100 5450 0    60   Input ~ 0
 Safety_Loop
-Text Label 2650 5600 0    60   ~ 0
+Text Label 2800 5800 0    60   ~ 0
 AIRs+
-Text Label 2650 6250 0    60   ~ 0
+Text Label 2800 6000 0    60   ~ 0
 AIRs-
 Text Notes 13900 1050 0    197  ~ 0
 High Voltage
-Text Label 3800 5600 0    60   ~ 0
-Discharge_Relay+
-Text Label 3800 6250 0    60   ~ 0
-Discharge_Relay-
-Text Notes 2100 5950 0    60   ~ 0
+Text Notes 2200 5650 0    60   ~ 0
 Discharge Circuit\n
 $Comp
 L Circuit_layout-rescue:TS431ILT IC4
@@ -270,9 +266,9 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11400 5000 50
 $EndComp
 Text Label 10000 4900 0    60   ~ 0
 +3.3Vref
-Text Label 11600 2300 0    60   ~ 0
+Text Label 11950 2300 0    60   ~ 0
 PC_Relay+
-Text Label 11600 3100 0    60   ~ 0
+Text Label 11950 3100 0    60   ~ 0
 PC_Relay-
 $Comp
 L TSI_HV_Isolater-cache:R R65
@@ -287,9 +283,9 @@ F 3 "" H 10100 3300 50  0000 C CNN
 $EndComp
 Text Label 10250 2300 0    60   ~ 0
 +24HV
-Text Label 10600 3700 0    60   ~ 0
+Text Label 11100 3900 0    60   ~ 0
 I/O_Ground
-Text Notes 10550 3900 0    60   ~ 0
+Text Notes 10150 3800 0    60   ~ 0
 Pre-charge switch\n\n
 $Comp
 L Circuit_layout-rescue:LED-Device D6
@@ -354,8 +350,6 @@ F 3 "" H 5700 1400 50  0000 C CNN
 	1    5700 1400
 	-1   0    0    1   
 $EndComp
-Text Notes 10700 4150 0    60   ~ 0
-bypass\n
 $Comp
 L Circuit_layout-rescue:FINDER-32.21-x300-relays K1
 U 1 1 5BE81BB2
@@ -481,20 +475,14 @@ Text Notes 8350 2000 0    60   ~ 0
 Q
 Text Notes 8200 2950 0    60   ~ 0
 ~Q
-Text Notes 12850 2400 0    61   ~ 0
+Text Notes 13200 2400 0    61   ~ 0
 HV+\n
-Text Notes 12850 2950 0    61   ~ 0
+Text Notes 13200 2950 0    61   ~ 0
 MC+
-Text Notes 12550 2600 0    39   ~ 0
+Text Notes 12900 2600 0    39   ~ 0
 Pre-Charge resistor\n25 Ohm(25W)\nKAL25FB25R0\n
-Text Notes 12450 2550 0    47   ~ 0
+Text Notes 12800 2550 0    47   ~ 0
 R
-Text Notes 5550 5650 0    61   ~ 0
-MC+
-Text Notes 5550 6100 0    61   ~ 0
-HV-
-Text Notes 4900 6000 0    39   ~ 0
-Discharge resistor\n50 Ohm (50W)\nHS50 50R F\n
 Text Label 6100 10200 2    79   ~ 0
 Pre_charge_Ready
 $Comp
@@ -545,7 +533,7 @@ Text Label 5350 6800 2    60   ~ 0
 +5HV
 Text Label 3150 8100 0    60   ~ 0
 LV_RTN
-Text Label 2550 7900 2    60   ~ 0
+Text Label 1200 7800 2    60   ~ 0
 Safety_Loop
 $Comp
 L TSI_HV_Isolater-cache:R R70
@@ -649,9 +637,7 @@ Text Label 1000 2950 0    60   ~ 0
 I/O_Ground
 Text Notes 1250 2550 0    60   ~ 0
 Bypass for U21
-Text Notes 4000 5900 0    59   ~ 0
-NC
-Text Notes 11750 2700 0    59   ~ 0
+Text Notes 12100 2700 0    59   ~ 0
 NO
 Text Notes 8650 800  0    59   ~ 12
 ~S
@@ -782,12 +768,12 @@ $EndComp
 $Comp
 L Circuit_layout-rescue:Conn_01x02-conn J8
 U 1 1 5C676820
-P 3500 5850
-F 0 "J8" H 3500 5950 50  0000 C CNN
-F 1 "DC_Relay" H 3500 5650 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3500 5850 50  0001 C CNN
-F 3 "" H 3500 5850 50  0001 C CNN
-	1    3500 5850
+P 15450 8550
+F 0 "J8" H 15450 8650 50  0000 C CNN
+F 1 "DC_Relay" H 15450 8350 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 15450 8550 50  0001 C CNN
+F 3 "" H 15450 8550 50  0001 C CNN
+	1    15450 8550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -823,7 +809,7 @@ Connection ~ 2300 9250
 Wire Wire Line
 	2950 8600 3000 8600
 Wire Wire Line
-	7400 9950 7400 10300
+	7400 9950 7400 10000
 Wire Wire Line
 	7700 9650 8100 9650
 Wire Wire Line
@@ -838,10 +824,6 @@ Wire Wire Line
 	4350 8100 4550 8100
 Wire Wire Line
 	1100 5450 1400 5450
-Wire Wire Line
-	2650 5600 3200 5600
-Wire Wire Line
-	2650 6250 3200 6250
 Wire Wire Line
 	11100 7600 11650 7600
 Wire Wire Line
@@ -888,8 +870,6 @@ Wire Wire Line
 Wire Wire Line
 	11050 4900 10000 4900
 Wire Wire Line
-	10600 3500 10600 3700
-Wire Wire Line
 	10250 3300 10300 3300
 Wire Wire Line
 	10250 2300 11150 2300
@@ -900,8 +880,6 @@ Wire Wire Line
 	9800 2000 9800 3300
 Wire Wire Line
 	9800 5650 9800 6000
-Connection ~ 11150 3100
-Connection ~ 11150 2300
 Wire Wire Line
 	9800 4650 9800 4700
 Wire Wire Line
@@ -961,7 +939,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 3700 2300 3400
 Wire Wire Line
-	4600 1800 5650 1800
+	4600 1800 4900 1800
 Wire Wire Line
 	5650 3300 4600 3300
 Connection ~ 2500 1700
@@ -978,61 +956,33 @@ Wire Wire Line
 Wire Notes Line
 	4000 5350 450  5350
 Wire Notes Line
-	11550 2550 12000 2550
+	11900 2550 12350 2550
 Wire Notes Line
-	12000 2550 12000 2800
+	12350 2550 12350 2800
 Wire Notes Line
-	12000 2800 11550 2800
+	12350 2800 11900 2800
 Wire Notes Line
-	11550 2800 11550 2550
+	11900 2800 11900 2550
 Wire Notes Line
-	11600 2600 11600 2750
+	11950 2600 11950 2750
 Wire Notes Line
-	11600 2750 11700 2750
+	11950 2750 12050 2750
 Wire Notes Line
-	11700 2750 11700 2600
+	12050 2750 12050 2600
 Wire Notes Line
-	11700 2600 11600 2600
+	12050 2600 11950 2600
 Wire Notes Line
-	11600 3100 11600 2800
+	11950 3100 11950 2800
 Wire Notes Line
-	11600 2300 11600 2550
+	11950 2300 11950 2550
 Wire Notes Line
-	11950 2550 11950 2400
+	12300 2550 12300 2400
 Wire Notes Line
-	11950 2800 11950 2950
+	12300 2800 12300 2950
 Wire Notes Line
-	11950 2950 12900 2950
+	12300 2950 13250 2950
 Wire Notes Line
-	11950 2400 12900 2400
-Wire Notes Line
-	3800 5600 3800 5750
-Wire Notes Line
-	3700 5750 4250 5750
-Wire Notes Line
-	3700 5750 3700 5950
-Wire Notes Line
-	3700 5950 4250 5950
-Wire Notes Line
-	4250 5950 4250 5750
-Wire Notes Line
-	3800 5950 3800 6250
-Wire Notes Line
-	3750 5800 3750 5900
-Wire Notes Line
-	3750 5900 3950 5900
-Wire Notes Line
-	3950 5900 3950 5800
-Wire Notes Line
-	3950 5800 3750 5800
-Wire Notes Line
-	4150 5750 4150 5650
-Wire Notes Line
-	4150 5650 5650 5650
-Wire Notes Line
-	4150 5950 4150 6100
-Wire Notes Line
-	4150 6100 4950 6100
+	12300 2400 13250 2400
 Connection ~ 6950 9650
 Connection ~ 7400 10300
 Wire Wire Line
@@ -1094,8 +1044,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 6800 2800 6800
 Wire Wire Line
-	2550 7900 3100 7900
-Wire Wire Line
 	4750 7000 4750 7100
 Connection ~ 4750 7000
 Wire Wire Line
@@ -1131,70 +1079,34 @@ Wire Wire Line
 	6050 2100 6050 2250
 Wire Wire Line
 	15150 9300 14700 9300
-Wire Wire Line
-	3300 5850 3200 5850
-Wire Wire Line
-	3200 5850 3200 5600
-Connection ~ 3200 5600
-Wire Wire Line
-	3300 5950 3200 5950
-Wire Wire Line
-	3200 5950 3200 6250
-Connection ~ 3200 6250
 Wire Notes Line
-	12400 2700 12500 2700
+	12750 2700 12850 2700
 Wire Notes Line
-	12500 2850 12400 2850
+	12850 2850 12750 2850
 Wire Notes Line
-	12400 2850 12400 2700
+	12750 2850 12750 2700
 Wire Notes Line
-	12500 2700 12500 2850
+	12850 2700 12850 2850
 Wire Notes Line
-	12400 2450 12500 2450
+	12750 2450 12850 2450
 Wire Notes Line
-	12500 2600 12400 2600
+	12850 2600 12750 2600
 Wire Notes Line
-	12400 2600 12400 2450
+	12750 2600 12750 2450
 Wire Notes Line
-	12500 2450 12500 2600
+	12850 2450 12850 2600
 Wire Notes Line
-	12450 2450 12450 2400
+	12800 2450 12800 2400
 Wire Notes Line
-	12450 2600 12450 2700
+	12800 2600 12800 2700
 Wire Notes Line
-	12450 2850 12450 2950
-Text Notes 12450 2800 0    47   ~ 0
+	12800 2850 12800 2950
+Text Notes 12800 2800 0    47   ~ 0
 R
-Text Notes 12550 2800 0    39   ~ 0
+Text Notes 12900 2800 0    39   ~ 0
 25 Ohm (25W)\n
-Text Notes 5350 6150 2    47   ~ 0
-R
-Wire Notes Line
-	5250 6150 5250 6050
-Wire Notes Line
-	5400 6050 5400 6150
-Wire Notes Line
-	5400 6150 5250 6150
-Wire Notes Line
-	5250 6050 5400 6050
-Wire Notes Line
-	5100 6100 5250 6100
-Text Notes 5050 6150 2    47   ~ 0
-R
-Wire Notes Line
-	4950 6150 4950 6050
-Wire Notes Line
-	5100 6050 5100 6150
-Wire Notes Line
-	5100 6150 4950 6150
-Wire Notes Line
-	4950 6050 5100 6050
-Wire Notes Line
-	5400 6100 5650 6100
-Text Notes 11600 2550 0    47   ~ 0
+Text Notes 11950 2550 0    47   ~ 0
 GX14CB\n
-Text Notes 4300 5900 0    43   ~ 0
-Z1032-ND
 Text Notes 9750 1100 0    43   ~ 0
 logic of SR latch
 Wire Wire Line
@@ -1203,10 +1115,6 @@ Wire Wire Line
 	2300 9250 3000 9250
 Wire Wire Line
 	9800 3300 9800 4350
-Wire Wire Line
-	11150 3100 11600 3100
-Wire Wire Line
-	11150 2300 11600 2300
 Wire Wire Line
 	9800 4700 9800 5150
 Wire Wire Line
@@ -1236,26 +1144,12 @@ Wire Wire Line
 Wire Wire Line
 	4550 8100 5350 8100
 Wire Wire Line
-	3200 5600 3800 5600
-Wire Wire Line
-	3200 6250 3800 6250
-Wire Wire Line
 	13500 4050 14100 4050
 Connection ~ 14950 4650
 Wire Wire Line
 	14950 4650 15450 4650
 Text Label 14950 5000 0    79   ~ 0
 Pre_charge_Ready
-Wire Notes Line
-	16000 3250 16000 5700
-Wire Notes Line
-	16000 5700 14450 5700
-Wire Notes Line
-	14450 5700 14450 3250
-Wire Notes Line
-	14400 3250 16000 3250
-Text Notes 14650 5450 0    61   ~ 0
-Change 1. Move Pre_charge_Ready from pin A1 to Pin 11
 Wire Wire Line
 	4250 10200 4450 10200
 Wire Wire Line
@@ -1271,16 +1165,6 @@ F 3 "" H 4600 10200 50  0000 C CNN
 	1    4600 10200
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	4400 9950 5050 9950
-Wire Notes Line
-	5050 9950 5050 10650
-Wire Notes Line
-	5050 10650 4400 10650
-Wire Notes Line
-	4400 10650 4400 9950
-Text Notes 4400 10950 0    61   ~ 0
-Change 2. Because Pre_charge_Ready is now 24v, R54 is changed to 2.4k, matching R70.\nCurrent is 0.01A.
 Connection ~ 2300 3400
 $Comp
 L Circuit_layout-rescue:MCP6004-linear U40
@@ -1305,16 +1189,6 @@ Wire Notes Line
 	10350 3050 10350 3550
 Text Notes 9600 3000 0    39   ~ 0
 Change 8. pin 1 and 2 are flipped on footprint
-Wire Notes Line
-	12050 5050 12850 5050
-Wire Notes Line
-	12850 5050 12850 5500
-Wire Notes Line
-	12850 5500 12050 5500
-Wire Notes Line
-	12050 5500 12050 5050
-Text Notes 11150 5450 0    39   ~ 0
-Change 9. new pin# on new footprint\nold pin# does not match datasheet 
 Text Notes 12600 6800 0    39   ~ 0
 same as I/O Ground\nCannot be changed now b/c "/" in invalid in label name
 Wire Notes Line
@@ -1402,16 +1276,6 @@ Wire Wire Line
 Connection ~ 12950 5700
 Wire Wire Line
 	12950 5700 13500 5700
-Wire Notes Line
-	13350 5100 13750 5100
-Wire Notes Line
-	13750 5100 13750 5850
-Wire Notes Line
-	13750 5850 13350 5850
-Wire Notes Line
-	13350 5850 13350 5100
-Text Notes 13250 5600 0    39   ~ 0
-Change 12. Jumper for MC
 Text Label 14450 7100 2    60   ~ 0
 I/O_ground
 Wire Wire Line
@@ -1518,12 +1382,6 @@ Text Label 12350 4050 0    61   ~ 0
 +5HV
 Text Label 14950 5000 0    79   ~ 0
 Pre_charge_Ready
-Text Notes 14650 5450 0    61   ~ 0
-Change 1. Move Pre_charge_Ready from pin A1 to Pin 11
-Text Notes 11150 5450 0    39   ~ 0
-Change 9. new pin# on new footprint\nold pin# does not match datasheet 
-Text Notes 13250 5600 0    39   ~ 0
-Change 12. Jumper for MC
 Wire Wire Line
 	9850 7800 10000 7800
 Wire Wire Line
@@ -1555,22 +1413,6 @@ Wire Bus Line
 	9350 650  9350 1500
 Wire Bus Line
 	8500 650  8950 650 
-$Comp
-L SN74LVC1G08DCKR:SN74LVC1G08DCKR U29
-U 1 1 5DFB3D2B
-P 7050 4100
-F 0 "U29" H 7050 4570 50  0000 C CNN
-F 1 "SN74LVC1G08DCKR" H 7050 4479 50  0000 C CNN
-F 2 "SOT65P210X110-5N" H 7050 4100 50  0001 L BNN
-F 3 "Single 2-Input Positive-AND Gate 5-SC70 -40 to 125" H 7050 4100 50  0001 L BNN
-F 4 "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC1G08DCKR/296-11602-1-ND/385741?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 7050 4100 50  0001 L BNN "Field4"
-F 5 "SN74LVC1G08DCKR" H 7050 4100 50  0001 L BNN "Field5"
-F 6 "SC-70-5 Texas Instruments" H 7050 4100 50  0001 L BNN "Field6"
-F 7 "296-11602-1-ND" H 7050 4100 50  0001 L BNN "Field7"
-F 8 "Texas Instruments" H 7050 4100 50  0001 L BNN "Field8"
-	1    7050 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 4000 6100 4000
 Text Label 6100 4000 0    60   ~ 0
@@ -1583,10 +1425,6 @@ Wire Wire Line
 	5950 3400 7100 3400
 Wire Wire Line
 	5650 4200 6350 4200
-Text Label 8400 4000 2    60   ~ 0
-pc_and_sl_ready
-Wire Wire Line
-	7750 4000 8400 4000
 Text Label 4850 2000 0    60   ~ 0
 pc_and_sl_ready
 Wire Wire Line
@@ -1618,6 +1456,405 @@ Wire Bus Line
 Connection ~ 9650 800 
 Wire Bus Line
 	9650 800  9650 1500
+$Comp
+L linear:MCP6001 U33
+U 1 1 5EDA0941
+P 2000 7900
+F 0 "U33" H 2200 8050 50  0000 L CNN
+F 1 "MCP6001" H 2100 8150 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 2000 7900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2000 8100 50  0001 C CNN
+	1    2000 7900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1100 6700 0    60   Input ~ 0
++3.3V
+Wire Wire Line
+	1100 6700 1350 6700
+Text Label 1350 6700 0    59   ~ 0
++3.3V
+Wire Wire Line
+	1900 7600 1900 7400
+Text Label 1900 7400 0    60   ~ 0
++3.3V
+Text Label 1900 8250 0    60   ~ 0
+LV_RTN
+Wire Wire Line
+	1900 8200 1900 8250
+Wire Wire Line
+	1700 8000 1600 8000
+Wire Wire Line
+	1600 8000 1600 8300
+Wire Wire Line
+	1600 8300 2400 8300
+Wire Wire Line
+	2400 8300 2400 7900
+Wire Wire Line
+	2400 7900 3100 7900
+Wire Wire Line
+	2400 7900 2300 7900
+Connection ~ 2400 7900
+Text Notes 2350 7500 0    60   ~ 0
+buffer
+Text Label 8400 4000 2    60   ~ 0
+pc_and_sl_ready
+$Comp
+L SN74LVC1G08DCKR:SN74LVC1G08DCKR U29
+U 1 1 5DFB3D2B
+P 7050 4100
+F 0 "U29" H 7050 4570 50  0000 C CNN
+F 1 "SN74LVC1G08DCKR" H 7050 4479 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-353_SC-70-5_Handsoldering" H 7050 4100 50  0001 L BNN
+F 3 "Single 2-Input Positive-AND Gate 5-SC70 -40 to 125" H 7050 4100 50  0001 L BNN
+F 4 "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC1G08DCKR/296-11602-1-ND/385741?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 7050 4100 50  0001 L BNN "Field4"
+F 5 "SN74LVC1G08DCKR" H 7050 4100 50  0001 L BNN "Field5"
+F 6 "SC-70-5 Texas Instruments" H 7050 4100 50  0001 L BNN "Field6"
+F 7 "296-11602-1-ND" H 7050 4100 50  0001 L BNN "Field7"
+F 8 "Texas Instruments" H 7050 4100 50  0001 L BNN "Field8"
+	1    7050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Circuit_layout-rescue:TLP291-opto U34
+U 1 1 5EF57D2F
+P 4050 5900
+F 0 "U34" H 3850 6100 50  0000 L CNN
+F 1 "TLP293" H 4050 6100 50  0000 L CNN
+F 2 "Housings_SSOP:SOP-4_4.4x2.8mm_Pitch1.27mm" H 3850 5700 50  0001 L CIN
+F 3 "https://www.digikey.com/products/en?keywords=TLP293(GB-TPLECT-ND" H 4050 5900 50  0001 L CNN
+	1    4050 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSI_HV_Isolater-cache:R R108
+U 1 1 5EF8315B
+P 3250 5800
+F 0 "R108" V 3330 5800 50  0000 C CNN
+F 1 "2.4k" V 3250 5800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3180 5800 50  0001 C CNN
+F 3 "" H 3250 5800 50  0000 C CNN
+F 4 "P249KCCT-ND" V 3250 5800 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF2493V/P249KCCT-ND/119664" V 3250 5800 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF2493V" V 3250 5800 60  0001 C CNN "Man P/N"
+F 7 "RES SMD 249K OHM 1% 1/8W 0805" V 3250 5800 60  0001 C CNN "Description"
+F 8 "0.10" V 3250 5800 60  0001 C CNN "Cost"
+	1    3250 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 5800 3750 5800
+Wire Wire Line
+	3100 5800 2800 5800
+Wire Wire Line
+	3750 6000 2800 6000
+Wire Wire Line
+	15250 8550 14750 8550
+Wire Wire Line
+	15250 8650 14750 8650
+Text Label 14750 8550 2    60   ~ 0
+DC_Relay+
+Text Label 14750 8650 2    60   ~ 0
+DC_Relay-
+Wire Notes Line
+	8450 4000 8450 2700
+Wire Notes Line
+	8450 2700 4800 2700
+Wire Notes Line
+	4800 2700 4800 2000
+Wire Notes Line
+	4800 2000 4850 2000
+$Comp
+L Circuit_layout-rescue:TEST_1P-conn 3.3V_TP?
+U 1 1 5E4A92D7
+P 1450 7800
+AR Path="/58A62F55/5E4A92D7" Ref="3.3V_TP?"  Part="1" 
+AR Path="/5BCEB271/5E4A92D7" Ref="SL_TP1"  Part="1" 
+F 0 "SL_TP1" H 1450 8070 50  0000 C CNN
+F 1 "SL_TP" H 1450 8000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1650 7800 50  0001 C CNN
+F 3 "" H 1650 7800 50  0001 C CNN
+	1    1450 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 7800 1450 7800
+Connection ~ 1450 7800
+Wire Wire Line
+	1450 7800 1600 7800
+$Comp
+L Circuit_layout-rescue:TEST_1P-conn 3.3V_TP?
+U 1 1 5E4E025D
+P 4900 1750
+AR Path="/58A62F55/5E4E025D" Ref="3.3V_TP?"  Part="1" 
+AR Path="/5BCEB271/5E4E025D" Ref="TSV_Ready1"  Part="1" 
+F 0 "TSV_Ready1" H 4900 2020 50  0000 C CNN
+F 1 "TSV_Ready" H 4900 1950 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5100 1750 50  0001 C CNN
+F 3 "" H 5100 1750 50  0001 C CNN
+	1    4900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Circuit_layout-rescue:TEST_1P-conn 3.3V_TP?
+U 1 1 5E4F598E
+P 5800 3300
+AR Path="/58A62F55/5E4F598E" Ref="3.3V_TP?"  Part="1" 
+AR Path="/5BCEB271/5E4F598E" Ref="PC_Ready1"  Part="1" 
+F 0 "PC_Ready1" H 5800 3570 50  0000 C CNN
+F 1 "Precharge_Ready" H 5800 3500 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3300 5800 3300
+Connection ~ 5650 3300
+$Comp
+L Circuit_layout-rescue:TEST_1P-conn 3.3V_TP?
+U 1 1 5E519160
+P 8800 4000
+AR Path="/58A62F55/5E519160" Ref="3.3V_TP?"  Part="1" 
+AR Path="/5BCEB271/5E519160" Ref="pc_sl1"  Part="1" 
+F 0 "pc_sl1" H 8800 4270 50  0000 C CNN
+F 1 "pc_sl" H 8800 4200 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 9000 4000 50  0001 C CNN
+F 3 "" H 9000 4000 50  0001 C CNN
+	1    8800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4000 8800 4000
+Text Label 5150 6250 0    60   ~ 0
+I/O_Ground
+$Comp
+L TSI_HV_Isolater-cache:R R109
+U 1 1 5F093F4B
+P 5350 5250
+F 0 "R109" V 5430 5250 50  0000 C CNN
+F 1 "1M" V 5350 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5280 5250 50  0001 C CNN
+F 3 "" H 5350 5250 50  0000 C CNN
+F 4 "P249KCCT-ND" V 5350 5250 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF2493V/P249KCCT-ND/119664" V 5350 5250 60  0001 C CNN "URL"
+F 6 "ERJ-6ENF2493V" V 5350 5250 60  0001 C CNN "Man P/N"
+F 7 "RES SMD 249K OHM 1% 1/8W 0805" V 5350 5250 60  0001 C CNN "Description"
+F 8 "0.10" V 5350 5250 60  0001 C CNN "Cost"
+	1    5350 5250
+	-1   0    0    1   
+$EndComp
+Text Label 5350 4750 0    60   ~ 0
++24HV
+Text Notes 7450 6050 0    118  ~ 0
+DC relay: NC
+Wire Wire Line
+	4900 1750 4900 1800
+Connection ~ 4900 1800
+Wire Wire Line
+	4900 1800 5650 1800
+$Comp
+L Circuit_layout-rescue:Q_PMOS_GSD-Device Q?
+U 1 1 5EB9BD8A
+P 5650 5800
+AR Path="/58ADE509/5EB9BD8A" Ref="Q?"  Part="1" 
+AR Path="/5BCEB271/5EB9BD8A" Ref="Q6"  Part="1" 
+F 0 "Q6" H 5850 5850 50  0000 L CNN
+F 1 "ZVP1320F" H 5850 5750 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5850 5900 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ZVP1320F.pdf" H 5650 5800 50  0001 C CNN
+	1    5650 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5750 6000 5750 6100
+Wire Wire Line
+	5050 6000 5050 6250
+Wire Wire Line
+	5350 4900 5350 5100
+Wire Wire Line
+	4750 5800 5050 5800
+$Comp
+L MMSZ5226B-7-F:MMSZ5231B-7-F D12
+U 1 1 5EDA47C4
+P 5050 5300
+F 0 "D12" V 5250 5750 50  0000 R CNN
+F 1 "MMSZ5231B-7-F" V 5150 6050 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 5050 5300 50  0001 L BNN
+F 3 "Good" H 5050 5300 50  0001 L BNN
+F 4 "MMSZ5226B-7-F" H 5050 5300 50  0001 L BNN "Field4"
+F 5 "SOD-123" H 5050 5300 50  0001 L BNN "Field5"
+F 6 "DIODES" H 5050 5300 50  0001 L BNN "Field6"
+F 7 "$0.06 USD" H 5050 5300 50  0001 L BNN "Field7"
+	1    5050 5300
+	0    -1   -1   0   
+$EndComp
 Text Notes 6900 4800 0    59   ~ 0
 AND gate
+Wire Wire Line
+	5050 5600 5050 5800
+Connection ~ 5050 5800
+Wire Wire Line
+	5050 5800 5350 5800
+Wire Wire Line
+	5350 5400 5350 5800
+Connection ~ 5350 5800
+Wire Wire Line
+	5350 5800 5450 5800
+Wire Wire Line
+	5050 5000 5050 4900
+Wire Wire Line
+	5050 4900 5350 4900
+Wire Wire Line
+	5350 4900 5350 4750
+Connection ~ 5350 4900
+Wire Wire Line
+	5750 5600 5750 4900
+Wire Wire Line
+	5750 4900 5350 4900
+Wire Wire Line
+	4350 6000 5050 6000
+$Comp
+L TSI_HV_Isolater-cache:R R111
+U 1 1 5F16E9E6
+P 4600 5800
+F 0 "R111" V 4500 5800 50  0000 C CNN
+F 1 "10k" V 4600 5800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4530 5800 50  0001 C CNN
+F 3 "" H 4600 5800 50  0000 C CNN
+	1    4600 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 5800 4350 5800
+Wire Wire Line
+	7300 9950 7300 10000
+Wire Wire Line
+	7300 10000 7400 10000
+Connection ~ 7400 10000
+Wire Wire Line
+	7400 10000 7400 10300
+$Comp
+L Circuit_layout-rescue:LED-RESCUE-Circuit_layout D?
+U 1 1 5E44EE3F
+P 2350 7100
+AR Path="/58ADE509/5E44EE3F" Ref="D?"  Part="1" 
+AR Path="/5BCEB271/5E44EE3F" Ref="D14"  Part="1" 
+F 0 "D14" H 2350 7200 50  0000 C CNN
+F 1 "SL Error" H 2350 7000 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 2350 7100 50  0001 C CNN
+F 3 "" H 2350 7100 50  0000 C CNN
+F 4 "516-1445-1-ND" H 2350 7100 60  0001 C CNN "DigiKey P/N"
+F 5 "http://www.digikey.com/product-detail/en/broadcom-limited/HSMR-C170/516-1445-1-ND/637769" H 2350 7100 60  0001 C CNN "URL"
+F 6 "HSMR-C170" H 2350 7100 60  0001 C CNN "Man P/N"
+	1    2350 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L TSI_HV_Isolater-cache:R R?
+U 1 1 5E44EE45
+P 1800 7100
+AR Path="/58ADE509/5E44EE45" Ref="R?"  Part="1" 
+AR Path="/5BCEB271/5E44EE45" Ref="R112"  Part="1" 
+F 0 "R112" V 1880 7100 50  0000 C CNN
+F 1 "330" V 1800 7100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1730 7100 50  0001 C CNN
+F 3 "" H 1800 7100 50  0000 C CNN
+	1    1800 7100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 7100 1950 7100
+Wire Wire Line
+	1650 7100 1600 7100
+Wire Wire Line
+	1600 7100 1600 7800
+Connection ~ 1600 7800
+Wire Wire Line
+	1600 7800 1700 7800
+Text Label 2900 7100 2    60   ~ 0
+LV_RTN
+Wire Wire Line
+	2550 7100 2900 7100
+Wire Wire Line
+	6550 5900 6900 5900
+Wire Wire Line
+	5050 6250 6550 6250
+Wire Wire Line
+	6900 6400 6900 6300
+Wire Wire Line
+	6550 6400 6900 6400
+Wire Wire Line
+	6550 6250 6550 6400
+Wire Wire Line
+	5750 6100 6550 6100
+Wire Wire Line
+	6900 5900 6900 6000
+Wire Wire Line
+	6550 6100 6550 5900
+$Comp
+L Circuit_layout-rescue:1N4001-Diode D16
+U 1 1 5E50A1B4
+P 6900 6150
+F 0 "D16" H 6900 6250 50  0000 C CNN
+F 1 "1N4001" H 6900 6050 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6900 5975 50  0001 C CNN
+F 3 "" H 6900 6150 50  0001 C CNN
+	1    6900 6150
+	0    1    1    0   
+$EndComp
+Text Label 6400 6250 2    60   ~ 0
+DC_Relay-
+Text Label 6400 6100 2    60   ~ 0
+DC_Relay+
+$Comp
+L Circuit_layout-rescue:1N4001-Diode D17
+U 1 1 5E86DDDE
+P 11600 2700
+F 0 "D17" H 11600 2800 50  0000 C CNN
+F 1 "1N4001" H 11600 2600 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 11600 2525 50  0001 C CNN
+F 3 "" H 11600 2700 50  0001 C CNN
+	1    11600 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11150 2300 11600 2300
+Connection ~ 11150 2300
+Wire Wire Line
+	11150 3100 11600 3100
+Connection ~ 11150 3100
+Wire Wire Line
+	11600 2550 11600 2300
+Connection ~ 11600 2300
+Wire Wire Line
+	11600 2300 11950 2300
+Wire Wire Line
+	11600 2850 11600 3100
+Connection ~ 11600 3100
+Wire Wire Line
+	11600 3100 11950 3100
+$Comp
+L Circuit_layout-rescue:Jumper-Device JP5
+U 1 1 5E92E1B9
+P 11600 3450
+F 0 "JP5" V 11646 3362 50  0000 R CNN
+F 1 "Jumper-Device" V 11555 3362 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 11600 3450 50  0001 C CNN
+F 3 "" H 11600 3450 50  0001 C CNN
+	1    11600 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11600 3150 11600 3100
+Wire Wire Line
+	11600 3750 11600 3800
+Wire Wire Line
+	11600 3800 11100 3800
+Wire Wire Line
+	10600 3500 10600 3800
+Wire Wire Line
+	11100 3800 11100 3900
+Connection ~ 11100 3800
+Wire Wire Line
+	11100 3800 10600 3800
 $EndSCHEMATC
